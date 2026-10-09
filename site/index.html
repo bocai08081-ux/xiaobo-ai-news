@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="小波AI资讯站：面向中文内容创作者的 AI 资讯聚合，每小时更新。社区、论文、模型、视频、官方博客与本地部署。" />
+  <meta name="theme-color" content="#f3efe6" />
+  <title>小波AI资讯站</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://bocai08081-ux.github.io/xiaobo-ai-news/" />
+</head>
+<body>
+  <header class="mast">
+    <div class="mast-row">
+      <p class="seal" aria-hidden="true">波</p>
+      <div>
+        <p class="kicker">XIAOBO · AI DESK</p>
+        <p class="updated" id="updated">正在读取…</p>
+      </div>
+    </div>
+    <h1>小波<span>AI 资讯站</span></h1>
+    <p class="lede">给中文内容创作者的 AI 速览。社区、论文、热榜、视频、官方博客和本地部署放在一处，每小时刷新。</p>
+  </header>
+
+  <div class="toolbar">
+    <div class="chips" id="chips" role="tablist" aria-label="分类"></div>
+    <div class="toolbar-row">
+      <label class="search">
+        <span class="sr-only">搜索</span>
+        <input id="q" type="search" placeholder="搜索标题或来源" autocomplete="off" enterkeyhint="search" />
+      </label>
+      <p class="count" id="count" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <main id="list"></main>
+
+  <footer class="foot" id="foot"></footer>
+  <noscript><p class="noscript">需要启用 JavaScript 才能加载资讯列表。</p></noscript>
+  <script src="app.js"></script>
+</body>
+</html>
