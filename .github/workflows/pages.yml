@@ -1,0 +1,75 @@
+name: Deploy site
+
+on:
+  schedule:
+    # GitHub 的定时任务按 UTC 触发，每小时整点一次，实际可能晚几分钟。
+    - cron: "0 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch news
+        env:
+          SUMMARY_API_KEY: ${{ secrets.SUMMARY_API_KEY }}
+          SUMMARY_API_BASE: ${{ secrets.SUMMARY_API_BASE }}
+          SUMMARY_MODEL: ${{ secrets.SUMMARY_MODEL }}
+        run: python scripts/fetch_news.py
+
+      # enablement 需要 GITHUB_TOKEN 以外的令牌（PAT 的 repo / Pages 写权限，
+      # 或 GitHub App 的 administration:write + pages:write）。默认令牌做不到，
+      # 所以这一步允许失败，接着用普通 configure-pages。
+      - name: Try to enable GitHub Pages
+        id: enable_pages
+        continue-on-error: true
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Configure GitHub Pages
+        id: configure_pages
+        if: steps.enable_pages.outcome != 'success'
+        continue-on-error: true
+        uses: actions/configure-pages@v5
+
+      - name: Pages setup hint
+        if: steps.enable_pages.outcome != 'success' && steps.configure_pages.outcome != 'success'
+        run: |
+          echo "::warning::未能用工作流令牌开启 GitHub Pages。请仓库所有者打开 Settings → Pages → Build and deployment，把 Source 选成 GitHub Actions 并保存，然后重新运行 Deploy site。"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
