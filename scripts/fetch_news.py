@@ -156,6 +156,12 @@ def parse_datetime(value: str | None) -> datetime | None:
     return dt.astimezone(timezone.utc)
 
 
+_BOILERPLATE_SUMMARY = re.compile(
+    r"^(?:点击查看原文|查看原文|阅读原文|阅读全文|继续阅读|read more|continue reading)[\s>》]*$",
+    re.I,
+)
+
+
 def html_to_text(value: str | None, limit: int = 280) -> str:
     if not value:
         return ""
@@ -167,6 +173,13 @@ def html_to_text(value: str | None, limit: int = 280) -> str:
     text = re.sub(r"\s+", " ", text).strip()
     if len(text) > limit:
         text = text[: limit - 1].rstrip() + "…"
+    return text
+
+
+def clean_summary(value: str | None) -> str:
+    text = html_to_text(value, 280)
+    if _BOILERPLATE_SUMMARY.match(text):
+        return ""
     return text
 
 
@@ -220,7 +233,7 @@ def make_item(
     snapshot: bool = False,
 ) -> dict | None:
     title = html_to_text(title, 240)
-    url = (url or "").strip()
+    url = canonical_url(url)
     if not title or not url.startswith(("http://", "https://")):
         return None
     if published_at.tzinfo is None:
@@ -232,7 +245,7 @@ def make_item(
         "source": source,
         "category": category,
         "publishedAt": isoformat(published_at),
-        "summary": html_to_text(summary, 280),
+        "summary": clean_summary(summary),
         "summaryZh": None,
         "meta": html_to_text(meta, 120),
         "snapshot": snapshot,

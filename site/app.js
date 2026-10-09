@@ -129,6 +129,7 @@ function relativeTime(iso, snapshot) {
   const then = new Date(iso).getTime();
   if (Number.isNaN(then)) return "";
   const minutes = Math.round((Date.now() - then) / 60000);
+  if (minutes < -1) return shanghaiStamp(iso).replace("（上海）", "");
   if (minutes < 1) return "刚刚";
   if (minutes < 60) return `${minutes} 分钟前`;
   const hours = Math.round(minutes / 60);

@@ -17,6 +17,7 @@ from fetch_news import (
     cn_ai_text,
     dedupe,
     detect_lang,
+    clean_summary,
     html_to_text,
     in_window,
     make_item,
@@ -60,6 +61,19 @@ class FetchLogicTest(unittest.TestCase):
 
     def test_html_to_text(self):
         self.assertEqual(html_to_text("<p>你好 <b>AI</b></p>"), "你好 AI")
+
+    def test_make_item_drops_tracking_and_boilerplate(self):
+        item = make_item(
+            title="黄仁勋为微软站台",
+            url="https://www.infoq.cn/article/abc?utm_source=rss&utm_medium=article",
+            source="InfoQ",
+            category="cn",
+            published_at=datetime(2026, 10, 9, tzinfo=timezone.utc),
+            summary="<div align='right'><a href='https://example.com'>点击查看原文></a></div>",
+        )
+        self.assertEqual(item["url"], "https://infoq.cn/article/abc")
+        self.assertEqual(item["summary"], "")
+        self.assertEqual(clean_summary("真正的摘要"), "真正的摘要")
 
     def test_rss_and_atom(self):
         rss = """<?xml version="1.0"?>
