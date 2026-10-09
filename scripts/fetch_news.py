@@ -66,6 +66,19 @@ CN_HINT = re.compile(
     re.I,
 )
 
+# General tech sites. Latin keywords need a boundary so "Wayfair" does not match "AI".
+CN_AI = re.compile(
+    r"(?:^|[^A-Za-z])("
+    r"A\.?I\.?|AIGC|GPT|LLMs?|ChatGPT|Claude|Gemini|DeepSeek|OpenAI|Anthropic|"
+    r"Qwen|Sora|Copilot|Midjourney|Kimi|Manus|Agents?"
+    r")(?:[^A-Za-z]|$)|"
+    r"人工智能|大模型|智能体|具身智能|多模态|生成式|机器学习|世界模型|基础模型|"
+    r"英伟达|智驾|自动驾驶|机器人",
+    re.I,
+)
+
+_CJK_RE = re.compile(r"[\u4e00-\u9fff]")
+
 AI_HINT = re.compile(
     r"(?:^|[^a-z0-9])("
     r"a\.?i\.?|llm|llms|gpt|chatgpt|claude|gemini|llama|mistral|qwen|deepseek|"
@@ -114,7 +127,7 @@ def isoformat(dt: datetime) -> str:
 def parse_datetime(value: str | None) -> datetime | None:
     if not value:
         return None
-    text = unescape(value).strip()
+    text = re.sub(r"\s+", " ", unescape(value).strip())
     if not text:
         return None
     try:
@@ -223,6 +236,7 @@ def make_item(
         "summaryZh": None,
         "meta": html_to_text(meta, 120),
         "snapshot": snapshot,
+        "lang": detect_lang(title),
     }
 
 
@@ -350,6 +364,28 @@ def feed_items(url: str, source: str, category: str, now: datetime, *, browser: 
 def looks_like_ai(*parts: str) -> bool:
     blob = " ".join(part for part in parts if part)
     return bool(AI_HINT.search(blob))
+
+
+def detect_lang(title: str) -> str:
+    """zh when the title is meaningfully Chinese, including mixed product names."""
+    text = title or ""
+    cjk = len(_CJK_RE.findall(text))
+    if cjk >= 8:
+        return "zh"
+    latin = len(re.findall(r"[A-Za-z]", text))
+    if cjk >= 4 and cjk >= latin * 0.25:
+        return "zh"
+    return "en"
+
+
+def cn_ai_text(title: str) -> bool:
+    return bool(CN_AI.search(title or ""))
+
+
+def accept_simon(title: str, summary: str = "") -> bool:
+    if (title or "").strip().lower().startswith("quoting "):
+        return False
+    return looks_like_ai(title, summary)
 
 
 def fetch_hn(now: datetime) -> list[dict]:
@@ -760,6 +796,24 @@ def fetch_qbitai(now: datetime) -> list[dict]:
     return [item for item in items if CN_HINT.search(item["title"])]
 
 
+def fetch_cn_media(url: str, source: str, now: datetime) -> list[dict]:
+    """General Chinese tech feeds, kept only when the title is about AI."""
+    items = feed_items(url, source, "cn", now, cap=40)
+    return [item for item in items if cn_ai_text(item["title"])][:8]
+
+
+def fetch_simon(now: datetime) -> list[dict]:
+    items = feed_items(
+        "https://simonwillison.net/atom/everything/",
+        "Simon Willison",
+        "media",
+        now,
+        cap=20,
+    )
+    kept = [item for item in items if accept_simon(item["title"], item.get("summary") or "")]
+    return kept[:6]
+
+
 def source_specs(now: datetime):
     return [
         ("hn", "Hacker News", "hn", lambda: fetch_hn(now)),
@@ -772,12 +826,20 @@ def source_specs(now: datetime):
         ("yt-wes", "Wes Roth", "video", lambda: fetch_youtube("UCqcbQf6yw5KzRoDDcZ_wBSw", "Wes Roth", now)),
         ("verge", "The Verge", "media", lambda: feed_items("https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "The Verge", "media", now)),
         ("techcrunch", "TechCrunch", "media", lambda: feed_items("https://techcrunch.com/category/artificial-intelligence/feed/", "TechCrunch", "media", now)),
+        ("simon", "Simon Willison", "media", lambda: fetch_simon(now)),
         ("openai", "OpenAI", "official", lambda: feed_items("https://openai.com/news/rss.xml", "OpenAI", "official", now)),
         ("google-ai", "Google AI", "official", lambda: feed_items("https://blog.google/innovation-and-ai/technology/ai/rss/", "Google AI", "official", now)),
         ("deepmind", "Google DeepMind", "official", lambda: feed_items("https://deepmind.google/blog/rss.xml", "Google DeepMind", "official", now)),
         ("anthropic", "Anthropic", "official", lambda: fetch_anthropic(now)),
         ("qbitai", "量子位", "cn", lambda: fetch_qbitai(now)),
         ("jiqizhixin", "机器之心", "cn", lambda: fetch_jiqizhixin(now)),
+        ("leiphone", "雷峰网", "cn", lambda: fetch_cn_media("https://www.leiphone.com/feed", "雷峰网", now)),
+        ("ifanr", "爱范儿", "cn", lambda: fetch_cn_media("https://www.ifanr.com/feed", "爱范儿", now)),
+        ("geekpark", "极客公园", "cn", lambda: fetch_cn_media("https://www.geekpark.net/rss", "极客公园", now)),
+        ("36kr", "36氪", "cn", lambda: fetch_cn_media("https://www.36kr.com/feed-article", "36氪", now)),
+        ("tmtpost", "钛媒体", "cn", lambda: fetch_cn_media("https://www.tmtpost.com/rss.xml", "钛媒体", now)),
+        ("infoq", "InfoQ", "cn", lambda: fetch_cn_media("https://www.infoq.cn/feed", "InfoQ", now)),
+        ("solidot", "Solidot", "cn", lambda: fetch_cn_media("https://www.solidot.org/index.rss", "Solidot", now)),
         ("mlx", "MLX", "local", lambda: fetch_release_feed("https://github.com/ml-explore/mlx/releases.atom", "MLX", now, title_prefix="MLX")),
         ("mlx-lm", "mlx-lm", "local", lambda: fetch_release_feed("https://github.com/ml-explore/mlx-lm/releases.atom", "mlx-lm", now, title_prefix="mlx-lm")),
         ("llamacpp", "llama.cpp", "local", lambda: fetch_release_feed("https://github.com/ggml-org/llama.cpp/releases.atom", "llama.cpp", now, title_prefix="llama.cpp")),
