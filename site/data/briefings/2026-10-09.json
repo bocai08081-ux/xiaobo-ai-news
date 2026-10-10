@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-09",
+  "timezone": "Asia/Shanghai",
+  "generatedAt": "2026-10-10T02:42:21Z",
+  "updatedLabel": "10/10 10:42",
+  "mode": "fallback",
+  "cards": [
+    {
+      "id": "f82d620f3645dcfc",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "人类愿意向女性形象的 AI 智能体支付的报酬低于男性形象智能体",
+      "summary": "Solidot报道了这件事：人类愿意向女性形象的 AI 智能体支付的报酬低于男性形象智能体。",
+      "takeaway": "先看「人类愿意向女性形象的 AI…」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "Solidot",
+      "sourceUrl": "https://solidot.org/story?sid=85566",
+      "dateLabel": "10/09",
+      "verifiedLabel": "媒体 · 10/09 核查",
+      "featured": true
+    },
+    {
+      "id": "4a86c1aac3698131",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "全球最大独立 AI 原生影视公司，开始打破工具与制片厂的边界",
+      "summary": "InfoQ报道了这件事：全球最大独立 AI 原生影视公司，开始打破工具与制片厂的边界。",
+      "takeaway": "先看「全球最大独立 AI…」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "InfoQ",
+      "sourceUrl": "https://infoq.cn/article/ZxZMY50COGlUNHLSAEUo",
+      "dateLabel": "10/09",
+      "verifiedLabel": "媒体 · 10/09 核查",
+      "featured": false
+    },
+    {
+      "id": "7c93e6724d1210c5",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "当年「字节投毒实习生」田柯宇，估值 2 亿美元，要挑战李飞飞做世界模型",
+      "summary": "2026 年 10 月，AI 创投圈迎来一笔颇具戏剧感的融资。 一家 10 人规模的神秘实验室，没产品、没名字，成了资本市场冰火两重天的风暴眼。",
+      "takeaway": "这是公司层面的消息。先分清「当年「字节投毒实习生」田柯宇，估值 2…」有没有改变你能用的产品，再决定要不要跟。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "雷峰网",
+      "sourceUrl": "https://leiphone.com/category/yanxishe/BfzpShx7bKSPT4Ul.html",
+      "dateLabel": "10/09",
+      "verifiedLabel": "媒体 · 10/09 核查",
+      "featured": false
+    },
+    {
+      "id": "b6b8f2f88c11fd31",
+      "category": "nvidia",
+      "categoryLabel": "英伟达",
+      "title": "攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」",
+      "summary": "极客公园报道了这件事：攻克超声穿颅读脑，拿下 4 亿元新融资，他们要做脑科学的「英伟达」。",
+      "takeaway": "这是公司层面的消息。先分清「攻克超声穿颅读脑，拿下 4…」有没有改变你能用的产品，再决定要不要跟。",
+      "applicability": "针对 NVIDIA 显卡、CUDA 或英伟达软件栈。AMD 显卡和纯 Mac 环境通常对不上。",
+      "sourceName": "极客公园",
+      "sourceUrl": "http://geekpark.net/news/372148",
+      "dateLabel": "10/09",
+      "verifiedLabel": "媒体 · 10/09 核查",
+      "featured": false
+    },
+    {
+      "id": "a56e91999e73f05a",
+      "category": "nvidia",
+      "categoryLabel": "英伟达",
+      "title": "清华具身模型登顶全球第一！突围GPT-6、英伟达，不靠外挂和额外数据",
+      "summary": "星动纪元选择将视频预测与动作学习分阶段训练，重点不是「视频、动作一锅炖」，而是把两者「解耦」，重新「排序」。",
+      "takeaway": "先对一下「清华具身模型登顶全球第一！突围GPT-6、英伟达，不靠…」涉及的驱动、CUDA 和卡型，再决定要不要升级。",
+      "applicability": "针对 NVIDIA 显卡、CUDA 或英伟达软件栈。AMD 显卡和纯 Mac 环境通常对不上。",
+      "sourceName": "量子位",
+      "sourceUrl": "https://qbitai.com/2026/10/502125.html",
+      "dateLabel": "10/09",
+      "verifiedLabel": "媒体 · 10/09 核查",
+      "featured": false
+    }
+  ]
+}

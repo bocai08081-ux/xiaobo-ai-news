@@ -2,20 +2,24 @@ name: Deploy site
 
 on:
   schedule:
-    # GitHub 的定时任务按 UTC 触发，每小时整点一次，实际可能晚几分钟。
-    - cron: "0 * * * *"
+    # 运行器是 UTC。这三个钟点对应北京时间 08:30、14:30、20:30。
+    # 简报按北京时间的自然日归档，不使用运行器的本地时区。
+    - cron: "30 0,6,12 * * *"
   workflow_dispatch:
   push:
     branches: [main]
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
 concurrency:
   group: pages
   cancel-in-progress: false
+
+env:
+  TZ: Asia/Shanghai
 
 jobs:
   build:
@@ -30,12 +34,28 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Fetch news
+      - name: Fetch news and build briefing
         env:
+          TZ: Asia/Shanghai
           SUMMARY_API_KEY: ${{ secrets.SUMMARY_API_KEY }}
           SUMMARY_API_BASE: ${{ secrets.SUMMARY_API_BASE }}
           SUMMARY_MODEL: ${{ secrets.SUMMARY_MODEL }}
         run: python scripts/fetch_news.py
+
+      # 把简报、行情和人物动态提交回仓库，往期才不会在下次部署时消失。
+      # GITHUB_TOKEN 的推送不会再次触发这个工作流。推不上去也不阻断部署。
+      - name: Save briefing archive
+        continue-on-error: true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/briefings site/data/gpus.json site/data/people.json
+          if git diff --cached --quiet; then
+            echo "简报没有变化，跳过提交"
+          else
+            git commit -m "更新北京时间每日简报"
+            git push
+          fi
 
       # enablement 需要 GITHUB_TOKEN 以外的令牌（PAT 的 repo / Pages 写权限，
       # 或 GitHub App 的 administration:write + pages:write）。默认令牌做不到，

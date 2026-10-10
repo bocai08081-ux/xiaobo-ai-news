@@ -1,0 +1,31 @@
+{
+  "timezone": "Asia/Shanghai",
+  "updatedAt": "2026-10-10T02:42:21Z",
+  "updatedLabel": "10/10 10:42",
+  "days": [
+    {
+      "date": "2026-10-10",
+      "label": "10/10",
+      "cardCount": 6,
+      "updatedLabel": "10/10 10:42"
+    },
+    {
+      "date": "2026-10-09",
+      "label": "10/09",
+      "cardCount": 5,
+      "updatedLabel": "10/10 10:42"
+    },
+    {
+      "date": "2026-10-08",
+      "label": "10/08",
+      "cardCount": 4,
+      "updatedLabel": "10/10 10:42"
+    },
+    {
+      "date": "2026-10-07",
+      "label": "10/07",
+      "cardCount": 4,
+      "updatedLabel": "10/10 10:42"
+    }
+  ]
+}

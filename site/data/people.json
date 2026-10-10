@@ -1,0 +1,63 @@
+{
+  "timezone": "Asia/Shanghai",
+  "updatedAt": "2026-10-10T02:54:23Z",
+  "updatedLabel": "10/10 10:54",
+  "people": [
+    {
+      "id": "tibo",
+      "name": "Tibo",
+      "handle": "thsottiaux",
+      "initial": "T"
+    },
+    {
+      "id": "musk",
+      "name": "马斯克",
+      "handle": "elonmusk",
+      "initial": "马"
+    },
+    {
+      "id": "trump",
+      "name": "特朗普",
+      "handle": "realDonaldTrump",
+      "initial": "特"
+    }
+  ],
+  "posts": [
+    {
+      "id": "805a88ef4cda499b",
+      "personId": "trump",
+      "title": "特朗普有一则新动态，来自The Verge",
+      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Trump’s attempt to rename AI is looking awfully artificial」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://theverge.com/policy/1008677/trump-super-intelligence-ai-rebranding",
+      "linkLabel": "查看原文",
+      "timeLabel": "10/09 22:25",
+      "publishedAt": "2026-10-09T14:25:43Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "606acb3b3f932a5b",
+      "personId": "musk",
+      "title": "马斯克有一则新动态，来自The Verge",
+      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「SpaceXAI backs Omarchy, the controversial Linux distro, with $1.5 million in compute」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自The Verge的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是The Verge。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://theverge.com/tech/1008148/spacexai-omarchy-grok-david-heinemeier-hansson",
+      "linkLabel": "查看原文",
+      "timeLabel": "10/09 01:57",
+      "publishedAt": "2026-10-08T17:57:01Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    }
+  ]
+}
