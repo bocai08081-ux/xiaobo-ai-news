@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-10T02:59:38Z",
-  "updatedLabel": "10/10 10:59",
+  "updatedAt": "2026-10-10T12:45:59Z",
+  "updatedLabel": "10/10 20:45",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,24 @@
     }
   ],
   "posts": [
+    {
+      "id": "64fc3156f59624dd",
+      "personId": "trump",
+      "title": "【数智周报】特朗普政府要求AI公司在发生安全事件后立即上报；华为与高通宣布达成广泛专利许可协议；月之暗面据悉即将完成IPO前融资，估值将达500亿美元",
+      "summary": "钛媒体报道了这件事：【数智周报】特朗普政府要求AI公司在发生安全事件后立即上报；华为与高通宣布达成广泛专利许可协议；月之暗面据悉即将完成IPO前融资，估值将达500亿美元。",
+      "context": "上文来自钛媒体的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是钛媒体。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "钛媒体",
+      "sourceUrl": "https://tmtpost.com/8163752.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "10/10 17:57",
+      "publishedAt": "2026-10-10T09:57:43Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "805a88ef4cda499b",
       "personId": "trump",
