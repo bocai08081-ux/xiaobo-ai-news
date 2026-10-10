@@ -1,24 +1,10 @@
 {
   "date": "2026-10-10",
   "timezone": "Asia/Shanghai",
-  "generatedAt": "2026-10-10T02:42:21Z",
-  "updatedLabel": "10/10 10:42",
+  "generatedAt": "2026-10-10T02:59:38Z",
+  "updatedLabel": "10/10 10:59",
   "mode": "fallback",
   "cards": [
-    {
-      "id": "476fd9b2a330e0bc",
-      "category": "nvidia",
-      "categoryLabel": "英伟达",
-      "title": "DLSS 5 正式版体验：十年没进步的游戏画面，英伟达怎么让它以假乱真？",
-      "summary": "改变的不只是画面，还有整个画面的生产流程。",
-      "takeaway": "先对一下「DLSS 5 正式版体验」涉及的驱动、CUDA 和卡型，再决定要不要升级。",
-      "applicability": "针对 NVIDIA 显卡、CUDA 或英伟达软件栈。AMD 显卡和纯 Mac 环境通常对不上。",
-      "sourceName": "爱范儿",
-      "sourceUrl": "https://ifanr.com/1683566",
-      "dateLabel": "10/10",
-      "verifiedLabel": "媒体 · 10/10 核查",
-      "featured": true
-    },
     {
       "id": "5b6250e2187e3852",
       "category": "models",
@@ -31,7 +17,7 @@
       "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b11539",
       "dateLabel": "10/10",
       "verifiedLabel": "官方 · 10/10 核查",
-      "featured": false
+      "featured": true
     },
     {
       "id": "75987f8d9a0479bb",
