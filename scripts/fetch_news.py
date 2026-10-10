@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
-"""Build site/data/news.json for 小波AI资讯站.
+"""Collect AI news into site/data/news.json for 小波AI资讯站.
 
 Each source is isolated: a failure is recorded and the rest of the build
-continues. No API keys are required.
+continues. Clock times are converted to Asia/Shanghai by the briefing step;
+this script stores timezone-aware UTC instants and does not trust the runner's
+local timezone.
 
-Optional Chinese summaries (skipped unless configured):
+Optional Chinese briefing (skipped unless configured, see scripts/briefing.py):
 
   SUMMARY_API_KEY    secret for an OpenAI-compatible chat API
   SUMMARY_API_BASE   default https://api.openai.com/v1
   SUMMARY_MODEL      default gpt-4o-mini
 
-When the key is absent, items keep their original excerpt and summaryZh is null.
+When the key is absent, the site still builds with rule-written Chinese cards.
 """
 
 from __future__ import annotations
@@ -66,6 +68,19 @@ CN_HINT = re.compile(
     re.I,
 )
 
+# General tech sites. Latin keywords need a boundary so "Wayfair" does not match "AI".
+CN_AI = re.compile(
+    r"(?:^|[^A-Za-z])("
+    r"A\.?I\.?|AIGC|GPT|LLMs?|ChatGPT|Claude|Gemini|DeepSeek|OpenAI|Anthropic|"
+    r"Qwen|Sora|Copilot|Midjourney|Kimi|Manus|Agents?"
+    r")(?:[^A-Za-z]|$)|"
+    r"人工智能|大模型|智能体|具身智能|多模态|生成式|机器学习|世界模型|基础模型|"
+    r"英伟达|智驾|自动驾驶|机器人",
+    re.I,
+)
+
+_CJK_RE = re.compile(r"[\u4e00-\u9fff]")
+
 AI_HINT = re.compile(
     r"(?:^|[^a-z0-9])("
     r"a\.?i\.?|llm|llms|gpt|chatgpt|claude|gemini|llama|mistral|qwen|deepseek|"
@@ -111,10 +126,40 @@ def isoformat(dt: datetime) -> str:
     return dt.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
 
+def to_beijing(dt: datetime) -> datetime:
+    """Convert an aware or UTC-naive instant to Asia/Shanghai.
+
+    Naive values are treated as UTC. GitHub Actions runners use UTC, and feed
+    timestamps are normalized to UTC before this is called.
+    """
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(SHANGHAI)
+
+
+def beijing_now() -> datetime:
+    return datetime.now(SHANGHAI)
+
+
+def format_beijing_stamp(dt: datetime) -> str:
+    """MM/DD HH:MM in Beijing time."""
+    return to_beijing(dt).strftime("%m/%d %H:%M")
+
+
+def format_beijing_day(dt: datetime) -> str:
+    """MM/DD in Beijing time."""
+    return to_beijing(dt).strftime("%m/%d")
+
+
+def beijing_date_key(dt: datetime) -> str:
+    """YYYY-MM-DD calendar day in Beijing."""
+    return to_beijing(dt).date().isoformat()
+
+
 def parse_datetime(value: str | None) -> datetime | None:
     if not value:
         return None
-    text = unescape(value).strip()
+    text = re.sub(r"\s+", " ", unescape(value).strip())
     if not text:
         return None
     try:
@@ -143,6 +188,12 @@ def parse_datetime(value: str | None) -> datetime | None:
     return dt.astimezone(timezone.utc)
 
 
+_BOILERPLATE_SUMMARY = re.compile(
+    r"^(?:点击查看原文|查看原文|阅读原文|阅读全文|继续阅读|read more|continue reading)[\s>》]*$",
+    re.I,
+)
+
+
 def html_to_text(value: str | None, limit: int = 280) -> str:
     if not value:
         return ""
@@ -154,6 +205,13 @@ def html_to_text(value: str | None, limit: int = 280) -> str:
     text = re.sub(r"\s+", " ", text).strip()
     if len(text) > limit:
         text = text[: limit - 1].rstrip() + "…"
+    return text
+
+
+def clean_summary(value: str | None) -> str:
+    text = html_to_text(value, 280)
+    if _BOILERPLATE_SUMMARY.match(text):
+        return ""
     return text
 
 
@@ -207,7 +265,7 @@ def make_item(
     snapshot: bool = False,
 ) -> dict | None:
     title = html_to_text(title, 240)
-    url = (url or "").strip()
+    url = canonical_url(url)
     if not title or not url.startswith(("http://", "https://")):
         return None
     if published_at.tzinfo is None:
@@ -219,10 +277,11 @@ def make_item(
         "source": source,
         "category": category,
         "publishedAt": isoformat(published_at),
-        "summary": html_to_text(summary, 280),
+        "summary": clean_summary(summary),
         "summaryZh": None,
         "meta": html_to_text(meta, 120),
         "snapshot": snapshot,
+        "lang": detect_lang(title),
     }
 
 
@@ -350,6 +409,28 @@ def feed_items(url: str, source: str, category: str, now: datetime, *, browser: 
 def looks_like_ai(*parts: str) -> bool:
     blob = " ".join(part for part in parts if part)
     return bool(AI_HINT.search(blob))
+
+
+def detect_lang(title: str) -> str:
+    """zh when the title is meaningfully Chinese, including mixed product names."""
+    text = title or ""
+    cjk = len(_CJK_RE.findall(text))
+    if cjk >= 8:
+        return "zh"
+    latin = len(re.findall(r"[A-Za-z]", text))
+    if cjk >= 4 and cjk >= latin * 0.25:
+        return "zh"
+    return "en"
+
+
+def cn_ai_text(title: str) -> bool:
+    return bool(CN_AI.search(title or ""))
+
+
+def accept_simon(title: str, summary: str = "") -> bool:
+    if (title or "").strip().lower().startswith("quoting "):
+        return False
+    return looks_like_ai(title, summary)
 
 
 def fetch_hn(now: datetime) -> list[dict]:
@@ -760,6 +841,24 @@ def fetch_qbitai(now: datetime) -> list[dict]:
     return [item for item in items if CN_HINT.search(item["title"])]
 
 
+def fetch_cn_media(url: str, source: str, now: datetime) -> list[dict]:
+    """General Chinese tech feeds, kept only when the title is about AI."""
+    items = feed_items(url, source, "cn", now, cap=40)
+    return [item for item in items if cn_ai_text(item["title"])][:8]
+
+
+def fetch_simon(now: datetime) -> list[dict]:
+    items = feed_items(
+        "https://simonwillison.net/atom/everything/",
+        "Simon Willison",
+        "media",
+        now,
+        cap=20,
+    )
+    kept = [item for item in items if accept_simon(item["title"], item.get("summary") or "")]
+    return kept[:6]
+
+
 def source_specs(now: datetime):
     return [
         ("hn", "Hacker News", "hn", lambda: fetch_hn(now)),
@@ -772,12 +871,20 @@ def source_specs(now: datetime):
         ("yt-wes", "Wes Roth", "video", lambda: fetch_youtube("UCqcbQf6yw5KzRoDDcZ_wBSw", "Wes Roth", now)),
         ("verge", "The Verge", "media", lambda: feed_items("https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "The Verge", "media", now)),
         ("techcrunch", "TechCrunch", "media", lambda: feed_items("https://techcrunch.com/category/artificial-intelligence/feed/", "TechCrunch", "media", now)),
+        ("simon", "Simon Willison", "media", lambda: fetch_simon(now)),
         ("openai", "OpenAI", "official", lambda: feed_items("https://openai.com/news/rss.xml", "OpenAI", "official", now)),
         ("google-ai", "Google AI", "official", lambda: feed_items("https://blog.google/innovation-and-ai/technology/ai/rss/", "Google AI", "official", now)),
         ("deepmind", "Google DeepMind", "official", lambda: feed_items("https://deepmind.google/blog/rss.xml", "Google DeepMind", "official", now)),
         ("anthropic", "Anthropic", "official", lambda: fetch_anthropic(now)),
         ("qbitai", "量子位", "cn", lambda: fetch_qbitai(now)),
         ("jiqizhixin", "机器之心", "cn", lambda: fetch_jiqizhixin(now)),
+        ("leiphone", "雷峰网", "cn", lambda: fetch_cn_media("https://www.leiphone.com/feed", "雷峰网", now)),
+        ("ifanr", "爱范儿", "cn", lambda: fetch_cn_media("https://www.ifanr.com/feed", "爱范儿", now)),
+        ("geekpark", "极客公园", "cn", lambda: fetch_cn_media("https://www.geekpark.net/rss", "极客公园", now)),
+        ("36kr", "36氪", "cn", lambda: fetch_cn_media("https://www.36kr.com/feed-article", "36氪", now)),
+        ("tmtpost", "钛媒体", "cn", lambda: fetch_cn_media("https://www.tmtpost.com/rss.xml", "钛媒体", now)),
+        ("infoq", "InfoQ", "cn", lambda: fetch_cn_media("https://www.infoq.cn/feed", "InfoQ", now)),
+        ("solidot", "Solidot", "cn", lambda: fetch_cn_media("https://www.solidot.org/index.rss", "Solidot", now)),
         ("mlx", "MLX", "local", lambda: fetch_release_feed("https://github.com/ml-explore/mlx/releases.atom", "MLX", now, title_prefix="MLX")),
         ("mlx-lm", "mlx-lm", "local", lambda: fetch_release_feed("https://github.com/ml-explore/mlx-lm/releases.atom", "mlx-lm", now, title_prefix="mlx-lm")),
         ("llamacpp", "llama.cpp", "local", lambda: fetch_release_feed("https://github.com/ggml-org/llama.cpp/releases.atom", "llama.cpp", now, title_prefix="llama.cpp")),
@@ -941,9 +1048,6 @@ def build_payload(now: datetime | None = None) -> dict:
     order = {spec[0]: index for index, spec in enumerate(specs)}
     statuses.sort(key=lambda row: order.get(row["id"], 999))
     items = dedupe(collected)
-    summary_status = maybe_summarize(items)
-    if summary_status:
-        statuses.append(summary_status)
     items.sort(key=lambda row: (row["publishedAt"], row["title"]), reverse=True)
     shanghai = current.astimezone(SHANGHAI)
     return {
@@ -956,18 +1060,52 @@ def build_payload(now: datetime | None = None) -> dict:
     }
 
 
+def publish_views(items: list[dict], now: datetime | None = None) -> None:
+    """Write the briefing, GPU board, and people pages. Never raises."""
+    from briefing import publish_briefings
+    from market import publish_market
+    from people import publish_people
+
+    current = now or beijing_now()
+    data_dir = ROOT / "site" / "data"
+    try:
+        publish_briefings(items, current, data_dir / "briefings")
+    except Exception as exc:  # noqa: BLE001 — the raw feed should still ship
+        print(f"[fail] 简报 {exc}", file=sys.stderr)
+    try:
+        publish_market(current, data_dir / "gpus.json")
+    except Exception as exc:  # noqa: BLE001
+        print(f"[fail] 显卡行情 {exc}", file=sys.stderr)
+    try:
+        publish_people(items, current, data_dir / "people.json")
+    except Exception as exc:  # noqa: BLE001
+        print(f"[fail] 人物动态 {exc}", file=sys.stderr)
+
+
 def main() -> int:
-    parser = argparse.ArgumentParser(description="抓取小波 AI 资讯并写出 news.json")
+    parser = argparse.ArgumentParser(description="抓取小波 AI 资讯并生成每日简报")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
-    args = parser.parse_args()
-    payload = build_payload()
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    ok = sum(1 for source in payload["sources"] if source["ok"])
-    print(
-        f"wrote {args.output} items={len(payload['items'])} sources_ok={ok}/{len(payload['sources'])}",
-        file=sys.stderr,
+    parser.add_argument(
+        "--from-json",
+        type=Path,
+        help="不抓取网络，直接用已有 news.json 里的 items 生成页面数据",
     )
+    args = parser.parse_args()
+    if args.from_json:
+        payload = json.loads(args.from_json.read_text(encoding="utf-8"))
+        items = payload.get("items") or []
+        print(f"using {args.from_json} items={len(items)}", file=sys.stderr)
+    else:
+        payload = build_payload()
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        ok = sum(1 for source in payload["sources"] if source["ok"])
+        print(
+            f"wrote {args.output} items={len(payload['items'])} sources_ok={ok}/{len(payload['sources'])}",
+            file=sys.stderr,
+        )
+        items = payload["items"]
+    publish_views(items, beijing_now())
     return 0
 
 

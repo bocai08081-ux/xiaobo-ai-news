@@ -1,0 +1,199 @@
+{
+  "timezone": "Asia/Shanghai",
+  "updatedAt": "2026-10-10T02:42:21Z",
+  "updatedLabel": "10/10 10:42",
+  "regions": [
+    {
+      "id": "domestic",
+      "label": "国内",
+      "currency": "CNY",
+      "subtitle": "中国大陆 · 人民币"
+    },
+    {
+      "id": "overseas",
+      "label": "海外",
+      "currency": "USD",
+      "subtitle": "海外渠道 · 标价待核"
+    }
+  ],
+  "channels": {
+    "domestic": [
+      {
+        "id": "all",
+        "label": "全部渠道"
+      },
+      {
+        "id": "jd-self",
+        "label": "京东自营"
+      },
+      {
+        "id": "jd-third",
+        "label": "京东第三方"
+      },
+      {
+        "id": "taobao",
+        "label": "淘宝"
+      },
+      {
+        "id": "tmall",
+        "label": "天猫"
+      }
+    ],
+    "overseas": [
+      {
+        "id": "all",
+        "label": "全部渠道"
+      },
+      {
+        "id": "amazon",
+        "label": "Amazon"
+      },
+      {
+        "id": "newegg",
+        "label": "Newegg"
+      },
+      {
+        "id": "official",
+        "label": "官网"
+      }
+    ]
+  },
+  "brands": [
+    {
+      "id": "all",
+      "label": "全部"
+    },
+    {
+      "id": "nvidia",
+      "label": "英伟达"
+    },
+    {
+      "id": "amd",
+      "label": "AMD"
+    },
+    {
+      "id": "cn",
+      "label": "国产显卡"
+    }
+  ],
+  "models": [
+    {
+      "id": "rtx-5090",
+      "region": "domestic",
+      "brand": "nvidia",
+      "brandLabel": "英伟达",
+      "name": "RTX 5090",
+      "vram": "32GB",
+      "note": "具体板卡版本待确认"
+    },
+    {
+      "id": "rtx-5080",
+      "region": "domestic",
+      "brand": "nvidia",
+      "brandLabel": "英伟达",
+      "name": "RTX 5080",
+      "vram": "16GB",
+      "note": "具体板卡版本待确认"
+    },
+    {
+      "id": "rtx-5070",
+      "region": "domestic",
+      "brand": "nvidia",
+      "brandLabel": "英伟达",
+      "name": "RTX 5070",
+      "vram": "12GB",
+      "note": "显存以在售型号为准"
+    },
+    {
+      "id": "rx-7900-xtx",
+      "region": "domestic",
+      "brand": "amd",
+      "brandLabel": "AMD",
+      "name": "RX 7900 XTX",
+      "vram": "24GB",
+      "note": "具体板卡版本待确认"
+    },
+    {
+      "id": "rx-9070-xt",
+      "region": "domestic",
+      "brand": "amd",
+      "brandLabel": "AMD",
+      "name": "RX 9070 XT",
+      "vram": "16GB",
+      "note": "具体板卡版本待确认"
+    },
+    {
+      "id": "rx-9060-xt",
+      "region": "domestic",
+      "brand": "amd",
+      "brandLabel": "AMD",
+      "name": "RX 9060 XT",
+      "vram": "8GB",
+      "note": "具体板卡版本待确认"
+    },
+    {
+      "id": "mtt-s80",
+      "region": "domestic",
+      "brand": "cn",
+      "brandLabel": "国产显卡",
+      "name": "摩尔线程 MTT S80",
+      "vram": "16GB",
+      "note": "具体板卡版本待确认"
+    },
+    {
+      "id": "rtx-5090-os",
+      "region": "overseas",
+      "brand": "nvidia",
+      "brandLabel": "英伟达",
+      "name": "RTX 5090",
+      "vram": "32GB",
+      "note": "海外零售型号待核对"
+    },
+    {
+      "id": "rtx-5080-os",
+      "region": "overseas",
+      "brand": "nvidia",
+      "brandLabel": "英伟达",
+      "name": "RTX 5080",
+      "vram": "16GB",
+      "note": "海外零售型号待核对"
+    },
+    {
+      "id": "rtx-5070-os",
+      "region": "overseas",
+      "brand": "nvidia",
+      "brandLabel": "英伟达",
+      "name": "RTX 5070",
+      "vram": "12GB",
+      "note": "显存以在售型号为准"
+    },
+    {
+      "id": "rx-7900-xtx-os",
+      "region": "overseas",
+      "brand": "amd",
+      "brandLabel": "AMD",
+      "name": "RX 7900 XTX",
+      "vram": "24GB",
+      "note": "海外零售型号待核对"
+    },
+    {
+      "id": "rx-9070-xt-os",
+      "region": "overseas",
+      "brand": "amd",
+      "brandLabel": "AMD",
+      "name": "RX 9070 XT",
+      "vram": "16GB",
+      "note": "海外零售型号待核对"
+    },
+    {
+      "id": "rx-9060-xt-os",
+      "region": "overseas",
+      "brand": "amd",
+      "brandLabel": "AMD",
+      "name": "RX 9060 XT",
+      "vram": "8GB",
+      "note": "海外零售型号待核对"
+    }
+  ],
+  "quotes": []
+}

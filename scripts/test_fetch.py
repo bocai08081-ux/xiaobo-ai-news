@@ -12,8 +12,14 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from fetch_news import (
+    accept_simon,
+    beijing_date_key,
     canonical_url,
+    clean_summary,
+    cn_ai_text,
     dedupe,
+    detect_lang,
+    format_beijing_stamp,
     html_to_text,
     in_window,
     make_item,
@@ -47,6 +53,8 @@ class FetchLogicTest(unittest.TestCase):
         self.assertEqual(iso, datetime(2026, 10, 8, 12, 0, tzinfo=timezone.utc))
         day = parse_datetime("Oct 8, 2026")
         self.assertEqual(day.year, 2026)
+        kr = parse_datetime("2026-10-09 21:55:09  +0800")
+        self.assertEqual(kr, datetime(2026, 10, 9, 13, 55, 9, tzinfo=timezone.utc))
 
     def test_window(self):
         now = datetime(2026, 10, 9, 9, 0, tzinfo=timezone.utc)
@@ -55,6 +63,20 @@ class FetchLogicTest(unittest.TestCase):
 
     def test_html_to_text(self):
         self.assertEqual(html_to_text("<p>你好 <b>AI</b></p>"), "你好 AI")
+
+    def test_make_item_drops_tracking_and_boilerplate(self):
+        item = make_item(
+            title="黄仁勋为微软站台",
+            url="https://www.infoq.cn/article/abc?utm_source=rss&utm_medium=article",
+            source="InfoQ",
+            category="cn",
+            published_at=datetime(2026, 10, 9, tzinfo=timezone.utc),
+            summary="<div align='right'><a href='https://example.com'>点击查看原文></a></div>",
+        )
+        self.assertEqual(item["url"], "https://infoq.cn/article/abc")
+        self.assertEqual(item["summary"], "")
+        self.assertEqual(item["lang"], "zh")
+        self.assertEqual(clean_summary("真正的摘要"), "真正的摘要")
 
     def test_rss_and_atom(self):
         rss = """<?xml version="1.0"?>
@@ -138,13 +160,38 @@ class FetchLogicTest(unittest.TestCase):
 
     def test_payload_shape_roundtrip_fields(self):
         item = make_item(
-            title="标题",
+            title="标题很长的一条中文资讯",
             url="https://example.com/x",
             source="量子位",
             category="cn",
             published_at=datetime(2026, 10, 9, tzinfo=timezone.utc),
         )
         json.dumps(item, ensure_ascii=False)
+        self.assertEqual(item["lang"], "zh")
+
+    def test_detect_lang_mixed_product_names(self):
+        self.assertEqual(detect_lang("Claude Haiku 5.5"), "en")
+        self.assertEqual(detect_lang("陶哲轩转发抵制声明，数学界和OpenAI彻底撕破脸"), "zh")
+        self.assertEqual(detect_lang("OpenAI全面上线GPT-6"), "zh")
+        self.assertEqual(detect_lang("jialinyyzz/humanizer"), "en")
+
+    def test_cn_ai_text_ignores_latin_substrings(self):
+        self.assertFalse(cn_ai_text("Wayfair与雨果跨境达成战略合作，助推供应商高质量出海"))
+        self.assertTrue(cn_ai_text("当年实习生要挑战李飞飞做世界模型"))
+        self.assertTrue(cn_ai_text("OpenAI全面上线GPT-6"))
+        self.assertTrue(cn_ai_text("AI家电，攻占黄金周"))
+        self.assertFalse(cn_ai_text("华为和小米，开启新一轮涨价"))
+
+    def test_accept_simon_skips_quotes(self):
+        self.assertFalse(accept_simon("Quoting Ben Affleck", "Claude said something"))
+        self.assertTrue(accept_simon("Claude Haiku 5.5", ""))
+        self.assertFalse(accept_simon("A recipe for soup", "tomatoes"))
+
+    def test_beijing_calendar_day_crosses_utc_midnight(self):
+        # 2026-10-09 16:30 UTC is 2026-10-10 00:30 in Beijing.
+        instant = datetime(2026, 10, 9, 16, 30, tzinfo=timezone.utc)
+        self.assertEqual(beijing_date_key(instant), "2026-10-10")
+        self.assertEqual(format_beijing_stamp(instant), "10/10 00:30")
 
 
 if __name__ == "__main__":

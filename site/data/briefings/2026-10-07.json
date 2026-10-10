@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-07",
+  "timezone": "Asia/Shanghai",
+  "generatedAt": "2026-10-10T02:42:21Z",
+  "updatedLabel": "10/10 10:42",
+  "mode": "fallback",
+  "cards": [
+    {
+      "id": "ea4f899dc8dfd436",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "Google AI：Introducing Playground: Create and play c…",
+      "summary": "Google AI报道了与AI 模型有关的新动态，原文标题是「Introducing Playground: Create and play custom games」。先把它当成今天要核对的结论，细节以原文为准。",
+      "takeaway": "先看「Google AI」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "Google AI",
+      "sourceUrl": "https://blog.google/innovation-and-ai/technology/ai/playground-experimental-gaming-platform",
+      "dateLabel": "10/07",
+      "verifiedLabel": "官方 · 10/07 核查",
+      "featured": true
+    },
+    {
+      "id": "ad4e14640e358f44",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "OpenAI：Helping teens learn, plan, and shape the…",
+      "summary": "OpenAI报道了与AI 模型有关的新动态，原文标题是「Helping teens learn, plan, and shape the future of AI」。先把它当成今天要核对的结论，细节以原文为准。",
+      "takeaway": "先看「OpenAI」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/teens-learn-and-plan",
+      "dateLabel": "10/07",
+      "verifiedLabel": "官方 · 10/07 核查",
+      "featured": false
+    },
+    {
+      "id": "305e4205ebcd32af",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "Two Minute Papers：DeepMind's New AI Just Cracked The Code O…",
+      "summary": "Two Minute Papers报道了与AI 模型有关的新动态，原文标题是「DeepMind's New AI Just Cracked The Code Of Life」。先把它当成今天要核对的结论，细节以原文为准。",
+      "takeaway": "先看「Two Minute Papers」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "Two Minute Papers",
+      "sourceUrl": "https://youtube.com/watch?v=Wkaw03p3BrM",
+      "dateLabel": "10/07",
+      "verifiedLabel": "综合 · 10/07 核查",
+      "featured": false
+    },
+    {
+      "id": "04e9dc3828b5420c",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "OpenAI：Radisson Hotel Group brings hotel discove…",
+      "summary": "OpenAI报道了与AI 模型有关的新动态，原文标题是「Radisson Hotel Group brings hotel discovery into ChatGPT」。先把它当成今天要核对的结论，细节以原文为准。",
+      "takeaway": "先看「OpenAI」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/radisson",
+      "dateLabel": "10/07",
+      "verifiedLabel": "官方 · 10/07 核查",
+      "featured": false
+    }
+  ]
+}

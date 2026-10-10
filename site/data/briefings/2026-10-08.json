@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-08",
+  "timezone": "Asia/Shanghai",
+  "generatedAt": "2026-10-10T02:42:21Z",
+  "updatedLabel": "10/10 10:42",
+  "mode": "fallback",
+  "cards": [
+    {
+      "id": "a3bb337f636d27d5",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "Ollama：Ollama v0.40.2-rc0: server: hide duplicat…",
+      "summary": "Ollama报道了与AI 模型有关的新动态，原文标题是「Ollama v0.40.2-rc0: server: hide duplicate and downgrade guards from list (#18874)」。先把它当成今天要核对的结论，细节以原文为准。",
+      "takeaway": "先看「Ollama」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "Ollama",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.2-rc0",
+      "dateLabel": "10/08",
+      "verifiedLabel": "官方 · 10/08 核查",
+      "featured": true
+    },
+    {
+      "id": "ca1ec6c6a1a1314d",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "OpenAI：Pollo AI turns creative ideas into campai…",
+      "summary": "OpenAI报道了与AI 模型有关的新动态，原文标题是「Pollo AI turns creative ideas into campaigns with OpenAI」。先把它当成今天要核对的结论，细节以原文为准。",
+      "takeaway": "先看「OpenAI」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/pollo-ai",
+      "dateLabel": "10/08",
+      "verifiedLabel": "官方 · 10/08 核查",
+      "featured": false
+    },
+    {
+      "id": "77b3f0b977bcd0cf",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "Anthropic：Introducing the Anthropic Cyber Mission",
+      "summary": "Anthropic报道了与AI 模型有关的新动态，原文标题是「Introducing the Anthropic Cyber Mission」。先把它当成今天要核对的结论，细节以原文为准。",
+      "takeaway": "先看「Anthropic」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "Anthropic",
+      "sourceUrl": "https://anthropic.com/news/anthropic-cyber-mission",
+      "dateLabel": "10/08",
+      "verifiedLabel": "官方 · 10/08 核查",
+      "featured": false
+    },
+    {
+      "id": "5f22c7586cd7a9cc",
+      "category": "amd",
+      "categoryLabel": "AMD",
+      "title": "Lemonade 2026.41.1 发布了更新",
+      "summary": "Lemonade报道了与AMD有关的新动态，原文标题是「Lemonade v2026.41.1」。先把它当成今天要核对的结论，细节以原文为准。",
+      "takeaway": "先确认「Lemonade 2026.41.1 发布了更新」是否覆盖你的 AMD 卡和当前驱动，再动现有的推理环境。",
+      "applicability": "针对 AMD 显卡和 ROCm。CUDA 专用的步骤不要直接搬过来。",
+      "sourceName": "Lemonade",
+      "sourceUrl": "https://github.com/lemonade-sdk/lemonade/releases/tag/v2026.41.1",
+      "dateLabel": "10/08",
+      "verifiedLabel": "官方 · 10/08 核查",
+      "featured": false
+    }
+  ]
+}
