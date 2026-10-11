@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-10T12:45:59Z",
-  "updatedLabel": "10/10 20:45",
+  "updatedAt": "2026-10-11T06:03:50Z",
+  "updatedLabel": "10/11 14:03",
   "people": [
     {
       "id": "tibo",
@@ -24,17 +24,17 @@
   ],
   "posts": [
     {
-      "id": "64fc3156f59624dd",
-      "personId": "trump",
-      "title": "【数智周报】特朗普政府要求AI公司在发生安全事件后立即上报；华为与高通宣布达成广泛专利许可协议；月之暗面据悉即将完成IPO前融资，估值将达500亿美元",
-      "summary": "钛媒体报道了这件事：【数智周报】特朗普政府要求AI公司在发生安全事件后立即上报；华为与高通宣布达成广泛专利许可协议；月之暗面据悉即将完成IPO前融资，估值将达500亿美元。",
-      "context": "上文来自钛媒体的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是钛媒体。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "钛媒体",
-      "sourceUrl": "https://tmtpost.com/8163752.html",
+      "id": "0030d6d1ec68ab09",
+      "personId": "musk",
+      "title": "马斯克豪言 SpaceX 估值将超1000万亿美元，遭拉表打脸；传腾讯字节加速个人智能体研发；四部门拟禁止汽车采用全隐藏式门把手",
+      "summary": "马斯克豪言 SpaceX 估值超 1000 万亿美元，惨遭拉表打脸 近日，马斯克在社交平台大胆预测，SpaceX 未来估值有望突破 1000 万亿美元，体量将远超当前全球经济总量。目前 SpaceX 估值仅约 2.2 万亿美元，而 2025 年全球 GDP 总量约 118 万亿美元，此番极具颠覆性的超高估值言论引发全…",
+      "context": "上文来自极客公园的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是极客公园。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "极客公园",
+      "sourceUrl": "http://geekpark.net/news/372216",
       "linkLabel": "查看原文",
-      "timeLabel": "10/10 17:57",
-      "publishedAt": "2026-10-10T09:57:43Z",
+      "timeLabel": "10/11 08:53",
+      "publishedAt": "2026-10-11T00:53:38Z",
       "tags": [
         "AI 模型",
         "转述"
@@ -53,24 +53,6 @@
       "linkLabel": "查看原文",
       "timeLabel": "10/09 22:25",
       "publishedAt": "2026-10-09T14:25:43Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "606acb3b3f932a5b",
-      "personId": "musk",
-      "title": "马斯克有一则新动态，来自The Verge",
-      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「SpaceXAI backs Omarchy, the controversial Linux distro, with $1.5 million in compute」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自The Verge的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是The Verge。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "The Verge",
-      "sourceUrl": "https://theverge.com/tech/1008148/spacexai-omarchy-grok-david-heinemeier-hansson",
-      "linkLabel": "查看原文",
-      "timeLabel": "10/09 01:57",
-      "publishedAt": "2026-10-08T17:57:01Z",
       "tags": [
         "AI 模型",
         "转述"

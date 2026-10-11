@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-11",
+  "timezone": "Asia/Shanghai",
+  "generatedAt": "2026-10-11T06:03:50Z",
+  "updatedLabel": "10/11 14:03",
+  "mode": "fallback",
+  "cards": [
+    {
+      "id": "ff2ac098ff80b7d4",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "AI运动硬件公司获数亿B轮融资，用体育大模型重构网球自主训练体验｜硬氪首发",
+      "summary": "从“理解运动”走向“参与训练”，构建带因果标注的数据壁垒。",
+      "takeaway": "这是公司层面的消息。先分清「AI运动硬件公司获数亿B轮融资，用体育大模型重构网球自…」有没有改变你能用的产品，再决定要不要跟。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "36氪",
+      "sourceUrl": "https://36kr.com/p/3990015565708035?f=rss",
+      "dateLabel": "10/11",
+      "verifiedLabel": "媒体 · 10/11 核查",
+      "featured": true
+    },
+    {
+      "id": "1896c9e6d13cbefe",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "Ollama 0.40.3 发布了更新",
+      "summary": "Ollama报道了与AI 模型有关的新动态，原文标题是「Ollama v0.40.3」。先把它当成今天要核对的结论，细节以原文为准。",
+      "takeaway": "先看「Ollama 0.40.3 发布了更新」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "Ollama",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.3",
+      "dateLabel": "10/11",
+      "verifiedLabel": "官方 · 10/11 核查",
+      "featured": false
+    },
+    {
+      "id": "a145bc74ad439b10",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "llama.cpp 发布了新版本 b11552",
+      "summary": "llama.cpp报道了与AI 模型有关的新动态，原文标题是「llama.cpp b11552」。先把它当成今天要核对的结论，细节以原文为准。",
+      "takeaway": "先看「llama.cpp 发布了新版本 b11552」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "llama.cpp",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b11552",
+      "dateLabel": "10/11",
+      "verifiedLabel": "官方 · 10/11 核查",
+      "featured": false
+    },
+    {
+      "id": "f4bc1a94e71a9e4a",
+      "category": "amd",
+      "categoryLabel": "AMD",
+      "title": "AMD YES！老哥给老车插上显卡，手搓「真智驾」",
+      "summary": "爱范儿报道了这件事：AMD YES！老哥给老车插上显卡，手搓「真智驾」。",
+      "takeaway": "先确认「AMD YES！老哥给老车插上显卡，手搓「真智驾」」是否覆盖你的 AMD 卡和当前驱动，再动现有的推理环境。",
+      "applicability": "针对 AMD 显卡和 ROCm。CUDA 专用的步骤不要直接搬过来。",
+      "sourceName": "爱范儿",
+      "sourceUrl": "https://ifanr.com/1683790",
+      "dateLabel": "10/11",
+      "verifiedLabel": "媒体 · 10/11 核查",
+      "featured": false
+    }
+  ]
+}
