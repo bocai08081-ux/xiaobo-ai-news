@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-11T06:03:50Z",
-  "updatedLabel": "10/11 14:03",
+  "updatedAt": "2026-10-11T13:10:01Z",
+  "updatedLabel": "10/11 21:10",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,24 @@
     }
   ],
   "posts": [
+    {
+      "id": "ddff3a90e8eec251",
+      "personId": "musk",
+      "title": "硅谷AI现状：谁有算力谁是爹",
+      "summary": "量子位报道了这件事：硅谷AI现状：谁有算力谁是爹。",
+      "context": "上文来自量子位的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是量子位。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "量子位",
+      "sourceUrl": "https://qbitai.com/2026/10/502585.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "10/11 13:22",
+      "publishedAt": "2026-10-11T05:22:38Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "0030d6d1ec68ab09",
       "personId": "musk",
