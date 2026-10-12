@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-12",
+  "timezone": "Asia/Shanghai",
+  "generatedAt": "2026-10-12T06:13:22Z",
+  "updatedLabel": "10/12 14:13",
+  "mode": "fallback",
+  "cards": [
+    {
+      "id": "7f4a93218fdf36d0",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "llama.cpp 发布了新版本 b11562",
+      "summary": "llama.cpp报道了与AI 模型有关的新动态，原文标题是「llama.cpp b11562」。先把它当成今天要核对的结论，细节以原文为准。",
+      "takeaway": "先看「llama.cpp 发布了新版本 b11562」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "llama.cpp",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b11562",
+      "dateLabel": "10/12",
+      "verifiedLabel": "官方 · 10/12 核查",
+      "featured": true
+    },
+    {
+      "id": "9d9055fb82668eff",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "阿里巴巴中国电商事业群/飞猪CTO陈烨博士已确认出席QCon上海，分享“从 Coding 到消费：AI 的下一场革命”",
+      "summary": "InfoQ报道了这件事：阿里巴巴中国电商事业群/飞猪CTO陈烨博士已确认出席QCon上海，分享“从 Coding 到消费：AI 的下一场革命”。",
+      "takeaway": "先看「阿里巴巴中国电商事业群/飞猪CTO陈烨博士已确认出席Q…」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "InfoQ",
+      "sourceUrl": "https://infoq.cn/article/4hYrs8ShAKPAhyzTGQ92",
+      "dateLabel": "10/12",
+      "verifiedLabel": "媒体 · 10/12 核查",
+      "featured": false
+    },
+    {
+      "id": "a2419293dd3905a0",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "费莫一刘念邱：智驾无图的经验，也能迁移到机器人 | 物理AI 50人",
+      "summary": "刘念邱很难被归进典型的具身创业者模板里。 他不是从机器人实验室出来的学者，也不是过去两年才进入 Physical AI 的连续创业者。",
+      "takeaway": "先看「费莫一刘念邱」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "雷峰网",
+      "sourceUrl": "https://leiphone.com/category/transportation/Y6GLcnioywVn3u7K.html",
+      "dateLabel": "10/12",
+      "verifiedLabel": "媒体 · 10/12 核查",
+      "featured": false
+    },
+    {
+      "id": "29591b091d4ca93e",
+      "category": "models",
+      "categoryLabel": "AI 模型",
+      "title": "llama.cpp：llama.cpp b11563: ggml: Change default vi…",
+      "summary": "llama.cpp报道了与AI 模型有关的新动态，原文标题是「llama.cpp b11563: ggml: Change default visibility of symbols to hidden (#30014)」。先把它当成今天要核对的结论，细节以原文为准。",
+      "takeaway": "先看「llama.cpp」改的是模型、接口还是权限，再决定要不要换掉你现在的默认方案。",
+      "applicability": "适合已经在用大模型接口或开源权重的人。还没固定工作流的，看完标题再决定要不要跟。",
+      "sourceName": "llama.cpp",
+      "sourceUrl": "https://github.com/ggml-org/llama.cpp/releases/tag/b11563",
+      "dateLabel": "10/12",
+      "verifiedLabel": "官方 · 10/12 核查",
+      "featured": false
+    }
+  ]
+}

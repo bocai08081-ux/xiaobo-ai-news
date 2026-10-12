@@ -1,8 +1,14 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-11T13:10:01Z",
-  "updatedLabel": "10/11 21:10",
+  "updatedAt": "2026-10-12T06:13:22Z",
+  "updatedLabel": "10/12 14:13",
   "days": [
+    {
+      "date": "2026-10-12",
+      "label": "10/12",
+      "cardCount": 4,
+      "updatedLabel": "10/12 14:13"
+    },
     {
       "date": "2026-10-11",
       "label": "10/11",
