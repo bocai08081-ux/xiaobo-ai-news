@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-13T10:00:00+08:00",
+  "updatedAt": "2026-10-13T14:30:00+08:00",
   "items": [
     {
       "id": "2026-10-13-meta-muse-wonder",
@@ -75,6 +75,66 @@
       "sourceName": "钛媒体",
       "sourceUrl": "https://tmtpost.com/8166223.html",
       "publishedAt": "2026-10-13T09:22:01+08:00"
+    },
+    {
+      "id": "2026-10-13-nvidia-vera-rubin-ocp",
+      "module": "news",
+      "category": "nvidia",
+      "title": "英伟达在 OCP 开放 Vera Rubin 机柜设计，并推 800V 供电与液冷标准",
+      "summary": "在开放计算项目（OCP）全球峰会上，英伟达把 Vera Rubin 机柜与计算托盘设计贡献给 OCP 的 MGX 开放架构，并与 AMD、谷歌、Meta 发布开放数据中心规格 v0.7；与谷歌、Meta、微软发布电网韧性规格。同时联合思科推进 USFP 光模块（单通道 400Gb/s），Meta 将采用 Spectrum-6 交换机建设更大规模 AI 工厂。",
+      "impact": "这是数据中心侧标准，不直接改消费卡价格。但 Vera Rubin 时代的供电、液冷和机柜规格会决定明年云端与本地机房的扩容成本；你关注 AMD/英伟达显卡行情时，可以把“机柜与供电标准落地”当成供应节奏的背景。",
+      "applicability": "关注英伟达下一代平台、数据中心或显卡供应节奏的人。",
+      "sourceName": "NVIDIA Blog",
+      "sourceUrl": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+      "publishedAt": "2026-10-13T08:00:00+08:00"
+    },
+    {
+      "id": "2026-10-13-amd-helion",
+      "module": "news",
+      "category": "amd",
+      "title": "AMD 发布 Helion 智能体 AI 机架：最高 32768 核，11 月上市",
+      "summary": "AMD 于 10 月 12 日推出 Helion，基于 OCP 规范的开放机架蓝图，面向智能体工作负载。纯 CPU 配置搭载第六代 EPYC，最高 32,768 核；企业配置可整合 EPYC 与 Instinct MI350P。内置 token 路由器，可把智能体请求分到前沿模型与开源模型。戴尔、思科、HPE、联想、超微、鸿海、云达、纬颖等已表态支持，合作伙伴配置计划 2026 年 11 月提供。",
+      "impact": "Helion 强调智能体需要大量 CPU 侧算力，和训练用 GPU 机架（Helios）互补。对你本地 7900 XTX 没有直接换卡压力，但说明“智能体基础设施”正在成为新卖点；关注 AMD 生态和 ROCm 本地部署的人可以跟一下后续软件栈。",
+      "applicability": "关注 AMD 数据中心、ROCm 或智能体基础设施的人。",
+      "sourceName": "AMD Newsroom",
+      "sourceUrl": "https://newsroom.amd.com/news/open-rack-blueprint-scale-agentic-ai/",
+      "publishedAt": "2026-10-12T21:00:00+08:00"
+    },
+    {
+      "id": "2026-10-13-anthropic-distillation-defenses",
+      "module": "news",
+      "category": "models",
+      "title": "Anthropic：反蒸馏措施已把推理数据外泄压低约 90%–99%",
+      "summary": "Anthropic 发文称，针对用虚假账号批量抽取 Claude 推理轨迹来训练竞品模型的蒸馏攻击，已上线“保留思考”（preserved thinking）、两阶段分类器与账号封禁等措施。官方估计蒸馏方可拿到的推理 token 下降约一个到两个数量级，并点名智谱在 GLM-5.3 研发中曾尝试蒸馏美系模型能力。分类器误杀率号称低于 0.1%，但部分合法开发者需改掉多轮里改写历史上下文的写法。",
+      "impact": "如果你用 Claude API 做多轮智能体，注意新账号可能无法随意改写带 thinking 的历史上下文。对本地跑开源模型没有直接影响；想靠“刷 API 蒸馏”练模型会更难。",
+      "applicability": "用 Claude API 的开发者，以及关注模型安全与开源蒸馏争议的人。",
+      "sourceName": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/research/distillation-defenses",
+      "publishedAt": "2026-10-13T05:00:00+08:00"
+    },
+    {
+      "id": "2026-10-13-musk-spacexsi",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克把 SpaceXAI 改名为 SpaceXSI，跟进“超级智能”叫法",
+      "summary": "据 The Verge 等报道，马斯克响应特朗普把 artificial intelligence 改称 super intelligence 的行政令推动，承诺并将 SpaceX 旗下 AI 业务从 SpaceXAI 更名为 SpaceXSI；Salesforce 的 Benioff、英伟达的黄仁勋相关表述，以及微软纳德拉近日发言，也开始使用 super intelligence 一词。",
+      "impact": "更多是政治与品牌用语变化，短期不改你用的模型或 API。看英文新闻和招聘帖时，可能会同时看到 AI 与 SI 两套说法。",
+      "applicability": "关注马斯克与 SpaceX/xAI 动态的人。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
+      "publishedAt": "2026-10-12T02:33:00+08:00"
+    },
+    {
+      "id": "2026-10-13-trump-si-rebrand",
+      "module": "people",
+      "personId": "trump",
+      "title": "特朗普推动“超级智能”改名，硅谷巨头陆续跟进",
+      "summary": "The Verge 报道：特朗普行政令要求联邦机构在非法定文件中用 Super Intelligence / SI 替代 Artificial Intelligence / AI。马斯克、Benioff、黄仁勋相关表述以及微软纳德拉近日关于“紧急刹车”的发言，已开始采用这一叫法；普通用户和多数公司仍多用 AI。",
+      "impact": "政策用语层面的变化。读美国官方或大厂通稿时注意 SI 可能就是指 AI；对国内工具链和本地部署没有实质影响。",
+      "applicability": "关注美国 AI 政策与大厂动向的人。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
+      "publishedAt": "2026-10-12T02:33:00+08:00"
     }
   ]
 }
