@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "timezone": "Asia/Shanghai",
+  "updatedAt": "2026-10-13T10:00:00+08:00",
+  "items": [
+    {
+      "id": "2026-10-13-meta-muse-wonder",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "Meta 发布首个前沿大模型 Muse Wonder，定价对标 Opus 5.5",
+      "summary": "Meta 超级智能实验室发布 Muse Wonder 和 Muse Wonder Full。官方称两者在智能体、记忆和编程任务上达到业界领先，跑分与 Fable 5.1、GPT-6 Astra 相当。Wonder 已通过 Meta Model API 开放，输入每百万 token 4 美元、输出 20 美元；Wonder Full 只给 Muse Code 订阅用户，不走 API。",
+      "impact": "又多了一个顶级编程/智能体模型可选，价格和 Opus 5.5 一档。如果你在比较 Codex 类工作流的成本，可以拿同一个任务测一下它的耗时和花费，但先等第三方评测再考虑切换。",
+      "applicability": "适合用 API 跑编程或智能体任务的人；不是开源权重，不能本地跑。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/",
+      "publishedAt": "2026-10-13T01:56:00+08:00"
+    },
+    {
+      "id": "2026-10-13-anthropic-self-replication",
+      "module": "news",
+      "category": "models",
+      "title": "Anthropic 红队：部分 AI 模型可能“几个月内”具备自我复制能力",
+      "summary": "Anthropic 前沿红队发布报告，推演小模型组成自主传播、难以关停的“蠕虫式僵尸网络”的情形，可能是寄生在不安全算力上的“数字黏菌”，也可能是攻破数据中心或骗取算力额度的模型，并讨论了防范办法。",
+      "impact": "这是风险预警，不是已发生的事件。对普通使用者影响不大，但可以预期各家会进一步收紧智能体的联网、执行权限和账号风控。",
+      "applicability": "关注 AI 安全和智能体权限的人值得一读。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1009658/anthropic-self-propagating-ai-slime-mold-botnets",
+      "publishedAt": "2026-10-13T07:47:00+08:00"
+    },
+    {
+      "id": "2026-10-13-ai-short-drama-compute",
+      "module": "news",
+      "category": "vision",
+      "title": "AI 短剧成算力消耗大户，“每秒钟烧 1 块钱”",
+      "summary": "钛媒体文章分析，AI 短剧已成为视频生成算力最大的消耗方之一，生成成本按秒计算，带动了一条围绕视频模型和算力的生意。",
+      "impact": "和你做动画转真人一样，视频生成的主要成本是反复抽卡。本地跑 H3 可以省掉按秒计费，但要控制重试次数和 Codex 的 token 开销。",
+      "applicability": "做 AI 视频、短剧或在比较云端和本地生成成本的人。",
+      "sourceName": "钛媒体",
+      "sourceUrl": "https://tmtpost.com/8165999.html",
+      "publishedAt": "2026-10-13T09:23:14+08:00"
+    },
+    {
+      "id": "2026-10-13-astra-integer-multiplication",
+      "module": "news",
+      "category": "models",
+      "title": "开源社区用 AI 在 24 小时内突破 OpenAI 提出的整数乘法难题",
+      "summary": "36氪报道：一场全球直播中，人类加 AI 的开源社区在 24 小时内刷新了整数乘法相关纪录，突破了 OpenAI 此前提出的整数乘法难题（标题称 Astra 刷新纪录）。",
+      "impact": "继 OpenAI 上传数百篇 AI 数学论文引发争议后，“AI 做数学”仍是热点。对日常使用没有直接影响，结论以原文和后续核验为准。",
+      "applicability": "关注 AI 推理和科研能力的人。",
+      "sourceName": "36氪",
+      "sourceUrl": "https://36kr.com/p/4023452816134019?f=rss",
+      "publishedAt": "2026-10-13T09:32:16+08:00"
+    },
+    {
+      "id": "2026-10-13-deepseek-embodied",
+      "module": "news",
+      "category": "models",
+      "title": "曝 DeepSeek 梁文锋密集接触机器人创业者，拟入局具身智能",
+      "summary": "据新浪科技报道，梁文锋近期频繁和具身智能创业者交流，考虑自建团队或通过投资进入这一领域。他此前已投资宇树科技；彭博社还报道 DeepSeek 计划领投腾讯前 AI 科学家胡瀚创立的 Winverse AI。",
+      "impact": "目前还是传闻。短期不影响 DeepSeek 现有模型和 API，可以留意它之后会不会推出面向机器人的模型。",
+      "applicability": "关注国产大模型和机器人方向的人。",
+      "sourceName": "极客公园",
+      "sourceUrl": "http://geekpark.net/news/372264",
+      "publishedAt": "2026-10-13T08:27:49+08:00"
+    },
+    {
+      "id": "2026-10-13-google-gemini-strategy",
+      "module": "news",
+      "category": "models",
+      "title": "谷歌对 Gemini 的用法变了：模型越来越像同质化商品",
+      "summary": "钛媒体评论认为，大模型本身越来越同质化，谷歌正把 Gemini 更多地嵌进搜索、办公和云服务等自家产品，靠分发和整合来竞争，而不只比拼模型能力。",
+      "impact": "选模型时，与其追最新跑分，不如看它能不能接入你现有的工具链。",
+      "applicability": "在选 AI 工具或平台的人。",
+      "sourceName": "钛媒体",
+      "sourceUrl": "https://tmtpost.com/8166223.html",
+      "publishedAt": "2026-10-13T09:22:01+08:00"
+    }
+  ]
+}

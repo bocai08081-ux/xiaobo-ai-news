@@ -1090,6 +1090,11 @@ def main() -> int:
         type=Path,
         help="不抓取网络，直接用已有 news.json 里的 items 生成页面数据",
     )
+    parser.add_argument(
+        "--raw-only",
+        action="store_true",
+        help="只抓取原始候选写入 --output，不生成简报/行情/人物页面数据（精选内容在 site/data/briefs.json，由人工/助手维护）",
+    )
     args = parser.parse_args()
     if args.from_json:
         payload = json.loads(args.from_json.read_text(encoding="utf-8"))
@@ -1105,6 +1110,8 @@ def main() -> int:
             file=sys.stderr,
         )
         items = payload["items"]
+    if args.raw_only:
+        return 0
     publish_views(items, beijing_now())
     return 0
 

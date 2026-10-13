@@ -34,26 +34,26 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Fetch news and build briefing
+      # 只抓原始候选，写到 site/data/raw/candidates.json，供助手挑选。
+      # 页面展示的精选内容在 site/data/briefs.json，由助手直接提交，这里绝不改写它。
+      - name: Collect raw candidates
+        continue-on-error: true
         env:
           TZ: Asia/Shanghai
-          SUMMARY_API_KEY: ${{ secrets.SUMMARY_API_KEY }}
-          SUMMARY_API_BASE: ${{ secrets.SUMMARY_API_BASE }}
-          SUMMARY_MODEL: ${{ secrets.SUMMARY_MODEL }}
-        run: python scripts/fetch_news.py
+        run: python scripts/fetch_news.py --raw-only --output site/data/raw/candidates.json
 
-      # 把简报、行情和人物动态提交回仓库，往期才不会在下次部署时消失。
-      # GITHUB_TOKEN 的推送不会再次触发这个工作流。推不上去也不阻断部署。
-      - name: Save briefing archive
+      - name: Save raw candidates
+        if: github.event_name != 'push'
         continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/data/briefings site/data/gpus.json site/data/people.json
+          git add site/data/raw/candidates.json
           if git diff --cached --quiet; then
-            echo "简报没有变化，跳过提交"
+            echo "原始候选没有变化，跳过提交"
           else
-            git commit -m "更新北京时间每日简报"
+            git commit -m "更新原始候选（不影响精选简报）"
+            git pull --rebase --autostash || true
             git push
           fi
 

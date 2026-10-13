@@ -36,6 +36,47 @@ GitHub Actions 的运行器是 UTC。工作流设置了 `TZ=Asia/Shanghai`，脚
 
 已经写好的往期文件不会在下次构建时被覆盖。显卡报价和标了 `pinned` 的人物动态会保留。
 
+## 精选数据 `site/data/briefs.json`（页面以它为准）
+
+「AI 资讯」和「人物动态」里的新卡片来自 `site/data/briefs.json`。内容由助手每天北京时间 8:30、14:30、20:30 收集、翻译成中文并写好概述后直接提交，不再依赖 `SUMMARY_API_KEY` 或模板摘要。GitHub Actions 只把抓到的原始候选写进 `site/data/raw/candidates.json`，**不会改写 `briefs.json`**。旧的 `site/data/briefings/*.json` 只作为往期兜底，同一天有精选数据时以精选为准。
+
+```json
+{
+  "schemaVersion": 1,
+  "timezone": "Asia/Shanghai",
+  "updatedAt": "2026-10-13T10:00:00+08:00",
+  "items": [
+    {
+      "id": "2026-10-13-meta-muse-wonder",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "中文标题",
+      "summary": "发生了什么（中文概述）",
+      "impact": "对你的影响 / 解读",
+      "applicability": "适用说明（可选）",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://...",
+      "publishedAt": "2026-10-13T01:56:00+08:00"
+    }
+  ]
+}
+```
+
+| 字段 | 必填 | 说明 |
+| --- | --- | --- |
+| `id` | 是 | 唯一，建议 `日期-短名` |
+| `module` | 是 | `news`（AI 资讯）或 `people`（人物动态）。显卡行情仍用 `gpus.json` |
+| `category` | news 必填 | `models` / `vision` / `mac` / `nvidia` / `amd` |
+| `personId` | people 必填 | `tibo` / `musk` / `trump` |
+| `title` `summary` `impact` | 是 | 中文标题、概述、解读 |
+| `applicability` | 否 | 适用说明 |
+| `sourceName` `sourceUrl` | 是 | 来源名称和原文链接（http/https） |
+| `publishedAt` | 是 | 带时区的 ISO 时间，统一写北京时间 `+08:00`；页面按北京时间自然日归档 |
+| `featured` | 否 | 当天头条；不写就用第一条 |
+
+更新方式：用 GitHub contents API（`PUT /repos/bocai08081-ux/xiaobo-ai-news/contents/site/data/briefs.json`，带当前文件 `sha`）提交新版本到 `main`。推送会触发 Deploy site，几分钟后上线。新条目追加到 `items`，旧条目保留就是往期。
+
 ## 本地预览
 
 ```bash
