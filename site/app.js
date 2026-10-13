@@ -138,6 +138,81 @@ async function ensureDay(day) {
   return state.days[day];
 }
 
+
+const CATEGORY_LABELS = { models: "AI 模型", vision: "图像与视频", mac: "Mac", nvidia: "英伟达", amd: "AMD" };
+
+// 把 ISO 时间（带时区）换成北京时间的 { date: "YYYY-MM-DD", label: "MM/DD", time: "MM/DD HH:mm" }
+function beijingParts(iso) {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return null;
+  const bj = new Date(d.getTime() + 8 * 3600 * 1000);
+  const pad = (n) => String(n).padStart(2, "0");
+  const mm = pad(bj.getUTCMonth() + 1);
+  const dd = pad(bj.getUTCDate());
+  return {
+    date: `${bj.getUTCFullYear()}-${mm}-${dd}`,
+    label: `${mm}/${dd}`,
+    time: `${mm}/${dd} ${pad(bj.getUTCHours())}:${pad(bj.getUTCMinutes())}`,
+  };
+}
+
+// 精选数据 site/data/briefs.json 优先；旧的 data/briefings/*.json 只作为往期兜底。
+function applyBriefs(briefs, legacyIndex, people) {
+  const items = (briefs && briefs.items) || [];
+  const updated = briefs && briefs.updatedAt ? beijingParts(briefs.updatedAt) : null;
+  const byDay = {};
+  for (const item of items) {
+    const when = beijingParts(item.publishedAt) || beijingParts(item.date) || null;
+    const day = item.date || (when && when.date);
+    if (!day) continue;
+    if ((item.module || "news") === "people") {
+      if (people) {
+        people.posts = people.posts || [];
+        people.posts.unshift({
+          id: item.id,
+          personId: item.personId,
+          title: item.title,
+          summary: item.summary,
+          takeaway: item.impact,
+          sourceName: item.sourceName,
+          sourceUrl: item.sourceUrl,
+          timeLabel: when ? when.time : "时间待核实",
+        });
+        if (updated) people.updatedLabel = updated.time;
+      }
+      continue;
+    }
+    if (item.module && item.module !== "news") continue;
+    (byDay[day] = byDay[day] || []).push({
+      id: item.id,
+      category: item.category || "models",
+      categoryLabel: CATEGORY_LABELS[item.category] || item.categoryLabel || "AI 资讯",
+      title: item.title,
+      summary: item.summary,
+      takeaway: item.impact,
+      applicability: item.applicability || "",
+      sourceName: item.sourceName,
+      sourceUrl: item.sourceUrl,
+      dateLabel: when ? when.label : "日期待核实",
+      verifiedLabel: when ? `北京时间 ${when.time}` : "",
+      featured: Boolean(item.featured),
+    });
+  }
+  const curatedDays = Object.keys(byDay).sort().reverse();
+  for (const day of curatedDays) {
+    const cards = byDay[day];
+    if (!cards.some((c) => c.featured) && cards[0]) cards[0].featured = true;
+    cards.sort((a, b) => Number(b.featured) - Number(a.featured));
+    state.days[day] = { date: day, curated: true, updatedLabel: updated ? updated.time : "", cards };
+  }
+  const legacy = ((legacyIndex && legacyIndex.days) || []).filter((row) => !byDay[row.date]);
+  const rows = curatedDays
+    .map((day) => ({ date: day, label: day.slice(5).replace("-", "/"), cardCount: byDay[day].length }))
+    .concat(legacy)
+    .sort((a, b) => (a.date < b.date ? 1 : -1));
+  return { days: rows, updatedLabel: updated ? updated.time : (legacyIndex && legacyIndex.updatedLabel) || "" };
+}
+
 function renderNews() {
   const index = state.index;
   const days = (index && index.days) || [];
@@ -166,7 +241,9 @@ function renderNews() {
     nodes.push(archive);
   }
 
-  nodes.push(el("p", "banner", "当前为最近保存的快照，下一次核查将补充最新动态。"));
+  nodes.push(el("p", "banner", briefing && briefing.curated
+    ? "每天北京时间 8:30、14:30、20:30 精选更新，中文概述和解读已人工核对，来源可点开原文。"
+    : "这是旧版自动生成的往期快照，内容以原文为准。"));
 
   const board = el("div", "board");
   const cards = ((briefing && briefing.cards) || []).filter((card) => {
@@ -397,11 +474,13 @@ function showError(message) {
 async function load() {
   state.view = currentView();
   try {
-    const [index, gpus, people] = await Promise.all([
+    const [legacyIndex, gpus, people, briefs] = await Promise.all([
       loadJson("data/briefings/index.json").catch(() => ({ days: [], updatedLabel: "" })),
       loadJson("data/gpus.json").catch(() => null),
       loadJson("data/people.json").catch(() => null),
+      loadJson("data/briefs.json").catch(() => null),
     ]);
+    const index = applyBriefs(briefs, legacyIndex, people);
     state.index = index;
     state.gpus = gpus;
     state.people = people;

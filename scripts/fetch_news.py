@@ -1060,18 +1060,20 @@ def build_payload(now: datetime | None = None) -> dict:
     }
 
 
-def publish_views(items: list[dict], now: datetime | None = None) -> None:
-    """Write the briefing, GPU board, and people pages. Never raises."""
-    from briefing import publish_briefings
+def publish_views(items: list[dict], now: datetime | None = None, *, briefings: bool = True) -> None:
+    """Write GPU and people pages. Skip auto briefings when curated briefs.json is the source."""
     from market import publish_market
     from people import publish_people
 
     current = now or beijing_now()
     data_dir = ROOT / "site" / "data"
-    try:
-        publish_briefings(items, current, data_dir / "briefings")
-    except Exception as exc:  # noqa: BLE001 — the raw feed should still ship
-        print(f"[fail] 简报 {exc}", file=sys.stderr)
+    if briefings:
+        from briefing import publish_briefings
+
+        try:
+            publish_briefings(items, current, data_dir / "briefings")
+        except Exception as exc:  # noqa: BLE001 — the raw feed should still ship
+            print(f"[fail] 简报 {exc}", file=sys.stderr)
     try:
         publish_market(current, data_dir / "gpus.json")
     except Exception as exc:  # noqa: BLE001
@@ -1090,6 +1092,11 @@ def main() -> int:
         type=Path,
         help="不抓取网络，直接用已有 news.json 里的 items 生成页面数据",
     )
+    parser.add_argument(
+        "--raw-only",
+        action="store_true",
+        help="抓取原始候选写入 --output，并刷新 gpus.json / people.json；不生成自动简报，也不改写 site/data/briefs.json",
+    )
     args = parser.parse_args()
     if args.from_json:
         payload = json.loads(args.from_json.read_text(encoding="utf-8"))
@@ -1105,7 +1112,7 @@ def main() -> int:
             file=sys.stderr,
         )
         items = payload["items"]
-    publish_views(items, beijing_now())
+    publish_views(items, beijing_now(), briefings=not args.raw_only)
     return 0
 
 
