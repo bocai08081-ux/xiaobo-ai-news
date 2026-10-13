@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-13T06:55:43Z",
-  "updatedLabel": "10/13 14:55",
+  "updatedAt": "2026-10-13T19:24:17Z",
+  "updatedLabel": "10/14 03:24",
   "people": [
     {
       "id": "tibo",
@@ -24,6 +24,24 @@
   ],
   "posts": [
     {
+      "id": "fee7731f7bbf517e",
+      "personId": "musk",
+      "title": "马斯克吹爆的AI员工，我用完只想仅退款",
+      "summary": "马斯克力推的Grok Bot体验拉胯，国内多有平替。",
+      "context": "上文来自36氪的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是36氪。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "36氪",
+      "sourceUrl": "https://36kr.com/p/4024137525090183?f=rss",
+      "linkLabel": "查看原文",
+      "timeLabel": "10/13 20:47",
+      "publishedAt": "2026-10-13T12:47:55Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
       "id": "5c06f92d8c740bf1",
       "personId": "musk",
       "title": "长城汽车魏牌CEO赵永坡：最大的豪华不是沙发，是刹车；华为被曝将推出子品牌「星芒」；Claude半年封杀1140万个账号，申诉后仅4.2万翻案",
@@ -35,42 +53,6 @@
       "linkLabel": "查看原文",
       "timeLabel": "10/12 14:20",
       "publishedAt": "2026-10-12T06:20:00Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "48092d1d873f6f9c",
-      "personId": "trump",
-      "title": "特朗普有一则新动态，来自The Verge",
-      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Silicon Valley is falling in line with Trump’s attempt to rename AI」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "The Verge",
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
-      "linkLabel": "查看原文",
-      "timeLabel": "10/12 02:33",
-      "publishedAt": "2026-10-11T18:33:56Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "ddff3a90e8eec251",
-      "personId": "musk",
-      "title": "硅谷AI现状：谁有算力谁是爹",
-      "summary": "量子位报道了这件事：硅谷AI现状：谁有算力谁是爹。",
-      "context": "上文来自量子位的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是量子位。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "量子位",
-      "sourceUrl": "https://qbitai.com/2026/10/502585.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "10/11 13:22",
-      "publishedAt": "2026-10-11T05:22:38Z",
       "tags": [
         "AI 模型",
         "转述"
