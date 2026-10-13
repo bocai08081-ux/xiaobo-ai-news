@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-13T14:30:00+08:00",
+  "updatedAt": "2026-10-13T20:30:00+08:00",
   "items": [
     {
       "id": "2026-10-13-meta-muse-wonder",
@@ -135,6 +135,78 @@
       "sourceName": "The Verge",
       "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1009406/silicon-valley-is-falling-in-line-with-trumps-attempt-to-rename-ai",
       "publishedAt": "2026-10-12T02:33:00+08:00"
+    },
+    {
+      "id": "2026-10-13-nvidia-rtx-spark-nemotron",
+      "module": "news",
+      "category": "nvidia",
+      "title": "英伟达 RTX Spark 将于 10 月 16 日开卖，并推本地智能体模型 Nemotron 3.5 Bolt",
+      "summary": "英伟达博客称，RTX Spark 笔记本将于 10 月 16 日开卖，最高约 128GB 统一内存。专为本地智能体设计的开源 MoE 模型 Nemotron 3.5 Bolt 74B（约 9B 激活参数、2-bit 量化约 24GB）定于 10 月 15 日上线，可通过 llama.cpp、Ollama、LM Studio 等运行。同日更新还包括 PAIR 退出测试版、Broadcast 2.3，以及 ComfyUI 新增 RTX Video 插帧与 HDR 节点。",
+      "impact": "本地智能体硬件和模型又多了一条「笔记本级」路线。你现在用 7900 XTX + ComfyUI 做动画转真人，更值得跟一下 ComfyUI 的 RTX Video 插帧/HDR 节点是否也有 AMD/通用替代；Bolt 开源权重可留意是否有人转成 ROCm/MLX 友好格式。",
+      "applicability": "关注本地智能体、ComfyUI 视频后处理，或对比 NVIDIA 消费级 AI 本的人。",
+      "sourceName": "NVIDIA Blog",
+      "sourceUrl": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates/",
+      "publishedAt": "2026-10-13T12:00:00+08:00"
+    },
+    {
+      "id": "2026-10-13-personal-agi-garry-tan",
+      "module": "news",
+      "category": "models",
+      "title": "YC CEO：真正的 AGI 可能已在你电脑里——「个人 AGI」正在爆红",
+      "summary": "InfoQ 等报道梳理：Meta、OpenAI、Google 等加码个人 Agent 的同时，YC CEO Garry Tan 在 Startup School 2026 提出「个人 AGI」：不是数据中心里的神，而是跑在自己基础设施上、读取自有记忆、执行自写流程并持续复利的 Agent。他分享用 Markdown 知识库、Skill 文件与开源框架搭建个人 AI 大脑，并主张技能与记忆应放在自己控制的仓库里。",
+      "impact": "和你在做的本地模型、Codex skill、资讯站自动化方向一致：把流程写成可复用的 skill，比单纯追云端聊天机器人更有复利。适合做成 X 账号上的「个人 Agent 实操」选题。",
+      "applicability": "在搭个人 Agent、写 skill，或做中文 AI 创作者内容的人。",
+      "sourceName": "InfoQ",
+      "sourceUrl": "https://www.infoq.cn/article/pkFg3POvaTwJt9lei8Vj",
+      "publishedAt": "2026-10-13T19:45:54+08:00"
+    },
+    {
+      "id": "2026-10-13-alphaproof-nexus",
+      "module": "news",
+      "category": "models",
+      "title": "DeepMind AlphaProof Nexus 经《科学》同行评审：自主解决多道开放数学题",
+      "summary": "据 The Decoder 等报道，Google DeepMind 的 AlphaProof Nexus 相关工作已在《科学》发表：系统用 Gemini 起草并修订 Lean 形式化证明，由 Lean 编译器反馈纠错，必要时调用 AlphaProof。在 353 道埃尔德什问题中解决了 9 道（含两道悬置约 56 年的题），并证明 44 条 OEIS 猜想。对比 OpenAI 近期把大量 AI 数学证明直接丢到 GitHub 引发抵制，DeepMind 选择走同行评审。",
+      "impact": "「AI 做数学」热度还在，但可信度标准在分化：有 Lean 校验 + 期刊评审的结果，比纯 GitHub dump 更值得跟。对日常本地模型影响不大，可当科研向选题素材。",
+      "applicability": "关注 AI 科研能力、形式化证明或 AI 数学争议的人。",
+      "sourceName": "THE DECODER",
+      "sourceUrl": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solved-dozens-of-open-math-problems-and-actually-got-peer-reviewed/",
+      "publishedAt": "2026-10-12T17:35:54+08:00"
+    },
+    {
+      "id": "2026-10-13-amd-ryzen-ai-halo-192",
+      "module": "news",
+      "category": "amd",
+      "title": "AMD 新一代 Ryzen AI Halo：192GB 统一内存，最高可划 160GB 给 GPU",
+      "summary": "Guru3D 报道：AMD 发布搭载 Ryzen AI Max+ PRO 495 的 Ryzen AI Halo 开发者平台，配 192GB LPDDR5X-8533 统一内存（带宽约 273GB/s），最高可将约 160GB 划给集成 Radeon GPU，官方称可本地跑 4-bit 下约 3000 亿参数级模型。Linux 版标价 7299.99 美元，预装 ROCm；Windows（Project Zenith）稍后推出。机身仍约 150×150 mm。",
+      "impact": "这是「大统一内存」本地跑巨模的路线，和你 7900 XTX 24GB 离散卡互补：显卡算力强、Halo 更偏塞进超大权重。价格贵，更适合观察 ROCm 软件栈成熟度，而不是立刻跟风换机。",
+      "applicability": "关注 AMD 本地 AI、ROCm，或评估统一内存工作站的人。",
+      "sourceName": "Guru3D",
+      "sourceUrl": "https://www.guru3d.com/story/amd-launches-ryzen-ai-halo-developer-platform-with-192gb-unified-memory/",
+      "publishedAt": "2026-10-13T15:25:00+08:00"
+    },
+    {
+      "id": "2026-10-13-mass-sakana",
+      "module": "news",
+      "category": "models",
+      "title": "UC Berkeley 与 Sakana AI 提出 MASS：多 Agent 自监督推动模型自我改进",
+      "summary": "36氪报道：团队提出 Multi-Agent Self-Supervision（MASS），让同一模型轮流当解题者、工作流优化者和评估者——先在冻结权重下优化多智能体协作流程，再把优质轨迹蒸馏回共享权重。两轮后，Qwen3.6-27B 在三项测试任务上对外部强模型裁判的胜率从 53.9% 升至 69.9%；多 Agent 轨迹比单 Agent 监督更省 Token 且胜率更高。",
+      "impact": "说明「多智能体编排 + 自蒸馏」可能比单纯刷更多单 Agent 轨迹更划算。你如果用多 Agent/skill 流水线（资讯采集、审片、动画转真人），可以把「先优化流程再蒸馏」当成后续实验思路。",
+      "applicability": "做多智能体系统、或关注模型自我改进（RSI）的人。",
+      "sourceName": "36氪",
+      "sourceUrl": "https://36kr.com/p/4023756853022851",
+      "publishedAt": "2026-10-13T13:06:32+08:00"
+    },
+    {
+      "id": "2026-10-13-rea-mcp",
+      "module": "news",
+      "category": "models",
+      "title": "开源工具 REA 爆火：让编程 Agent 一键逆向二进制与 App",
+      "summary": "PlayCISO 等介绍：REA（Reverse Engineer Anything）是 MIT 许可的 MCP/CLI，可把 Claude Code、Codex、Cursor 等接到 Ghidra/IDA/Hopper，本地分析原生二进制、Electron、.NET、APK、网站与固件等，近期登上 GitHub 热榜。作者强调仅限合法授权目标；README 也提醒复制他人产品功能可能涉及知识产权风险。安全侧建议：勿在客户端藏密钥，客户端校验不能当信任边界。",
+      "impact": "双刃剑：做兼容性分析和审自己的打包产物时很强，但别用来抄竞品。你发的桌面/网页工具如果把密钥写进客户端，现在更容易被 Agent 扒出来。",
+      "applicability": "做安全、AppSec，或发布客户端软件的开发者。",
+      "sourceName": "PlayCISO",
+      "sourceUrl": "https://playciso.com/blog/rea-reverse-engineer-anything-agent-tool-for-defenders",
+      "publishedAt": "2026-10-11T12:00:00+08:00"
     }
   ]
 }
