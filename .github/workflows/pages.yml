@@ -34,8 +34,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      # 只抓原始候选，写到 site/data/raw/candidates.json，供助手挑选。
-      # 页面展示的精选内容在 site/data/briefs.json，由助手直接提交，这里绝不改写它。
+      # 抓原始候选供助手挑选，并刷新显卡行情和人物动态。
+      # 页面精选在 site/data/briefs.json，由助手直接提交，这里绝不改写它。
       - name: Collect raw candidates
         continue-on-error: true
         env:
@@ -48,11 +48,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/data/raw/candidates.json
+          git add site/data/raw/candidates.json site/data/gpus.json site/data/people.json
           if git diff --cached --quiet; then
-            echo "原始候选没有变化，跳过提交"
+            echo "原始候选和行情没有变化，跳过提交"
           else
-            git commit -m "更新原始候选（不影响精选简报）"
+            git commit -m "更新原始候选与行情（不影响精选简报）"
             git pull --rebase --autostash || true
             git push
           fi

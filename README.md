@@ -38,7 +38,7 @@ GitHub Actions 的运行器是 UTC。工作流设置了 `TZ=Asia/Shanghai`，脚
 
 ## 精选数据 `site/data/briefs.json`（页面以它为准）
 
-「AI 资讯」和「人物动态」里的新卡片来自 `site/data/briefs.json`。内容由助手每天北京时间 8:30、14:30、20:30 收集、翻译成中文并写好概述后直接提交，不再依赖 `SUMMARY_API_KEY` 或模板摘要。GitHub Actions 只把抓到的原始候选写进 `site/data/raw/candidates.json`，**不会改写 `briefs.json`**。旧的 `site/data/briefings/*.json` 只作为往期兜底，同一天有精选数据时以精选为准。
+「AI 资讯」和「人物动态」里的新卡片来自 `site/data/briefs.json`。内容由助手每天北京时间 8:30、14:30、20:30 收集、翻译成中文并写好概述后直接提交，不再依赖 `SUMMARY_API_KEY` 或模板摘要。GitHub Actions 把抓到的原始候选写进 `site/data/raw/candidates.json`，并继续刷新 `gpus.json` 和 `people.json`，**不会改写 `briefs.json`**。旧的 `site/data/briefings/*.json` 只作为往期兜底，同一天有精选数据时以精选为准。
 
 ```json
 {
@@ -106,7 +106,7 @@ python3 -m unittest discover -s scripts -p 'test_*.py'
 - 手动 `workflow_dispatch`
 - 推送到 `main` 时也会构建一次
 
-流程：抓取并写出简报 → 把 `site/data/briefings`、`gpus.json`、`people.json` 提交回仓库（这样往期还在）→ 部署 GitHub Pages。用 `GITHUB_TOKEN` 推送不会再次触发这个工作流。提交失败不会挡住当次部署。
+流程：抓取原始候选，刷新 `gpus.json` 和 `people.json`（不改写 `briefs.json`，也不覆盖已有往期简报）→ 定时或手动运行时把 `site/data/raw/candidates.json`、`gpus.json`、`people.json` 提交回仓库 → 部署 GitHub Pages。用 `GITHUB_TOKEN` 推送不会再次触发这个工作流。提交失败不会挡住当次部署。
 
 `news.json` 仍是构建产物，不提交回 git。
 
@@ -120,7 +120,7 @@ python3 -m unittest discover -s scripts -p 'test_*.py'
 | `SUMMARY_API_BASE` | 可选 | 默认 `https://api.openai.com/v1` |
 | `SUMMARY_MODEL` | 可选 | 默认 `gpt-4o-mini` |
 
-工作流把这三项传给 `scripts/fetch_news.py`。有密钥时，脚本请求 `POST {SUMMARY_API_BASE}/chat/completions`，请模型只返回简报 JSON。接口失败、超时或返回的不是中文时，改用规则摘编，构建继续。没有 `SUMMARY_API_KEY` 时不会发任何请求。
+定时工作流不再把这三项传给抓取步骤：页面简报以提交的 `briefs.json` 为准。本地运行不带 `--raw-only` 的 `scripts/fetch_news.py` 时，有密钥仍会请求 `POST {SUMMARY_API_BASE}/chat/completions`。接口失败、超时或返回的不是中文时，改用规则摘编。没有 `SUMMARY_API_KEY` 时不会发任何请求。
 
 ## 需要所有者做的一次性 Pages 设置
 
