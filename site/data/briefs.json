@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-14T14:30:00+08:00",
+  "updatedAt": "2026-10-14T20:30:00+08:00",
   "items": [
     {
       "id": "2026-10-13-meta-muse-wonder",
@@ -369,6 +369,67 @@
       "sourceName": "X · @elonmusk",
       "sourceUrl": "https://x.com/elonmusk/status/2110127808718741920",
       "publishedAt": "2026-10-14T05:57:28+08:00"
+    },
+    {
+      "id": "2026-10-14-anthropic-scion",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "Anthropic 用 7 人 5 个月自研 Scion 替换 Git：Claude 日合并量涨到 3 万次",
+      "summary": "Anthropic 工程博客披露：Claude 写代码太快，公司日均代码合并从 5 月约 2500 次涨到 9 月超 3 万次，主分支历史近 100GB，CI 每天约 2500 万次检出，Git 镜像扛不住。7 人团队五个月内自研服务端版本控制系统 Scion，并配套审查工具 Antique，完成整个 Monorepo 迁移。官方称基础设施 CPU/内存约为原 Git 镜像方案的 1/200，检出从分钟级到秒级，CI 省约 25% CPU。Scion 面向始终在线的 Agent，不适合当通用 Git 替代，也不开源，希望 GitHub/GitLab 吸收其服务端思路。",
+      "impact": "你天天用 Cursor/Codex，这正是「Agent 把仓库和 CI 撑爆」的预演。短期不用换 Git，但可以留意：稀疏检出、少拉历史、把长会话拆短、别让单会话无限改同一仓库——都能少踩 Anthropic 踩过的坑。也是中文 AI 圈很好的选题：Agent 时代开发基建要怎么变。",
+      "applicability": "用 AI 编程工具的开发者和关注工程基建的人；普通人本地小项目继续用 Git 即可。",
+      "sourceName": "InfoQ（援引 Anthropic Engineering）",
+      "sourceUrl": "https://www.infoq.cn/article/6iRATYfkqF7aITPaFR2R",
+      "publishedAt": "2026-10-14T14:10:00+08:00"
+    },
+    {
+      "id": "2026-10-14-liquid-lfm25-24b",
+      "module": "news",
+      "category": "models",
+      "title": "Liquid AI 开源 LFM2.5-24B-A2B：24B MoE 仅激活 2B，专为本地智能体",
+      "summary": "Liquid AI 发布 LFM2.5 系列最大也是收官模型 LFM2.5-24B-A2B：总参数 24B、每 token 约激活 2B，上下文 131K，面向端侧多步推理和工具调用。官方称在多项智能体/工具基准上可对标更大的 Qwen3.6-35B-A3B；M5 Max 上约 184 token/s，Ryzen AI Max+ 395 约 114 token/s。权重开源，首日支持 llama.cpp、MLX、vLLM、SGLang、ONNX。",
+      "impact": "和你本地跑 Qwen、搭个人 Agent 的方向很贴：Mac 有 MLX，台式机可走 llama.cpp/vLLM；激活参数小，24GB 显存的 7900 XTX 更有机会塞下量化版。适合拿来做本地 skill/资讯采集的轻量大脑，复杂写码仍用云端大模型。",
+      "applicability": "想在 Mac 或 AMD 卡上本地跑智能体的人；权重在 Hugging Face。",
+      "sourceName": "Liquid AI",
+      "sourceUrl": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "publishedAt": "2026-10-13T17:05:00+08:00"
+    },
+    {
+      "id": "2026-10-14-openai-gpt4o-api-retire",
+      "module": "news",
+      "category": "models",
+      "title": "OpenAI：GPT-4o / 4o mini / 4.1 系列 API 将于 2027 年 1 月 14 日下线",
+      "summary": "OpenAI 在 API 弃用页面通知：gpt-4o（含 2024-08-06、2024-11-20 快照）、gpt-4o-mini、gpt-4.1、gpt-4.1-mini 将于 2027 年 1 月 14 日从 API 移除，微调版同步下线，推荐迁移到 gpt-6-luna。通知日为 2026 年 10 月 14 日，约三个月缓冲；同页一般可用模型承诺至少六个月，此次短于惯例。社区对 GPT-4o「人设」依依不舍，请愿声浪再起。",
+      "impact": "若你还有脚本或旧工作流绑着 4o/4.1，现在就要排迁移和回归测试。Luna 单价更低，但风格和工具调用未必一样，别假设无缝替换。ChatGPT 产品侧不在这条弃用里，别和网页版混为一谈。",
+      "applicability": "仍在 API 里调用 GPT-4o/4.1 系列的开发者。",
+      "sourceName": "OpenAI Developers",
+      "sourceUrl": "https://developers.openai.com/api/docs/deprecations",
+      "publishedAt": "2026-10-14T12:00:00+08:00"
+    },
+    {
+      "id": "2026-10-14-nvidia-uk-ai-safety-250m",
+      "module": "news",
+      "category": "nvidia",
+      "title": "英伟达向英国捐赠价值 2.5 亿美元算力，支持智能体安全研究",
+      "summary": "《卫报》报道：市值约 5.5 万亿美元的英伟达将在五年内向英国捐赠价值 2.5 亿美元的算力，用于智能体安全与安保研究，算力经英国本地数据中心、用英伟达芯片交付。同日英国确认其 AI 安全研究所（AISI）可在 OpenAI、Anthropic、谷歌等前沿模型发布前进行测试。黄仁勋称要把加速计算交到英国研究者手中，以强化对更强大 AI 的防护。",
+      "impact": "偏政策和研究侧，不直接改消费卡价格。但「智能体安全」正和 Anthropic 自我复制预警叠在一起，说明大厂把 Agent 风险当成正经基建议题；你做本地 Agent 时，权限、联网和执行边界也值得收紧一点。",
+      "applicability": "关注英伟达、AI 安全和智能体治理的人。",
+      "sourceName": "The Guardian",
+      "sourceUrl": "https://www.theguardian.com/technology/2026/oct/14/nvidia-donates-to-uk-ai-safety-research",
+      "publishedAt": "2026-10-14T18:10:00+08:00"
+    },
+    {
+      "id": "2026-10-14-digup-mac-semantic",
+      "module": "news",
+      "category": "mac",
+      "title": "DigUp：Mac 端侧语义搜文件，用 EmbeddingGemma 2 描述内容就能找",
+      "summary": "开源 Mac 应用 DigUp 用 Google DeepMind 的 EmbeddingGemma 2 在本地给选定文件夹建索引，可用自然语言搜照片、PDF、音频、视频和代码，数据不出本机。需 Apple Silicon、macOS 14+，首次下载约 865MB 模型；可用 Homebrew cask 安装，快捷键唤起搜索。",
+      "impact": "你 Mac 上素材、脚本、审片截图一多，按文件名找很痛苦。这类本地语义搜索正好补 Spotlight 的短板，也适合当「个人 AGI 记忆层」的小工具，不用把硬盘内容丢给云端。",
+      "applicability": "Apple Silicon Mac 用户；项目开源，安装前可看 GitHub README。",
+      "sourceName": "Digital Trends",
+      "sourceUrl": "https://www.digitaltrends.com/computing/digup-ai-natural-language-file-search-embeddinggemma-2/",
+      "publishedAt": "2026-10-14T12:00:00+08:00"
     }
   ]
 }
