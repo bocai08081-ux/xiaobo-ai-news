@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-14T08:30:00+08:00",
+  "updatedAt": "2026-10-14T14:30:00+08:00",
   "items": [
     {
       "id": "2026-10-13-meta-muse-wonder",
@@ -287,6 +287,88 @@
       "sourceName": "TechCrunch",
       "sourceUrl": "https://techcrunch.com/2026/10/13/spacexsi-bundles-x-premium-grok-and-cursor-into-one-subscription/",
       "publishedAt": "2026-10-13T21:50:19+08:00"
+    },
+    {
+      "id": "2026-10-14-openai-office-bug-arrest",
+      "module": "news",
+      "category": "models",
+      "title": "OpenAI 工程师涉嫌在高管会议室装窃听器被捕，OpenAI 称用自家模型锁定嫌疑人",
+      "summary": "OpenAI 在一间高管会议室的电视 USB 口上发现一个隐藏的录音设备，设备约在 9 月 28 日装上，内容加密。美国司法部称，35 岁的沙特籍工程师 Abdulrahman Alfozan 被控截取口头通讯，监控曾拍到他多次出现在会议室附近并查看电视背后。OpenAI 说它用自己的模型分析了设备来源、定位到这名员工，已将其开除并移交 FBI；目前没有发现他接触或外泄模型权重、源代码和客户数据。",
+      "impact": "这件事本身离普通用户很远，但说明头部 AI 公司正把内部机密当成国家级安全问题来防。可以预期各家对员工、合作方和第三方工具的权限审查会更严，开源和 API 侧暂时不受影响。",
+      "applicability": "关注 AI 公司安全和行业八卦的人；案件还在调查中，指控未经法院定罪。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device",
+      "publishedAt": "2026-10-14T04:45:25+08:00"
+    },
+    {
+      "id": "2026-10-14-minicpm-v-47",
+      "module": "news",
+      "category": "models",
+      "title": "面壁 MiniCPM-V 4.7 开源：35B-A3B 多模态 MoE，iPhone 上约 3GB 内存跑出每秒 13+ token",
+      "summary": "面壁智能（OpenBMB）开源端侧多模态模型 MiniCPM-V 4.7，有 35B-A3B 和 1B 两个版本，能看图、多图、文档和视频。35B-A3B 是该系列首个 MoE 模型，官方称 Instruct 模式下综合分数高于 Qwen3.6 35B-A3B 且推理更快。配套的「前瞻专家调度」（LES）会提前预读下一层要用的专家权重，官方在 iPhone 17 Pro Max 上用约 3GB 内存测到每秒 13 个 token 以上，并支持 Intel、AMD、Arm 等芯片平台。",
+      "impact": "这是一个能在你 Mac 或 7900 XTX 上本地跑的视觉理解模型，和你在找的本地审片模型同一类。可以拿它和 Qwen3-VL 32B 用同一批问题镜头对比，看判断准确率和速度；跑分是官方自测，先实测再决定。",
+      "applicability": "适合想在本地做图像、视频理解的人；权重在 Hugging Face 公开，LES 加速走官方的 llama.cpp-omni 分支。",
+      "sourceName": "GitHub · OpenBMB/MiniCPM-V",
+      "sourceUrl": "https://github.com/OpenBMB/MiniCPM-V",
+      "publishedAt": "2026-10-13T10:35:26+08:00"
+    },
+    {
+      "id": "2026-10-14-ollama-0-40-4",
+      "module": "news",
+      "category": "mac",
+      "title": "Ollama v0.40.4：ollama launch codex 能直接选本地模型，Apple 芯片 MLX 后端继续优化",
+      "summary": "Ollama 发布 v0.40.4。`ollama launch codex` 的模型列表现在会列出本机已装的 Ollama 模型，进入 Codex CLI 后用 /model 就能切换；Apple 芯片上的 MLX 后端支持了决策类模型，投机解码更稳定，长状态改为截断而不是直接报错。另外还复用已加载的模型来提速，并新增多模态向量（embedding）支持。",
+      "impact": "你在 Mac 上用 Codex 又有本地模型，这版能让一些轻活（查代码、改小脚本）换成本地模型跑，少花云端 token。建议先拿简单任务试，复杂任务还是用云端大模型。",
+      "applicability": "用 Ollama 和 Codex CLI 的 Mac 用户。",
+      "sourceName": "GitHub · ollama/ollama",
+      "sourceUrl": "https://github.com/ollama/ollama/releases/tag/v0.40.4",
+      "publishedAt": "2026-10-13T03:00:12+08:00"
+    },
+    {
+      "id": "2026-10-14-apple-homeview-siri-ai",
+      "module": "news",
+      "category": "mac",
+      "title": "苹果发布 HomeView 家庭中枢，新版 Siri AI 首次落地带屏设备，299 美元",
+      "summary": "苹果发布首款家庭中枢 HomeView：7 英寸屏、A18 芯片，内置全新的 Siri AI，能识别最多六位家庭成员的脸并切换到各自的信息、日历和提醒，也能控制智能家居、打 FaceTime。和支持 Apple Intelligence 的 iPhone 或 iPad 配对后，Siri AI 能调用个人情境、跨应用办事，对话会在设备间同步。美国售价 299 美元，11 月 13 日发售；Siri AI 初期为测试版、先支持英语，HomeView 暂不在欧盟销售。同场还更新了 Apple TV 4K 和 HomePod mini 2。",
+      "impact": "苹果的新版 Siri 开始有了能对话、能跨应用办事的样子，后续大概率会推到 Mac 上。短期国内买不到也用不了中文，可以先观望，等 Siri AI 上 macOS 和支持中文再看。",
+      "applicability": "苹果生态用户；目前仅英语、首批市场不含中国大陆。",
+      "sourceName": "Apple Newsroom",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
+      "publishedAt": "2026-10-13T21:00:00+08:00"
+    },
+    {
+      "id": "2026-10-14-nvidia-china-share-idc",
+      "module": "news",
+      "category": "nvidia",
+      "title": "IDC：英伟达在中国 AI 芯片份额跌到 34%，华为升到 28%",
+      "summary": "路透社援引 IDC 报告称，2026 年上半年英伟达在中国数据中心 AI 芯片市场份额降到 34%，出货 67.8 万颗，同比少 44%；华为出货 57.2 万颗，占 28%。中国 AI 加速器总出货 200.8 万颗，其中 GPU 下降 26% 到 99.1 万颗，其他推理类加速器增长近 80% 到 101.6 万颗，数量首次超过 GPU。IDC 把这和美国出口限制、国产替代联系在一起。",
+      "impact": "对你买卡影响不大，这是数据中心市场。但国产推理芯片起量，意味着国内云端推理价格可能继续往下走，部分模型 API 会更便宜；本地消费级显卡的格局短期不变。",
+      "applicability": "关注算力格局、国产芯片和英伟达动向的人。",
+      "sourceName": "爱范儿（援引路透社 / IDC）",
+      "sourceUrl": "https://ifanr.com/1684137",
+      "publishedAt": "2026-10-14T08:08:24+08:00"
+    },
+    {
+      "id": "2026-10-14-tibo-codex-disk",
+      "module": "people",
+      "personId": "tibo",
+      "title": "Tibo：ChatGPT 和 Codex 桌面端本地状态占用磁盘减少 60%",
+      "summary": "OpenAI Codex 负责人 Tibo 在 X 上说，团队优化了 ChatGPT 和 Codex 桌面应用在磁盘上保存状态的方式，占用空间能减少约 60%。他说这是个小改动，但收到了太多重度用户磁盘被占满的反馈。",
+      "impact": "你 Codex 会话多、单会话又长，之前本地状态可能吃掉不少空间。更新桌面端后可以看一下占用有没有降下来，Mac 上磁盘会宽松一些。",
+      "sourceName": "X · @thsottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2110151780478927344",
+      "publishedAt": "2026-10-14T07:32:43+08:00"
+    },
+    {
+      "id": "2026-10-14-musk-grok-bot-push",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克连发多帖推 Grok Bot：每个 Bot 有自己的邮箱，可绑手机实体键",
+      "summary": "马斯克在 X 上连续转发推荐 Grok Bot：每个 Bot 都能领自己的邮箱地址，帮你分析、总结收件箱；可以把 Grok Bot 绑到手机的操作按钮上一键唤起；还转发了用户用它识别诈骗邮件、整理报税材料、做音乐视频的案例。",
+      "impact": "马斯克这一波主要是给产品造势，案例多为用户自述，效果因人而异。你做 AI 工具内容的话，这是个现成的选题，可以用自己的真实使用体验来对比。",
+      "sourceName": "X · @elonmusk",
+      "sourceUrl": "https://x.com/elonmusk/status/2110127808718741920",
+      "publishedAt": "2026-10-14T05:57:28+08:00"
     }
   ]
 }
