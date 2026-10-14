@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-13T20:30:00+08:00",
+  "updatedAt": "2026-10-14T08:30:00+08:00",
   "items": [
     {
       "id": "2026-10-13-meta-muse-wonder",
@@ -207,6 +207,86 @@
       "sourceName": "PlayCISO",
       "sourceUrl": "https://playciso.com/blog/rea-reverse-engineer-anything-agent-tool-for-defenders",
       "publishedAt": "2026-10-11T12:00:00+08:00"
+    },
+    {
+      "id": "2026-10-14-gemini-4-argon",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "谷歌正式发布 Gemini 4 Argon，跑分号称超过 GPT-6 Astra 和 Claude Opus 5.5",
+      "summary": "谷歌推出了等待已久的前沿模型 Gemini 4 Argon。官方称它在编程、网络安全、科学、金融和法律等多项基准上胜过 GPT-6 Astra、Claude Fable 5.1 和 Claude Opus 5.5，并减少了车轱辘话和套话。模型今天先向 Gemini App 和搜索 AI 模式的 Pro、Ultra 订阅用户开放，Antigravity 开发平台的 Ultra 用户也能用。API 首发价每百万输入 token 2 美元、输出 10 美元，约为 GPT-6 Astra 和 Fable 5 的五分之一，11 月底优惠期结束后价格翻倍。",
+      "impact": "你做 AI 资讯和工具测评，这是本周最值得追的一条：可以拿它和 GPT-6、Claude 做同题对比，出一期中文实测。API 价格低，用来批量写稿、翻译或审片成本更可控，但要趁 11 月底前的优惠期试。",
+      "applicability": "免费和 Plus 用户暂时用不上；想尽快试用可以走 API 或 Antigravity。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1009862/google-releases-gemini-4-argon",
+      "publishedAt": "2026-10-14T00:00:00+08:00"
+    },
+    {
+      "id": "2026-10-14-stepx-neo-agent-phone",
+      "module": "news",
+      "category": "models",
+      "title": "阶跃星辰发布首款智能体手机 STEPX Neo，3999 元含一年每月百亿 Token",
+      "summary": "10 月 13 日，阶跃终端发布智能体手机 STEPX Neo 先行版，同时推出智能体原生系统 Step AOS 1.0 和开发工具 Step Studio。手机解锁后先进入个人智能体 Amoo 界面，滑动才回到传统 App 桌面；背面有一块专门显示智能体状态的小屏。3999 元的定价包含硬件、系统、工具和连续 12 个月每月百亿 Token 的模型服务，10 月 16 日 10:13 首销。Amoo 已与支付宝、腾讯、携程、滴滴、剪映、高德、美团等近百家企业打通，服务接入主要走 MCP。",
+      "impact": "国产“AI 优先”手机第一次把模型额度打包进售价，适合做一期“智能体手机到底能替你干多少活”的开箱或对比选题。Step Studio 用自然语言生成 App 和 Skill，跟你做 skill 的思路相近，可以留意开发者生态。",
+      "sourceName": "InfoQ",
+      "sourceUrl": "https://www.infoq.cn/article/p2TobACROBC8UBPlRKXx",
+      "publishedAt": "2026-10-14T06:26:45+08:00"
+    },
+    {
+      "id": "2026-10-14-character-ai-bankruptcy",
+      "module": "news",
+      "category": "models",
+      "title": "Character.AI 申请破产保护，部分资产 2000 万美元卖给迪士尼",
+      "summary": "AI 角色聊天平台 Character.AI 成立五年后申请了美国破产法第 11 章保护，法院文件显示资产和负债都在 5000 万到 1 亿美元之间。公司同意以 2000 万美元把部分资产卖给迪士尼，并给出技术的非独占永久授权。平台在出售期间继续运营，交易预计 11 月底或 12 月初完成；CEO Colin Adams 表示若找不到能让平台继续运营的买家，平台将关闭。",
+      "impact": "曾经估值十亿美元的明星应用也撑不住诉讼和监管压力，说明纯陪聊产品护城河很浅。做 AI 角色或虚拟人内容时，版权和未成年人安全是绕不开的风险点。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/",
+      "publishedAt": "2026-10-13T20:23:42+08:00"
+    },
+    {
+      "id": "2026-10-14-higgsfield-10min-video",
+      "module": "news",
+      "category": "vision",
+      "title": "Higgsfield 借 OpenAI 模型把 AI 视频从 1 分钟拉长到 10 分钟以上",
+      "summary": "OpenAI 发布案例文章：AI 视频平台 Higgsfield 用 GPT-6 Astra 生成更长的视频，单条从 1 分钟提升到 10 分钟以上；同时用 GPT-Image-2.5 控制画面细节，并通过 GPT-Live 探索带语音的影片制作。",
+      "impact": "你在做经典动画 OP 的 AI 真人版，长视频的镜头一致性正是难点。可以关注 Higgsfield 的长片流程，和本地 ComfyUI 方案对比成本与可控性，也能作为“云端 vs 本地”的选题素材。",
+      "applicability": "这是 OpenAI 官方的客户案例，具体时长和效果以 Higgsfield 实际产品为准。",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/higgsfield-longer-videos-voice/",
+      "publishedAt": "2026-10-13T20:00:00+08:00"
+    },
+    {
+      "id": "2026-10-14-dlss5-october-update",
+      "module": "news",
+      "category": "nvidia",
+      "title": "英伟达 DLSS 5 十月更新：模型缩小 24%、4K 显存省 20%，11 月 5 日登陆《霍格沃茨之遗》",
+      "summary": "DLSS 5 此前因把游戏角色的脸“AI 重绘”得面目全非而饱受批评，英伟达新放出的对比图显示效果已明显收敛。十月更新把神经渲染模型缩小 24% 至约 1.18 亿参数，4K 显存占用降低 20%，在 RTX 50 系和即将推出的 RTX Spark 笔记本上速度约快一倍。新模型 10 月 16 日先在《NBA 2K27》上线，11 月 5 日进入《霍格沃茨之遗》，《燕云十六声》月底跟进。新版 Nvidia App 测试版还给 RTX 40/50 系的帧生成加了性能模式，最高快 35%。",
+      "impact": "你用的是 AMD 7900 XTX，用不上 DLSS 5，但这是 AI 渲染进游戏的风向标，可以和 AMD FSR 的进展放在一起写对比。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/news/1009904/dlss-5-hogwarts-legacy-changes-improvements",
+      "publishedAt": "2026-10-13T21:55:45+08:00"
+    },
+    {
+      "id": "2026-10-14-lemonade-rocm-windows",
+      "module": "news",
+      "category": "amd",
+      "title": "本地大模型服务 Lemonade 新候选版：ROCm 后端 TheNoise 支持 Windows",
+      "summary": "Lemonade v2026.42.1 候选版发布：ROCm 后端 TheNoise 新增 Windows 支持（自带便携 Python 解释器）；llama.cpp 后端新增 6 种模型架构，HRX 运行时新增 26 个文本聊天模型；extra_models_dir 能直接导入 Hugging Face 和 ModelScope 缓存目录里的模型；还修复了客户端中途断开时流式请求卡死的问题。",
+      "impact": "你在 Windows 台式机上用 7900 XTX 跑本地模型，ROCm 后端支持 Windows 值得试；能直接复用 Hugging Face 缓存，也省得重复下载模型。目前是候选版，正式版出来再上主力环境更稳。",
+      "sourceName": "GitHub · lemonade-sdk",
+      "sourceUrl": "https://github.com/lemonade-sdk/lemonade/releases/tag/candidate-v2026.42.1",
+      "publishedAt": "2026-10-13T01:22:25+08:00"
+    },
+    {
+      "id": "2026-10-14-musk-x-subscription",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克旗下 SpaceXSI 把 X Premium、Grok 和 Cursor 打包成一个订阅",
+      "summary": "马斯克旗下的 SpaceX Super Intelligence（SpaceXSI）推出统一订阅“The X Subscription”，把 Grok（聊天、语音、图像、视频和 API）、Grok 智能体、AI 编程工具 Cursor 和 X Premium 的蓝标、创作者工具、少广告等功能合在一起。共五档：免费、Plus 每月 8 美元、Premium 30 美元、Super 100 美元、Ultra 200 美元，Premium 及以上才能用最新的 Grok 模型。现有 X Premium+ 用户换到同级套餐价格持平或更低，升级入口会逐步开放。",
+      "impact": "你同时在用 X（@bocaix2c）和 Cursor，合并订阅可能比分开买更划算；先对比你现在的 Cursor 和 X 花费，等账单设置里出现升级入口再决定。这也是 X 上中文 AI 圈会热议的话题，适合发一条解读。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/13/spacexsi-bundles-x-premium-grok-and-cursor-into-one-subscription/",
+      "publishedAt": "2026-10-13T21:50:19+08:00"
     }
   ]
 }
