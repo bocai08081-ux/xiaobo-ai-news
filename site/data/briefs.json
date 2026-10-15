@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-15T08:30:00+08:00",
+  "updatedAt": "2026-10-15T14:30:00+08:00",
   "items": [
     {
       "id": "2026-10-13-meta-muse-wonder",
@@ -539,6 +539,139 @@
       "sourceName": "X @elonmusk",
       "sourceUrl": "https://x.com/elonmusk/status/2110483960312799675",
       "publishedAt": "2026-10-15T05:32:41+08:00"
+    },
+    {
+      "id": "2026-10-15-step5-preview-open-weights",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "阶跃开源 Step 5 Preview 权重：600B MoE、激活 27B、百万上下文",
+      "summary": "阶跃星辰今天在 Hugging Face 和 ModelScope 放出 Step 5 Preview 的 BF16 与 FP8 权重，同时公开技术博客和配套工具。模型是稀疏 MoE 架构，总参数 600B、每 token 激活 27B，支持 100 万 token 上下文，可输入文本和图像，主打长程 Agent、编程和金融分析。官方跑分里，它在 DeepSWE、ProgramBench 等编程榜上领先 Kimi K3、GLM-5.3 等开源对手，但和 GPT-6 Astra、Claude Opus 5 仍有差距。许可是 StepFun Model License 1.0，在 Apache 风格基础上加了署名和商用条款。",
+      "impact": "这是目前最强的一批国产开源模型之一，但官方部署方案最低也要 4 张 B300 或 8 张 H200 跑 FP8，你的 7900 XTX 和 Mac 都带不动，社区量化版出来前别急着下载。值得做的是用它的 API 或 OpenRouter 测编程和 Agent 任务，和 Kimi、GLM 横向对比，很适合做一条中文实测帖。",
+      "applicability": "关注国产开源大模型、做 Agent 和编程测评的人。",
+      "sourceName": "IT之家",
+      "sourceUrl": "https://www.ithome.com/1/013/268.htm",
+      "publishedAt": "2026-10-15T11:22:00+08:00"
+    },
+    {
+      "id": "2026-10-15-anthropic-q3-revenue",
+      "module": "news",
+      "category": "models",
+      "title": "Anthropic 三季度营收 168 亿美元，环比涨 45%，称调整后已盈利",
+      "summary": "据路透社报道、钛媒体整理，Anthropic 在 IPO 前的投资者会议上披露，第三季度营收达 168 亿美元，环比增长 45%；前两个季度分别为 47 亿和 116 亿美元。公司称第三季度经调整后实现盈利，但没有说明调整口径。报道称其目标估值超过 2 万亿美元，IPO 可能在 11 月美国中期选举后进行，早于 OpenAI；公司已承诺未来十年至少投入 5180 亿美元用于算力和基础设施。",
+      "impact": "Claude 系列的商业化跑得很快，说明 Claude Code 这类编程工具确实在赚钱，后续 Anthropic 大概率继续加码开发者产品。对你来说，Claude 和 Codex 之间的竞争会让两边的额度和价格持续调整，值得经常对比再决定订阅哪家。",
+      "applicability": "关注 AI 公司商业化和 IPO 的人。",
+      "sourceName": "钛媒体",
+      "sourceUrl": "https://tmtpost.com/8169578.html",
+      "publishedAt": "2026-10-15T12:42:00+08:00"
+    },
+    {
+      "id": "2026-10-15-claude-code-idle-compaction",
+      "module": "news",
+      "category": "models",
+      "title": "Claude Code 上线“空闲压缩”：长会话闲置前自动压缩，回来少烧额度",
+      "summary": "Claude Code 团队的 Lydia Hallie 宣布新增 idle compaction：上下文超过约 20 万 token 的会话，在闲置到提示缓存约 1 小时过期之前，会被自动压缩成摘要。之后回到这个会话时，只需重新处理摘要，不用把整段对话再算一遍，从而节省用量。代价是 Claude 之后基于摘要而不是完整上下文继续工作。可在 settings.json 里设置 \"idleCompaction\": false 关闭，也能用环境变量 CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS 调整阈值。SemiAnalysis 称该功能随 2.1.299 版本上线。",
+      "impact": "你之前在动画转真人项目里吃过“单会话过长烧掉上亿 token”的亏，这个功能针对的就是这个问题。如果用 Claude Code 跑长任务，可以保持开启；但审片、改分镜这种需要完整上下文细节的会话，建议把阈值调高或关闭，避免压缩后丢掉关键约束。",
+      "applicability": "用 Claude Code 跑长会话、在意用量的人。",
+      "sourceName": "X @lydiahallie",
+      "sourceUrl": "https://x.com/lydiahallie/status/2110484840256819380",
+      "publishedAt": "2026-10-15T05:36:11+08:00"
+    },
+    {
+      "id": "2026-10-15-states-sue-openai",
+      "module": "news",
+      "category": "models",
+      "title": "美国八个州起诉 OpenAI，指控 ChatGPT 对未成年人不安全",
+      "summary": "据 The Verge 和路透社报道，爱荷华、堪萨斯、内布拉斯加、西弗吉尼亚、阿肯色、亚利桑那、爱达荷和蒙大拿八个州分别起诉 OpenAI，指控其违反州消费者保护法，把 ChatGPT 宣传成安全、适合青少年的工具，实际却对脆弱用户有害，并且收集未成年人数据、没有有效阻止未成年人使用。各州要求民事罚款并停止误导宣传，部分州要求删除违法收集的数据。OpenAI 回应称已在 ChatGPT 中加入针对年龄的保护措施，如家长控制和休息提醒。",
+      "impact": "美国对聊天机器人的监管压力在快速升级，OpenAI 接下来可能收紧年龄验证和内容策略。你做 AI 内容时，涉及未成年人、心理健康类的话题要更谨慎；这条也适合做 X 上的中文解读。",
+      "applicability": "关注 AI 监管和 OpenAI 动态的人。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety",
+      "publishedAt": "2026-10-15T05:11:00+08:00"
+    },
+    {
+      "id": "2026-10-15-youtube-ai-music-label",
+      "module": "news",
+      "category": "vision",
+      "title": "YouTube Music 开始给 AI 生成歌曲打“Made with AI”标签",
+      "summary": "YouTube 宣布在 YouTube Music 播放页为“主要用生成式 AI 制作或修改”的歌曲添加 AI 标签，例如用生成模型创作曲子和人声；之后会扩展到 YouTube 主应用。平台结合音乐合作伙伴的申报和自家检测工具判断，未申报时也可能根据其他信号认定。按爱范儿整理的规则，用 AI 生成伴奏再由真人演唱算部分使用，用 AI 辅助写词作曲也需要披露，普通修音和自动母带处理不算。此前 Spotify 推出自愿标签，Deezer 支持过滤 AI 音乐，Bandcamp 直接禁止 AI 音乐。",
+      "impact": "你做 AI 真人版动画 OP 时如果用了 AI 配乐或 AI 翻唱，发到 YouTube 后很可能被打标签。建议主动标注 AI 参与情况，避免被平台判定后限流；B 站、小红书大概率也会跟进类似规则。",
+      "applicability": "用 AI 做音乐、视频配乐并发布到平台的创作者。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1011369/youtube-music-ai-label",
+      "publishedAt": "2026-10-15T02:22:00+08:00"
+    },
+    {
+      "id": "2026-10-15-mlx-0-32-4",
+      "module": "news",
+      "category": "mac",
+      "title": "MLX 0.32.4 发布：Metal 支持 1-bit 量化，M5 之前的芯片注意力省显存",
+      "summary": "苹果开源机器学习框架 MLX 发布 v0.32.4。主要变化包括：Metal 后端新增 1-bit 仿射量化；改进 M5 之前芯片在头维度 512 时的 SDPA 显存占用；新增缩放点积注意力和 gated delta net 的反向传播；加入 stft/istft 音频变换；支持 Python 3.15；修复 macOS 27 上的编译问题，以及 Metal fence 死锁等一批问题。",
+      "impact": "这类底层修复对你在 Mac 上跑的 Qwen3.8-27B MLX 可能有帮助，建议升级 mlx 和 mlx-lm 后重新测一次速度和稳定性。Mac mini M4 属于 M5 之前的芯片，长上下文推理的显存占用可能会降低；1-bit 量化目前更像实验功能，先观望社区出的模型。",
+      "applicability": "在 Mac 上用 MLX 跑本地模型的人。",
+      "sourceName": "GitHub ml-explore/mlx",
+      "sourceUrl": "https://github.com/ml-explore/mlx/releases/tag/v0.32.4",
+      "publishedAt": "2026-10-15T07:37:14+08:00"
+    },
+    {
+      "id": "2026-10-15-apple-intelligence-china-dec",
+      "module": "news",
+      "category": "mac",
+      "title": "曝国行 Apple 智能 12 月随 iOS 27.3 上线，新版 Siri 暂缺席",
+      "summary": "据爱范儿援引彭博社报道，苹果计划今年 12 月随 iOS 27.3 在中国内地上线 Apple Intelligence，首批主要是两年前的初代功能，如 Genmoji、通知摘要、写作工具和照片清除；Image Playground 等图像生成功能和部分文本生成功能暂不上线，今年的新版 Siri 也不会同步。工信部信息显示，iPhone Duo 国行版等机型的进网许可已新增 Apple 智能、通义万相和通义千问的大模型备案编号。报道称苹果与阿里合作开发合规安全机制，与百度合作搜索和 Siri 相关功能。",
+      "impact": "国行 Mac 和 iPhone 的系统级 AI 终于有了时间表，但功能比海外版少一截，能力也比不上你本地跑的 Qwen。等上线后可以实测“国行 Apple 智能 vs 本地模型”，在中文圈很容易出流量。",
+      "applicability": "使用国行苹果设备的人。",
+      "sourceName": "爱范儿",
+      "sourceUrl": "https://ifanr.com/1684374",
+      "publishedAt": "2026-10-15T08:13:00+08:00"
+    },
+    {
+      "id": "2026-10-15-lemonade-43-rc-thenoise",
+      "module": "news",
+      "category": "amd",
+      "title": "AMD Lemonade 43.0 候选版：图像后端 TheNoise 转正，加入 Qwen-Image-2.1 Turbo INT8",
+      "summary": "AMD 主导的本地 AI 服务 Lemonade 发布 v2026.43.0 候选版。更新包括：图像后端 TheNoise 在 Linux 和 Windows 的受支持 AMD 显卡上从实验级升为核心级；新增 Qwen-Image-2.1 Turbo INT8 和多参考图编辑；底层升级到 ROCm 10.1.0；/v1/stats 可实时显示请求数和估算 tokens/s，lemonade bench 新增预填充速度。候选版的 Windows 安装包未签名，安装时 SmartScreen 会报警。",
+      "impact": "这条和你的 7900 XTX 直接相关：Qwen-Image-2.1 Turbo INT8 可以在 Windows 上通过 Lemonade 直接跑，不一定非得走 ComfyUI。建议等正式签名版再装，到时用同一组提示词和 ComfyUI 对比出图速度和画质。",
+      "applicability": "在 AMD 显卡上跑本地文生图、大模型的人。",
+      "sourceName": "GitHub lemonade-sdk",
+      "sourceUrl": "https://github.com/lemonade-sdk/lemonade/releases/tag/candidate-v2026.43.0",
+      "publishedAt": "2026-10-15T01:59:55+08:00"
+    },
+    {
+      "id": "2026-10-15-nvidia-cupotential-fabs",
+      "module": "news",
+      "category": "nvidia",
+      "title": "英伟达在 SEMICON West 推出 cuPotential，用 GPU 和 AI Agent 加速芯片制造",
+      "summary": "英伟达在 SEMICON West 宣布，多家半导体企业正采用其 CUDA-X 库推进“AI 定义的晶圆厂”，并推出新库 cuPotential，可用于构建模拟原子和分子相互作用的 AI Agent，早期测试中能让已有 GPU 优化流程再快 2 到 3 倍。官方称 NanoVDB 帮助 Lam Research 把芯片制造仿真提速 30 倍，图像处理库 NPP 帮 KLA 加速晶圆检测。cuPotential 目前处于早期访问阶段。",
+      "impact": "这是面向晶圆厂的工业方案，和你的显卡选购、本地部署没有直接关系。可以把它当作背景信息：英伟达正把“AI Agent 加 GPU 仿真”推向制造业，长期看会继续推高高端算力需求。",
+      "applicability": "关注半导体和工业 AI 的人。",
+      "sourceName": "NVIDIA / GlobeNewswire",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/14/3380979/0/en/nvidia-and-semiconductor-leaders-advance-ai-across-chip-design-and-manufacturing-for-ai-defined-fabs.html",
+      "publishedAt": "2026-10-15T00:10:00+08:00"
+    },
+    {
+      "id": "2026-10-15-tibo-codex-reset-day10",
+      "module": "people",
+      "personId": "tibo",
+      "title": "Tibo 28 天挑战第 10 天：再次重置 Codex 用量额度",
+      "summary": "OpenAI 的 Tibo（Thibault Sottiaux）发帖“Day 10/ Reset”，并配文调侃“我的重置按钮丢了的传闻被严重夸大了”，随后表示两小时内生效，北京时间 14:28 左右又发“Done and dusted”确认完成。他在 10 月 5 日到 11 月 1 日的 28 天挑战中，每天要么上线一项改进，要么重置 Codex 用量额度；这是继 Day 2、6、8 后的又一次重置。此前他超过一天没发更新，X 上不少用户发帖关心。",
+      "impact": "如果你这周 Codex 额度快用完了，现在应该已经刷新，可以把积压的长任务安排上。也可以留意 tiboreset.com 这类追踪站，按重置节奏规划 Codex 的重度使用。",
+      "applicability": "Codex 重度用户。",
+      "sourceName": "X @thsottiaux",
+      "sourceUrl": "https://x.com/thsottiaux/status/2110595484180214059",
+      "publishedAt": "2026-10-15T12:55:51+08:00"
+    },
+    {
+      "id": "2026-10-15-musk-grok-bot-purchase-guarantee",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克：Grok Bot 代购出错或泄露银行卡，SpaceX 全额兜底",
+      "summary": "一位用户分享用 Grok Bot 订机票的经历后，马斯克转发并表示：“如果 Grok Bot 在购物时出错或泄露你的卡（目前从没发生过），SpaceX 会赔偿你的损失。”此前有用户反映，亚马逊以“未授权的 AI 代理违反使用条款”为由阻止 Grok Bot 下单，马斯克回应称可以让 Grok Bot 去别的购物网站买，“购物网站远不止亚马逊一个”。他当天还连续转发多条用户用 Grok Bot 预约牙医、卖货、处理工作的帖子。",
+      "impact": "AI 代理帮人下单付款正在从演示走向日常，平台和 AI 公司之间的拉锯也开始了。做 X 内容时，“AI 代理购物被亚马逊拦截”加“马斯克承诺兜底”是一组冲突感很强的选题。",
+      "applicability": "关注马斯克和 AI 代理落地的人。",
+      "sourceName": "X @elonmusk",
+      "sourceUrl": "https://x.com/elonmusk/status/2110610960474079445",
+      "publishedAt": "2026-10-15T13:57:20+08:00"
     }
   ]
 }
