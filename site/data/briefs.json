@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-14T20:30:00+08:00",
+  "updatedAt": "2026-10-15T08:30:00+08:00",
   "items": [
     {
       "id": "2026-10-13-meta-muse-wonder",
@@ -430,6 +430,115 @@
       "sourceName": "Digital Trends",
       "sourceUrl": "https://www.digitaltrends.com/computing/digup-ai-natural-language-file-search-embeddinggemma-2/",
       "publishedAt": "2026-10-14T12:00:00+08:00"
+    },
+    {
+      "id": "2026-10-15-freevideo-h3-8gb",
+      "module": "news",
+      "category": "vision",
+      "featured": true,
+      "title": "FreeVideo 更新到 v0.4.5：8GB 显存就能本地跑 MiniMax H3",
+      "summary": "开源项目 FreeVideo（GitHub 约 1.9k 星，10 月 2 日开源）发布 v0.4.5。它以 ComfyUI 插件加一键启动器的形式运行 MiniMax H3，通过把权重分散到显存、内存和硬盘来压低峰值占用，官方称最低 8GB 显存加 16GB 内存即可生成。本次更新改进了生成进度显示、图片生成排队与报错、创作面板刷新后保留设置，以及运镜/动作提示词联想。Windows 和 Linux 安装包面向英伟达显卡，macOS 版为 Apple silicon 预览版（官方在 24GB 内存的 M5 Mac 上测试）。",
+      "impact": "你在台式机上用 ComfyUI 跑 H3 做动画转真人，这个项目的低显存调度思路值得参考；不过官方安装包只写了英伟达显卡，7900 XTX 能不能用要自己试或等社区反馈。MacBook M5 Pro 64GB 可以直接试 Mac 预览版，当作第二台出片机器。",
+      "applicability": "代码 Apache 2.0，模型权重走 MiniMax H3 社区许可（有地区和用途限制）；8GB 显存门槛目前主要来自项目自述和社区测试。",
+      "sourceName": "GitHub · FlashML-org/FreeVideo",
+      "sourceUrl": "https://github.com/FlashML-org/FreeVideo/releases/tag/v0.4.5",
+      "publishedAt": "2026-10-15T05:10:25+08:00"
+    },
+    {
+      "id": "2026-10-15-amd-minicpm-v47-rocm",
+      "module": "news",
+      "category": "amd",
+      "title": "AMD 宣布 MiniCPM-V 4.7 首日支持 Radeon 显卡和 Ryzen AI",
+      "summary": "AMD 开发者博客称，面壁智能开源 MiniCPM-V 4.7 时，Radeon 显卡、Ryzen AI Max 集显和 Ryzen AI NPU 已有首日支持。1B 和 35B-A3B 两个版本在 Radeon AI PRO R9700、Radeon PRO W7900D（gfx1100）和 Radeon 8060S 上用 ROCm 后端跑通了图文推理；1B 版可通过 FastFlowLM 1.0.8 跑在 XDNA 2 NPU 上。AMD 说明这次只验证功能正确性，还没公布速度和显存数据。",
+      "impact": "W7900D 和你的 7900 XTX 同是 gfx1100 架构，说明 MiniCPM-V 4.7 在你的卡上大概率能用 ROCm 直接跑。你正在找本地审片用的视觉模型，可以把 35B-A3B 版和 Qwen3-VL 32B 放一起比一下速度和准确度。",
+      "applicability": "用 AMD 显卡跑本地多模态模型的人；部署时按 rocminfo 输出选 gfx 目标。",
+      "sourceName": "AMD 开发者博客",
+      "sourceUrl": "https://www.amd.com/en/developer/resources/technical-articles/2026/minicpm-day-0-support-across-amd-hardware.html",
+      "publishedAt": "2026-10-14T12:00:00+08:00"
+    },
+    {
+      "id": "2026-10-15-grok-voice-3",
+      "module": "news",
+      "category": "models",
+      "title": "SpaceXSI 发布 Grok Voice 3.0，登上 Artificial Analysis 语音对语音榜首",
+      "summary": "SpaceXSI（原 xAI）发布语音对语音模型 Grok Voice 3.0。官方引用 Artificial Analysis 10 月 13 日的测试：综合指数 86.9 分排第一，高于 GPT-Live-1（83.2）和 Gemini 3.8 Live（82.6）；Full Duplex Bench 97%，响应延迟低于 1 秒。它已用于特斯拉车机、Starlink 客服（每天约 2 万通电话、约 70% 无需人工）和 Grok Bot 的语音模式。API 价格不变，每分钟 0.08 美元，用 grok-voice-latest 的应用已自动切换。",
+      "impact": "语音智能体的价格和延迟又往下压了一档。你如果想给 B 站或小红书做 AI 配音、语音互动类内容，这是可以拿来对比的新选项；但跑分主要由官方和 Artificial Analysis 给出，中文口音和方言效果还得自己测。",
+      "applicability": "需要实时语音对话或语音客服的开发者；通过 xAI Voice Agent API 使用。",
+      "sourceName": "xAI / SpaceXSI 官方",
+      "sourceUrl": "https://x.ai/news/grok-voice-3",
+      "publishedAt": "2026-10-15T01:04:57+08:00"
+    },
+    {
+      "id": "2026-10-15-openai-apple-trade-secrets",
+      "module": "news",
+      "category": "models",
+      "title": "OpenAI 指控前员工带走 100 多份硬件文件并向苹果高层展示",
+      "summary": "The Verge 报道，OpenAI 在周三提交的法庭文件中称，一名跳槽去苹果的前员工把 100 多份机密文件发到私人账号，内容包括至少一款未发布设备的图片、供应商信息、工程数据和外观工艺标准，并向苹果亚洲运营副总裁等高层做过展示。OpenAI 还把苹果本周发布的 HomeView 智能屏等新设备与此联系起来。这是两家商业机密诉讼的一部分，此前是苹果指控 OpenAI 窃取原型资料。苹果暂未回应。",
+      "impact": "OpenAI 的硬件设备和苹果的 AI 家居产品线正面撞上，官司会拖慢还是曝光更多 OpenAI 设备细节值得留意。对你来说是很好的 X 选题素材：AI 硬件之争已经打到法庭上。",
+      "applicability": "关注 OpenAI 硬件和苹果 AI 产品的人；目前只是 OpenAI 单方指控。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/1011276/openai-employee-unreleased-product-plans",
+      "publishedAt": "2026-10-15T00:43:00+08:00"
+    },
+    {
+      "id": "2026-10-15-ai-decompiling-games",
+      "module": "news",
+      "category": "models",
+      "title": "AI 正在批量反编译老游戏：游戏保存的福音，也是软件版权的噩梦",
+      "summary": "Simon Willison 转引独立游戏开发者 Popcar 的文章：最近一波用 AI 反编译现有游戏的项目，催生了各种游戏混搭，也带来了游戏保存热潮，很多老游戏被移植到新硬件，甚至用 WebAssembly 跑在浏览器里。文章同时提醒，如果 AI 能反编译任何软件，付费游戏和应用就可能被违背意愿“开源”，竞争对手之间也能互相抄。",
+      "impact": "你在做 RO（rAthena）私服和汉化，这股风潮和你的方向高度相关：AI 辅助逆向能大幅降低读老客户端、改协议的门槛。但版权风险也在变大，公开发布前要想清楚素材和代码的来源。",
+      "applicability": "做老游戏移植、私服、汉化或逆向的人。",
+      "sourceName": "Simon Willison",
+      "sourceUrl": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
+      "publishedAt": "2026-10-15T00:26:00+08:00"
+    },
+    {
+      "id": "2026-10-15-apple-minions-mac-gpu",
+      "module": "news",
+      "category": "mac",
+      "title": "苹果论文 Minions：把闲置 Mac 的 GPU 拼成内部推理云",
+      "summary": "苹果机器学习研究团队发表论文，介绍内部系统 Minions：把公司里空闲的 Apple Silicon Mac GPU 聚合成分布式虚拟 GPU 云，跑嵌入和本地大模型推理。任务被拆成子任务，由 Mac 主动拉取执行，结果存 S3、状态记在 PostgreSQL，掉线的机器由看门狗重新分配任务。论文称部分推理任务的排队时间从 10 小时以上降到几分钟。它不是把多台 Mac 合成一块大显存，训练和跨组织联合还在规划中。",
+      "impact": "你手上有 MacBook M5 Pro 和 Mac mini M4，思路可以借鉴：批量审片、打标签、生成字幕这类能拆开的任务，可以让两台 Mac 空闲时分摊着跑，不用都压在台式机上。目前没有开源代码，只能参考架构自己搭。",
+      "applicability": "有多台 Apple Silicon Mac、需要批量推理的人。",
+      "sourceName": "The Register",
+      "sourceUrl": "https://www.theregister.com/ai-and-ml/2026/10/13/apple-unleashes-a-swarm-of-mac-minions-to-share-gpu-resources-for-large-ai-tasks/5302891",
+      "publishedAt": "2026-10-14T04:16:00+08:00"
+    },
+    {
+      "id": "2026-10-15-jensen-cut-off-unsafe-ai",
+      "module": "news",
+      "category": "nvidia",
+      "title": "黄仁勋：若客户开发不安全的 AI，英伟达会停止供货",
+      "summary": "据彭博报道，黄仁勋在伦敦接受 Emily Chang 采访时被问到是否会停止向不负责任的开发者供货，他说“这是假设，但会的”，并补充会先沟通，英伟达不替别人经营公司，对客户如何使用技术的判断也有限度。他同时表示，并不认为当前对 AI 的担忧程度是合理的。前一天英伟达刚宣布向英国 AI 安全研究捐赠价值 2.5 亿美元的算力。",
+      "impact": "英伟达在 AI 安全话题上的姿态明显变积极，但这番话更多是表态，不涉及具体规则。跟你的显卡选购和本地部署没有直接关系。",
+      "applicability": "关注英伟达和 AI 安全监管的人。",
+      "sourceName": "Bloomberg Law",
+      "sourceUrl": "https://news.bloomberglaw.com/artificial-intelligence/nvidia-ceo-says-he-would-cut-off-customers-who-build-unsafe-ai",
+      "publishedAt": "2026-10-15T05:29:00+08:00"
+    },
+    {
+      "id": "2026-10-15-trump-si-force",
+      "module": "people",
+      "personId": "trump",
+      "title": "特朗普宣布成立“超级智能部队”，由 AI 主管 Jay Clayton 牵头",
+      "summary": "据德国之声报道，特朗普宣布组建 Super Intelligence Force 工作组，由新任 AI 主管 Jay Clayton 担任主席，FTC 主席 Ferguson 等三人任副主席，万斯、国防部长赫格塞思在列，David Sacks 和赖斯为外部成员。据《华尔街日报》和 Politico 披露的章程，工作组将研究生物安全、供水等关键基础设施风险，考虑要求 AI 实验室上报“入侵、黑客攻击和越狱”事件，并须在 120 天内提交风险报告，同时防止“过度监管”。白宫尚未公布官方细节。",
+      "impact": "美国对前沿 AI 实验室的监管可能从“不管”转向“要求上报”，后续会影响 OpenAI、Anthropic 等公司的产品节奏。短期对你用的模型和工具没有影响。",
+      "applicability": "关注美国 AI 政策的人。",
+      "sourceName": "DW 德国之声",
+      "sourceUrl": "https://www.dw.com/en/trumps-us-super-intelligence-force-and-ai-czar-jay-clayton/a-79598001",
+      "publishedAt": "2026-10-14T12:00:00+08:00"
+    },
+    {
+      "id": "2026-10-15-musk-grok-voice-push",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克连发帖力推 Grok Voice 3.0，称其为全球最好的对话语音模型",
+      "summary": "马斯克在 X 上多次转发 SpaceXSI 和 Artificial Analysis 的帖子，称“Grok Voice 3.0 现在是世界领先的对话语音模型”，并号召大家试用。他还转发一位用户的经历：一封通过 SPF、DKIM、DMARC 验证的仿冒邮件被 Grok Bot 识别出隐藏的钓鱼链接，配文“Grok Bot 能识别诈骗邮件”。",
+      "impact": "马斯克这几天的重点是 Grok 的语音和 Grok Bot 智能体。做 X 内容时，Grok 语音实测对比是个容易蹭到热度的选题。",
+      "applicability": "关注马斯克和 Grok 产品的人。",
+      "sourceName": "X @elonmusk",
+      "sourceUrl": "https://x.com/elonmusk/status/2110483960312799675",
+      "publishedAt": "2026-10-15T05:32:41+08:00"
     }
   ]
 }
