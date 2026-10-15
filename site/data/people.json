@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-14T17:23:36Z",
-  "updatedLabel": "10/15 01:23",
+  "updatedAt": "2026-10-15T04:55:07Z",
+  "updatedLabel": "10/15 12:55",
   "people": [
     {
       "id": "tibo",
@@ -22,5 +22,42 @@
       "initial": "特"
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "id": "d54373b3b0614c32",
+      "personId": "tibo",
+      "title": "Tibo有一则新动态，来自Hacker News",
+      "summary": "Hacker News报道了与AI 模型有关的新动态，原文标题是「OpenAI Cuts Codex Desktop Storage Use by 60 Percent」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "这条链到本人的公开帖子。帖子本身可能很短，卡片里的说明是编辑补上的上下文，不是帖子原文。",
+      "sourceNote": "原帖来自 @thsottiaux。卡片标题和说明是中文整理，时间已换算成北京时间。",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://twitter.com/thsottiaux/status/2110151780478927344",
+      "linkLabel": "查看原帖",
+      "timeLabel": "10/15 04:26",
+      "publishedAt": "2026-10-14T20:26:50Z",
+      "tags": [
+        "AI 模型",
+        "原帖"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "c63c766bf807989b",
+      "personId": "musk",
+      "title": "茶百道涉IPO欺诈，被暂停交易；字节Seed单独设立大模型安全与对齐部门；华为披露下一代麒麟芯片进展，已进入测试阶段丨雷峰早报",
+      "summary": "要闻提示 1.茶百道涉IPO欺诈，被暂停交易 2.字节跳动Seed单独设立大模型安全与对齐部门 3.华为披露下一代麒麟芯片进展，已进入测试阶段 4.中国刻蚀机之父尹志尧：AI可能会出现泡沫，国内半导体设备商500家得倒闭90% 5.DeepSeek融资翻倍至1000亿，新一轮投资方基本确定 6.传华人AI科学家姚顺宇…",
+      "context": "上文来自雷峰网的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "雷峰网",
+      "sourceUrl": "https://leiphone.com/category/zaobao/CKsYHgrcdIkO3hvO.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "10/14 23:48",
+      "publishedAt": "2026-10-14T15:48:00Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    }
+  ]
 }
