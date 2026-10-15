@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-15T11:47:28Z",
-  "updatedLabel": "10/15 19:47",
+  "updatedAt": "2026-10-15T17:12:42Z",
+  "updatedLabel": "10/16 01:12",
   "people": [
     {
       "id": "tibo",
@@ -23,24 +23,6 @@
     }
   ],
   "posts": [
-    {
-      "id": "d54373b3b0614c32",
-      "personId": "tibo",
-      "title": "Tibo有一则新动态，来自Hacker News",
-      "summary": "Hacker News报道了与AI 模型有关的新动态，原文标题是「OpenAI Cuts Codex Desktop Storage Use by 60 Percent」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "这条链到本人的公开帖子。帖子本身可能很短，卡片里的说明是编辑补上的上下文，不是帖子原文。",
-      "sourceNote": "原帖来自 @thsottiaux。卡片标题和说明是中文整理，时间已换算成北京时间。",
-      "sourceName": "Hacker News",
-      "sourceUrl": "https://twitter.com/thsottiaux/status/2110151780478927344",
-      "linkLabel": "查看原帖",
-      "timeLabel": "10/15 04:26",
-      "publishedAt": "2026-10-14T20:26:50Z",
-      "tags": [
-        "AI 模型",
-        "原帖"
-      ],
-      "pinned": false
-    },
     {
       "id": "c63c766bf807989b",
       "personId": "musk",
