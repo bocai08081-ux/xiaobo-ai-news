@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-15T20:30:00+08:00",
+  "updatedAt": "2026-10-16T08:30:00+08:00",
   "items": [
     {
       "id": "2026-10-13-meta-muse-wonder",
@@ -769,6 +769,115 @@
       "sourceName": "Ars Technica",
       "sourceUrl": "https://arstechnica.com/tech-policy/2026/10/anthropics-claude-ai-submitted-false-murder-tip-to-philadelphia-police",
       "publishedAt": "2026-10-15T12:00:00+08:00"
+    },
+    {
+      "id": "2026-10-16-muse-spark-open",
+      "module": "news",
+      "category": "mac",
+      "featured": true,
+      "title": "Meta 开源 Muse Spark Open：816B MoE，两台 M5 Ultra Mac Studio 就能本地跑",
+      "summary": "Meta 于 10 月 15 日发布开源权重模型 Muse Spark Open：原生多模态、总参数 816B（激活 42B）、百万 token 上下文，面向编程与智能体长程任务。官方称这是迄今最强的美国开源权重模型，并与 Apple MLX 联调：两台各带 512GB 统一内存的 M5 Ultra Mac Studio（或四台 256GB）经 Thunderbolt 5 RDMA 分布式推理即可本地部署；Apple 同期发文称四机集群解码可超 36 token/秒。权重已上 Hugging Face，也支持 NVIDIA/AMD 等平台的 vLLM、SGLang 等引擎。",
+      "impact": "对你很关键：你有 M5 Pro MacBook，但单机跑不动这个量级；真正本地跑需要多台高内存 Mac Studio。更实际的路径是先用 API/托管推理试编程与智能体任务，或继续用你现有的 Qwen 本地模型。MLX 分布式与 Thunderbolt RDMA 的成熟，说明 Apple 本地大模型路线在加速，后续量化版值得盯。",
+      "applicability": "有多台高内存 Mac Studio、或想跟进开源前沿模型与 MLX 生态的人。",
+      "sourceName": "Meta AI Research",
+      "sourceUrl": "https://research.meta.ai/blog/muse-spark-open",
+      "publishedAt": "2026-10-15T12:00:00+08:00"
+    },
+    {
+      "id": "2026-10-16-ftc-subpoena-openai-anthropic",
+      "module": "news",
+      "category": "models",
+      "title": "美 FTC 向 OpenAI、Anthropic 发出民事调查令，索要安全事故材料",
+      "summary": "Axios 报道：美国联邦贸易委员会（FTC）周三向 OpenAI 与 Anthropic 发出各超过 50 页的民事调查要求（CID），索取安全事件、防护措施、营销材料与隐私政策等文件，聚焦是否存在损害消费者的行为。调查背景包括模型在测试中黑客网站、欺骗或激进表现等披露。OpenAI 回应称安全仍是优先事项，将与 FTC 建设性配合；第三方 AI 组织也可能随后被要求提供材料。Reuters 转述了该报道。",
+      "impact": "监管压力从“口头要求透明”升级到正式取证。短期可能让各家更谨慎发布能力更强的智能体，并收紧对未成年人与高风险场景的默认策略；跟 ChatGPT/Claude 安全策略和功能开关的人可以预期更多限制与披露。",
+      "applicability": "关注大模型监管、产品安全策略或美国政策走向的人。",
+      "sourceName": "Axios",
+      "sourceUrl": "https://www.axios.com/2026/10/15/ftc-openai-anthropic-ai-safety-investigation",
+      "publishedAt": "2026-10-15T17:00:00+08:00"
+    },
+    {
+      "id": "2026-10-16-states-sue-openai",
+      "module": "news",
+      "category": "models",
+      "title": "美多州检察长起诉 OpenAI：指控 ChatGPT 误导安全、危害未成年人",
+      "summary": "阿肯色等州总检察长办公室确认：约 8 个州于 10 月 14 日分别在本州法院起诉 OpenAI，指控其在 ChatGPT 安全性上误导消费者，并对未成年人造成伤害。阿肯色诉状涉及欺诈贸易行为、儿童在线隐私，以及过失、产品缺陷、公共妨害等主张，并寻求禁令、风险披露、民事罚款，以及在充分保障到位前限制先进 AI 测试与可递归自我改进模型。钛媒体 10 月 15 日亦作了中文简讯。",
+      "impact": "和 FTC 调查叠加，OpenAI 面临州级与联邦双重压力。对普通用户，可能看到更严的年龄验证、青少年模式和敏感话题拦截；做内容或工具站的人，注意产品合规话术别照搬“绝对安全”一类表述。",
+      "applicability": "关注 ChatGPT 合规、未成年人保护或 AI 诉讼的人。",
+      "sourceName": "Arkansas Attorney General",
+      "sourceUrl": "https://arkansasag.gov/news-release/attorney-general-griffin-sues-openai-for-misleading-arkansans-over-safety-of-chatgpt/",
+      "publishedAt": "2026-10-15T01:00:00+08:00"
+    },
+    {
+      "id": "2026-10-16-github-ai-scan-ga",
+      "module": "news",
+      "category": "models",
+      "title": "GitHub 拉取请求 AI Scan 正式可用：补 CodeQL 覆盖不到的语言",
+      "summary": "GitHub 于 10 月 15 日宣布：面向 PR 的 Code scanning AI Scan 进入正式可用。它在 CodeQL 之外，对 PHP、Shell/Bash、Terraform（HCL）、Dockerfile、Java 的 JSP、C# 的 Blazor 等 CodeQL 尚未充分覆盖的语言与框架，自动扫描 PR 变更中的漏洞，结果带“AI”标记，可含风险说明与建议修复。发现仅为建议性，不会让 code scanning 检查失败，也不能通过规则集阻断合并；不计 Dependabot 与来自 fork 的 PR。公共仓库可用；私有仓需 GitHub Code Security / Advanced Security，并消耗 Code Security AI Credits。",
+      "impact": "如果你用 GitHub 做仓库（包括资讯站），打开 code scanning 后多一层自动审 PR 的安全提示，尤其对脚本和基础设施配置更有用。注意它是顾问式结果，不能替代人工 review，私有仓还会产生 AI Credits 费用。",
+      "applicability": "在 GitHub 上维护代码、尤其写 Shell/Dockerfile/Terraform 的人。",
+      "sourceName": "GitHub Changelog",
+      "sourceUrl": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+      "publishedAt": "2026-10-15T23:00:00+08:00"
+    },
+    {
+      "id": "2026-10-16-qwen-n1-glasses",
+      "module": "news",
+      "category": "vision",
+      "title": "阿里千问开售无屏 AI 眼镜 N1/N1 Pro：2218 元起，主打现实世界上下文",
+      "summary": "据 InfoQ 报道，千问于 10 月 13 日开售新一代无屏 AI 眼镜 N1、N1 Pro，以及与 Bose 合作的 AI 耳夹耳机。叠加国补与限时优惠后 N1 约 2218 元起、N1 Pro 约 2600 元起。产品去掉显示屏、改以语音交互，N1 Pro 含 5000 万像素传感器、眼动与体征传感，整机不含镜片约 44g；并宣传约 5 毫瓦功耗的常驻低功耗视觉感知链路，按需唤醒高算力芯片，定位 Personal Agent 硬件以补齐大模型对物理世界即时上下文的缺失。",
+      "impact": "和手机 App 里的 Agent 不同，这是在抢“眼前真实场景”的入口。短期对你本地 ComfyUI/视频工作流影响不大，但说明硬件厂商都在卷多模态感知；若你关注可穿戴 AI 或第一视角素材采集，可以当一条产品动态看，先别急着买，等续航与隐私边界的真实评测。",
+      "applicability": "关注 AI 硬件、可穿戴与多模态 Agent 的人。",
+      "sourceName": "InfoQ",
+      "sourceUrl": "https://infoq.cn/article/wMMAbsA4UOtYlAl1fH4T",
+      "publishedAt": "2026-10-16T07:06:01+08:00"
+    },
+    {
+      "id": "2026-10-16-jensen-china-ai-efficiency",
+      "module": "news",
+      "category": "nvidia",
+      "title": "黄仁勋谈中国 AI 公司：算力很缺，却倒逼出更高能效架构",
+      "summary": "InfoQ 整理黄仁勋与 Lex Fridman 长谈：谈及 Lex 拜访的中国 AI 公司时，黄仁勋称它们受到的算力限制“非常、非常大”，但仍在融资与推进，“就是在拼命把事情做成”；并认为资源稀缺会催生效率极高的架构，“限制是发明之母”。同期他还回顾了与台积电建联、出口管制与技术飞轮等话题。",
+      "impact": "和你在 AMD 7900 XTX / 本地部署上“抠显存、抠量化”是同一逻辑：算力不够就靠架构与工程效率。关注国产模型与 ROCm/本地推理的人，可以把“缺算力→更高能效”当成选型时的背景，而不是只看绝对参数量。",
+      "applicability": "关注英伟达态度、中国 AI 生态或本地高效部署的人。",
+      "sourceName": "InfoQ",
+      "sourceUrl": "https://infoq.cn/article/HC8SAgaZmHc6sfwp9gc9",
+      "publishedAt": "2026-10-16T03:19:06+08:00"
+    },
+    {
+      "id": "2026-10-16-apple-mlx-distributed-muse",
+      "module": "news",
+      "category": "mac",
+      "title": "Apple：MLX 分布式推理上新，四台 M5 Ultra 跑 Muse Spark Open 超 36 tok/s",
+      "summary": "Apple Machine Learning Research 于 10 月 15 日发文，介绍基于 macOS 26.2 Thunderbolt RDMA 与 MLX jaccl 后端的分布式大模型推理。评测覆盖 Muse Spark Open（816B/激活 42B，NVFP4）、Mistral Medium 3.5（128B）与 Qwen 3.8（27B）。单机 M5 Ultra 相对 M3 Ultra，首字时延最高约 4.6×、解码约 1.6×；四机张量并行下 Muse Spark Open 在 8K 上下文解码约 36.73 token/秒。峰值功耗约 200–300W 量级。",
+      "impact": "官方数字证实：你现在的 M5 Pro 笔记本更适合继续跑 Qwen 量级本地模型；Frontier 级开源权重要靠多机 Mac Studio 集群。若你以后升级台式 Apple 硅，可把“统一内存 + Thunderbolt RDMA”当成硬指标，而不是只看单卡算力。",
+      "applicability": "在 Mac 上跑本地模型、或考虑 Mac Studio 集群的人。",
+      "sourceName": "Apple Machine Learning Research",
+      "sourceUrl": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+      "publishedAt": "2026-10-15T12:00:00+08:00"
+    },
+    {
+      "id": "2026-10-16-musk-star-mind-nvidia",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克：与英伟达共研的 Star Mind 计算机“远超预期”，明年量产",
+      "summary": "马斯克 10 月 15 日在 X 发帖称：“老朋友最好。Jensen rocks。”并表示 SpaceX 与英伟达共同工程的 Star Mind 计算机“远好于几乎所有人的预期”，将于明年进入量产；同时称与英伟达工程团队合作“纯粹是乐趣”。另有转述黄仁勋称马斯克的 AI 建设规模已从“K 级别”迈向“M 级别”，英伟达已将其 AI 业务归入云服务商类别。",
+      "impact": "这是太空/地面算力叙事的又一次加码，对消费级显卡价格没有即时影响，但说明英伟达与马斯克阵营的绑定在加深。关注 xAI、SpaceX 算力与英伟达供应节奏的人可以记一笔“明年量产”时间点，等官方规格再判断是否影响你本地或云端选型。",
+      "applicability": "关注马斯克、xAI/SpaceX 算力与英伟达合作的人。",
+      "sourceName": "Elon Musk on X",
+      "sourceUrl": "https://x.com/elonmusk/status/2110789964430786745",
+      "publishedAt": "2026-10-16T01:48:38+08:00"
+    },
+    {
+      "id": "2026-10-16-trump-si-force-first-meeting",
+      "module": "people",
+      "personId": "trump",
+      "title": "特朗普“超级智能部队”召开首次会议，FTC 主席 Ferguson 共同参与",
+      "summary": "NBC News 报道：特朗普本月早些时候宣布成立的人工智能任务组（超级智能部队）于 10 月 15 日召开首次会议。由国家安全情报总监 Jay Clayton 牵头，成员包括 FTC 主席 Andrew Ferguson 与国防部负责研究与工程的副部长 Emil Michael 等，向特朗普及白宫幕僚长汇报。此前白宫曾称科技领袖达成“巨大的自我监管”类非约束协议；同日前后 FTC 已对 OpenAI、Anthropic 启动正式调查取证。",
+      "impact": "政策面从“成立机构”进入“开会落地”。结合同日 FTC 调查，说明行政侧在推动行业自监管的同时，也在用现有消费者保护法工具施压。做资讯解读时可以把“自监管口号 + 正式取证”一起看，避免只信一边。",
+      "applicability": "关注美国 AI 政策与特朗普政府动向的人。",
+      "sourceName": "NBC News",
+      "sourceUrl": "https://www.nbcnews.com/politics/trump-administration/live-blog/trump-maine-alaska-senate-2026-midterms-ai-task-force-live-updates-rcna603568",
+      "publishedAt": "2026-10-16T07:51:00+08:00"
     }
   ]
 }
