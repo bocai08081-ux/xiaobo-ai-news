@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-16T08:30:00+08:00",
+  "updatedAt": "2026-10-16T14:30:00+08:00",
   "items": [
     {
       "id": "2026-10-13-meta-muse-wonder",
@@ -878,6 +878,103 @@
       "sourceName": "NBC News",
       "sourceUrl": "https://www.nbcnews.com/politics/trump-administration/live-blog/trump-maine-alaska-senate-2026-midterms-ai-task-force-live-updates-rcna603568",
       "publishedAt": "2026-10-16T07:51:00+08:00"
+    },
+    {
+      "id": "2026-10-16-nemotron-super-vl",
+      "module": "news",
+      "category": "nvidia",
+      "featured": true,
+      "title": "英伟达开源 Nemotron 3.5 Super VL：120B MoE 多模态智能体模型，同档吞吐最高约 5 倍",
+      "summary": "英伟达于 10 月 15 日发布开源多模态模型 Nemotron 3.5 Super VL：总参数约 1200 亿、每次激活约 120 亿的 MoE，面向常驻智能体，整合推理、指令跟随、工具调用以及文本/图像/文档/视频理解；官方称同档开源模型中智能体任务吞吐最高约 5 倍。同期上线可塞进 24GB 的 Nemotron 3.5 Bolt 74B-A9B（本地智能体），更小的 Bolt E4B（约 4GB）定于 10 月 23 日推出。权重与训练配方已上 Hugging Face、OpenRouter、ModelScope 与 NVIDIA NIM。",
+      "impact": "如果你有 RTX 5080/5070 Ti 或在看本地智能体，Bolt 这条线值得跟；Super VL 更偏企业/多卡部署。你现在主力是 7900 XTX + ComfyUI 做动画转真人，开源多模态权重可留意社区是否很快出 ROCm/通用推理适配，但不急着换栈。",
+      "applicability": "关注英伟达开源模型、本地智能体或 RTX Spark/RTX 消费卡推理的人。",
+      "sourceName": "NVIDIA Blog",
+      "sourceUrl": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "publishedAt": "2026-10-15T23:00:00+08:00"
+    },
+    {
+      "id": "2026-10-16-gpt-live-1-1",
+      "module": "news",
+      "category": "models",
+      "title": "OpenAI 推送 GPT-Live-1.1：ChatGPT 语音多语种更自然，Codex/Dots 同步升级",
+      "summary": "OpenAI 帮助中心与社区公告显示，ChatGPT Voice 正在推送 GPT-Live-1.1 与精简版 GPT-Live-1.1 Quip：法/德/印地/日/韩/墨西哥西语等口音更自然，并增加 Bubbie 等新音色；检索等待时改用更多短句，减少反复说 “checking”。更新覆盖 ChatGPT、Codex 与 Dots，API 稍后跟上。",
+      "impact": "日常用语音聊 AI 会更顺；若你主要靠 Codex 写代码，语音侧升级不影响额度与模型能力，但多语口音改善对练口语或听会议纪要更有用。",
+      "applicability": "用 ChatGPT Voice、Codex 或 Dots 的人。",
+      "sourceName": "OpenAI Help Center",
+      "sourceUrl": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "publishedAt": "2026-10-16T03:11:00+08:00"
+    },
+    {
+      "id": "2026-10-16-brin-rsi",
+      "module": "news",
+      "category": "models",
+      "title": "谢尔盖·布林：谷歌 Gemini 已踏上「递归自我改进」跑步机",
+      "summary": "Business Insider 报道，谷歌联合创始人谢尔盖·布林在讨论 Gemini 4 Argon 的圆桌中表示，模型已在协助构建下一代模型，公司「开始踏上 RSI（递归自我改进）跑步机」。谷歌安全报告也写到，AI 智能体已作为高杠杆助手撰写多数生产代码与修复，但仍需人工审阅后提交。",
+      "impact": "这是大厂内部节奏的表述，不是「AI 已失控」。对你选模型影响不大，但说明编程智能体在厂商内部已深度嵌入研发；继续用 Codex/本地模型时，仍要把人工审片和短会话当默认习惯。",
+      "applicability": "关注前沿模型研发节奏与 AI 安全讨论的人。",
+      "sourceName": "Business Insider",
+      "sourceUrl": "https://www.businessinsider.com/sergey-brin-google-gemini-ai-argon-recursive-self-improvement-rsi-2026-10",
+      "publishedAt": "2026-10-15T20:53:00+08:00"
+    },
+    {
+      "id": "2026-10-16-doubao-saep-reject",
+      "module": "news",
+      "category": "models",
+      "title": "豆包手机助手 SAEP 公示结束：155 款 App 明确拒绝 AI 自动操作屏幕",
+      "summary": "极客公园报道，豆包手机助手《屏幕自动化操作声明协议》（SAEP）30 天公示期于 10 月 14 日结束，拒绝名单最终达 155 款，腾讯系约 66 款、阿里系约 23 款，美团、快手以及 Kimi、DeepSeek 等也在列。协议把是否允许 AI 读屏/模拟点击的选择权交还给开发者；未拒绝应用将按风险层级逐步开放。",
+      "impact": "手机端「Agent 代点 App」正撞上超级 App 的流量与风控墙。做内容或工具时别默认跨 App 自动化能畅通；本地 ComfyUI/Codex 工作流仍更可控。",
+      "applicability": "关注手机 AI 助手、Agent 权限或国内 App 生态博弈的人。",
+      "sourceName": "极客公园",
+      "sourceUrl": "http://geekpark.net/news/372436",
+      "publishedAt": "2026-10-16T10:18:00+08:00"
+    },
+    {
+      "id": "2026-10-16-mlx-lm-0-32-2",
+      "module": "news",
+      "category": "mac",
+      "title": "mlx-lm v0.32.2 发布：修好 MiMo-V2-Flash，并补齐 Muse Spark Hugging Face 命名",
+      "summary": "Apple MLX 生态的 mlx-lm 于北京时间 10 月 16 日凌晨发布 v0.32.2：修复 MiMo-V2-Flash 注意力缩放与 SMM mask，并加入 Muse Spark 的 Hugging Face 名称映射，方便在 Mac 上拉取 Meta 新开源权重。",
+      "impact": "你 MacBook 上若用 MLX 跑本地模型，升级后加载 Muse Spark Open 相关权重会更省事；和早间「两台 M5 Ultra 跑 Muse Spark」新闻是同一条工具链上的补丁。",
+      "applicability": "在 Mac 上用 MLX/mlx-lm 本地推理的人。",
+      "sourceName": "GitHub",
+      "sourceUrl": "https://github.com/ml-explore/mlx-lm/releases/tag/v0.32.2",
+      "publishedAt": "2026-10-16T10:49:00+08:00"
+    },
+    {
+      "id": "2026-10-16-nvidia-app-mcp-agents",
+      "module": "news",
+      "category": "nvidia",
+      "title": "NVIDIA App 11.0.9.565：本地 MCP 服务可让 AI Agent 控制游戏设置与录制",
+      "summary": "英伟达发布说明写明，NVIDIA App 新增基于 Model Context Protocol（MCP）的本地服务，兼容的 AI 助手可用自然语言查看已安装游戏、套用优化设置或开启 ShadowPlay 录制；入口在设置 → 功能 → AI Agents and App Connections。同版本还加入 RTX Spark 原生支持与 DLSS 帧生成 Performance Mode（Beta）。",
+      "impact": "有 NVIDIA 卡（含你的 5080/5070 Ti）时可留意该开关是否被更新打开；不需要 Agent 控游戏时建议关掉，降低本机额外暴露面。对 AMD 7900 XTX 主力机无直接关系。",
+      "applicability": "使用 NVIDIA App / GeForce 驱动且关心本地 Agent 权限的人。",
+      "sourceName": "NVIDIA",
+      "sourceUrl": "https://www.nvidia.com/en-us/software/nvidia-app/release-highlights/",
+      "publishedAt": "2026-10-16T12:00:00+08:00"
+    },
+    {
+      "id": "2026-10-16-tibo-day11-capacity",
+      "module": "people",
+      "personId": "tibo",
+      "title": "Tibo 28 天挑战第 11 天：加算力减「模型满负荷」中断，阻塞后应能自动继续",
+      "summary": "OpenAI 的 Tibo（@thsottiaux）在第 11 天公告称，已上线一系列改动并增加算力，显著降低「Selected model is at capacity. Please try a different model」造成的中断；即便仍出现，任务也应最终自行继续而非一直卡住。原帖未给出适用套餐、改善比例或等待时长。",
+      "impact": "你用 Codex 做动画转真人长会话时，满负荷提示应少一些；仍建议短会话、排队脚本，别把「会自动继续」当成可无限挂机。",
+      "applicability": "重度使用 Codex / ChatGPT Work 的人。",
+      "sourceName": "Tibo on X",
+      "sourceUrl": "https://x.com/thsottiaux/status/2110750421367287996",
+      "publishedAt": "2026-10-15T23:11:30+08:00"
+    },
+    {
+      "id": "2026-10-16-musk-spacex-metr-evals",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克回应 Anthropic 开放 METR 评估：SpaceX「大概也会这么做」",
+      "summary": "Anthropic 宣布已给予独立评估机构 METR 接近员工级的访问权限以审查安全实践后，马斯克在转发相关讨论下回复：「SpaceX will probably do the same」。这是对第三方安全评估开放态度的表态，尚未见到 SpaceX/xAI 的正式制度细节。",
+      "impact": "更多是安全治理信号。短期不改你用的 API 或本地模型；关注 xAI/Grok 后续是否公布类似外部评估安排即可。",
+      "applicability": "关注马斯克、xAI/SpaceX 与 AI 安全评估动态的人。",
+      "sourceName": "Elon Musk on X",
+      "sourceUrl": "https://x.com/elonmusk/status/2110870806322360671",
+      "publishedAt": "2026-10-16T07:09:52+08:00"
     }
   ]
 }
