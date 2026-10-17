@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-17T04:43:42Z",
-  "updatedLabel": "10/17 12:43",
+  "updatedAt": "2026-10-17T11:01:21Z",
+  "updatedLabel": "10/17 19:01",
   "people": [
     {
       "id": "tibo",
@@ -35,24 +35,6 @@
       "linkLabel": "查看原文",
       "timeLabel": "10/17 08:22",
       "publishedAt": "2026-10-17T00:22:32Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "b73643b97018ca53",
-      "personId": "musk",
-      "title": "特斯拉都飞了，还要自动驾驶？",
-      "summary": "钛媒体报道了这件事：特斯拉都飞了，还要自动驾驶？",
-      "context": "上文来自钛媒体的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是钛媒体。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "钛媒体",
-      "sourceUrl": "https://tmtpost.com/8171034.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "10/16 17:50",
-      "publishedAt": "2026-10-16T09:50:09Z",
       "tags": [
         "AI 模型",
         "转述"
