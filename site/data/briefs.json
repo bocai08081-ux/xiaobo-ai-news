@@ -1,8 +1,69 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-19T14:30:00+08:00",
+  "updatedAt": "2026-10-19T20:30:00+08:00",
   "items": [
+    {
+      "id": "2026-10-19-ev-minimax-m31-flash",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "MiniMax 正式发布 M3.1 Flash：推理提速近 3 倍、费用降约 70%，官方认领「Space Bunny」",
+      "summary": "MiniMax 投资者关系页于北京时间 10 月 19 日宣布正式上线 M3.1 Flash：面向 Agent、编程、Computer Use 与网络安全场景，在线推理速度约为上一代 Flash 的近三倍，使用成本降低约 70%。官方文档显示模型 ID 为 MiniMax-M3.1-Flash，上下文 100 万 token，支持文本/图像/视频多模态输入，可用 effort（low～max，默认 max）调节思考深度，且思考不可关闭。API 标价为输入 $0.15 / 百万 token、输出 $0.60、缓存读 $0.015；兼容 Anthropic 与 OpenAI 协议。第一财经报道称，同日下午官方短视频配文「Welcome back，Space Bunny」，确认此前在 OpenRouter 匿名上线、曾登顶 Token 日调用榜的 Space Bunny 即该模型早期版本。",
+      "impact": "你一直在用 MiniMax H3 做动画转真人，同厂再出一条便宜、快、专打 Agent/编程的 Flash，很适合当 Codex/Claude Code 的备选路由，尤其是长会话、多工具循环这种烧 token 的活。先在 API 或 MiniMax Code 里用 medium/high effort 试一圈真实任务，别只看榜；权重是否本地可下要以官方许可证为准，别默认能塞进 5090。",
+      "applicability": "需要廉价 Agent/编程模型、或已在用 MiniMax H3 / OpenRouter 的开发者。",
+      "sourceName": "MiniMax Investor Relations",
+      "sourceUrl": "https://ir.minimax.io/news-events/new-releases",
+      "publishedAt": "2026-10-19T20:00:00+08:00"
+    },
+    {
+      "id": "2026-10-19-ev-google-harness2",
+      "module": "news",
+      "category": "models",
+      "title": "Google Research 开源 Harness²：不改模型权重，递归优化 Agent「外壳」",
+      "summary": "Google Cloud AI Research 在 GitHub（google-research/harness2，Apache 2.0）开源 Harness²：把提示词、工具、记忆、技能、子 Agent、脚本与插件等「外壳」当作可递归改进的对象，模型权重保持冻结。流程分两层：任务级用 Propose–Probe–Compose 对比试改；外壳级把可复用经验写进持续改进库。论文（arXiv:2610.14224）称在 WorkBuddy-Bench、JobBench、LAB 等基准上，单步即可把 GLM-5、Gemini 3.5 Flash 等配置相对基线提升最多约 11.5 分。仓库支持并行/串行递归，以及 OpenCode、Codex 执行器；截至北京时间 10 月 19 日晚约 9578 star。仓库声明：非 Google 官方支持产品。",
+      "impact": "和你做的 Codex skill、ComfyUI 脚本封装是同一条路：模型不动，把排队、审片、短会话这些 harness 迭代好。可以当方法论参考——真正落地仍要对着你的 bobo-skills 流程改，别指望直接套进生产。",
+      "applicability": "在做 Agent 脚手架、Codex/OpenCode 工作流优化的人。",
+      "sourceName": "GitHub · google-research/harness2",
+      "sourceUrl": "https://github.com/google-research/harness2",
+      "publishedAt": "2026-10-19T20:10:00+08:00"
+    },
+    {
+      "id": "2026-10-19-ev-samsung-tsmc-nvhbm",
+      "module": "news",
+      "category": "nvidia",
+      "title": "韩媒：三星将用台积电 3nm 做英伟达定制 NVHBM 的底座逻辑芯片",
+      "summary": "路透社援引《首尔经济》报道：三星电子将采用台积电 3 纳米工艺，为英伟达下一代定制高带宽内存 NVHBM 生产底座逻辑芯片（base die），这是三星首次在 HBM 制造环节与台积电合作。英伟达要求三星、SK 海力士、美光在 NVHBM 上统一用台积电工艺做 base die、用六代 DRAM 工艺做核心颗粒。NVHBM 于今年 8 月亮相，把英伟达定制内存控制器放进 base die，以便跨供应商标准化。三星内部评估后接受该要求，但标准 HBM 及其他客户定制产品仍走自有产线，并评估自有晶圆厂在台积电产能不足时能否补位。韩媒称相对标准 HBM4E，NVHBM 带宽最高可高约 30%、功耗可低约 15%。",
+      "impact": "这是数据中心级 HBM，不是你手里的 5090/5080 显存故事，但说明英伟达在供应链上进一步「统一规格」：谁想进 NVHBM 名单，底座逻辑都得按台积电规矩来。看消费级 RTX 涨价或缺货时，可以把「HBM/先进封装瓶颈」当成背景知识，别和游戏显卡库存混为一谈。",
+      "applicability": "关注英伟达供应链、AI 基建与显卡行情背景的人。",
+      "sourceName": "Reuters / Business Standard",
+      "sourceUrl": "https://www.business-standard.com/technology/tech-news/samsung-to-tap-tsmc-technology-for-nvidia-s-custom-memory-chips-report-126101800775_1.html",
+      "publishedAt": "2026-10-18T22:25:00+08:00"
+    },
+    {
+      "id": "2026-10-19-ev-musk-spacex-shares-kids",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克：明年将给美国每个孩子一股 SpaceX 股份，「这只是第一批」",
+      "summary": "马斯克（@elonmusk）北京时间 10 月 19 日 15:52 发帖：「Next year, I will give one of my SpaceX shares to every kid in America. This will be the first of many.」（明年我将把我持有的一股 SpaceX 股份送给美国每一个孩子。这只是第一批。）同日他还把别人说的「全民基本收入」纠正为「universal high income」（全民高收入），并转发用户夸 Grok Bot 的帖子写道「Hire Grok @Bot today. You won’t regret it.」",
+      "impact": "和 AI 政策、xAI/SpaceX 叙事绑在一起，适合当 X 上「马斯克在玩什么股权叙事」的短评素材；Grok Bot 那句转发则是现成的产品口碑截图。细节（如何登记、是否需监护人、税务）推文里没写，转发前别自行补全。",
+      "applicability": "关注马斯克、SpaceX 与 xAI 舆论的人。",
+      "sourceName": "X · Elon Musk",
+      "sourceUrl": "https://x.com/elonmusk/status/2112089556615123114",
+      "publishedAt": "2026-10-19T15:52:45+08:00"
+    },
+    {
+      "id": "2026-10-19-ev-tibo-outrank-free-blog",
+      "module": "people",
+      "personId": "tibo",
+      "title": "Tibo：Outrank 博客托管改为免费，一分钟可上线",
+      "summary": "Tibo（@tibo_maker）北京时间 10 月 19 日 18:30 发帖称，Outrank 用户本来就需要博客来发内容，再让他们另开一个付费托管「不公平」，因此把博客托管做成免费：约一分钟可上线，并强调即便不付费用 Outrank，也可以用这套免费博客托管。随后补充了入口链接与架构说明。",
+      "impact": "和 AI Agent 关系不大，但 Tibo 仍是你常跟的「独立开发者 + AI 工具」账号；若你在做 SEO/内容站（小波资讯站之外的副业博客），这条是可直接试用的免费托管选项。",
+      "applicability": "关注 Tibo 产品动态、需要轻量博客托管的人。",
+      "sourceName": "X · Tibo",
+      "sourceUrl": "https://x.com/tibo_maker/status/2112129138035138658",
+      "publishedAt": "2026-10-19T18:30:02+08:00"
+    },
     {
       "id": "2026-10-19-pm-opencode-console-key-breach",
       "module": "news",
