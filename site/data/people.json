@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-18T16:01:44Z",
-  "updatedLabel": "10/19 00:01",
+  "updatedAt": "2026-10-19T04:58:04Z",
+  "updatedLabel": "10/19 12:58",
   "people": [
     {
       "id": "tibo",
@@ -24,6 +24,24 @@
   ],
   "posts": [
     {
+      "id": "e338168ad79e81f0",
+      "personId": "tibo",
+      "title": "早报｜曝苹果机械臂版HomeView正在开发/蔚来三季度销量首次超BBA/英伟达否认RTX 5090停产",
+      "summary": "爱范儿报道了这件事：早报｜曝苹果机械臂版HomeView正在开发/蔚来三季度销量首次超BBA/英伟达否认RTX 5090停产。",
+      "context": "上文来自爱范儿的公开报道，不是 @thsottiaux 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是爱范儿。只因为标题或摘要提到了Tibo，才收进人物动态。",
+      "sourceName": "爱范儿",
+      "sourceUrl": "https://ifanr.com/1684815",
+      "linkLabel": "查看原文",
+      "timeLabel": "10/19 08:00",
+      "publishedAt": "2026-10-19T00:00:42Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
       "id": "229c8a6e8ad530f2",
       "personId": "musk",
       "title": "iPhone Duo 一秒售罄，发货排到明年；马斯克：考虑自建电商平台；谷歌创始人：AI 正开始自己造自己",
@@ -35,42 +53,6 @@
       "linkLabel": "查看原文",
       "timeLabel": "10/17 08:22",
       "publishedAt": "2026-10-17T00:22:32Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "efa164a3921b8db4",
-      "personId": "musk",
-      "title": "马斯克有一则新动态，来自The Verge",
-      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「The tech backlash is now in theaters」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自The Verge的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是The Verge。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "The Verge",
-      "sourceUrl": "https://theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial",
-      "linkLabel": "查看原文",
-      "timeLabel": "10/16 05:39",
-      "publishedAt": "2026-10-15T21:39:52Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "ac13ec21a7ae4ad5",
-      "personId": "trump",
-      "title": "特朗普有一则新动态，来自The Verge",
-      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Trump posts AI-edited photo to brag about White House restoration work」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "The Verge",
-      "sourceUrl": "https://theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
-      "linkLabel": "查看原文",
-      "timeLabel": "10/16 05:09",
-      "publishedAt": "2026-10-15T21:09:33Z",
       "tags": [
         "AI 模型",
         "转述"
