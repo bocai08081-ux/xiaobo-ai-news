@@ -1,8 +1,68 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-20T14:30:00+08:00",
+  "updatedAt": "2026-10-20T20:30:00+08:00",
   "items": [
+    {
+      "id": "2026-10-20-ev-deepseek-deepinfer",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "DeepSeek 开源自家生产推理框架 DeepInfer：支撑 V4.1 Flash 线上服务，Apache 2.0",
+      "summary": "DeepSeek 于北京时间 10 月 20 日 17:30 在 X 宣布开源内部推理框架 DeepInfer，称其支撑 DeepSeek-V4.1-Flash 的大规模线上服务，希望帮社区降低算力成本和能耗；帖子数小时内获超 77 万次浏览。GitHub 仓库 README 显示：目前仅支持 DeepSeek-V4.1-Flash（默认权重 DeepSeek-V4.1-Flash-1017），硬件为英伟达 SM100（Blackwell 数据中心卡）和华为昇腾 950；内置 FlashMLA、DeepGEMM、DeepEP 等自研算子，支持注意力数据并行、MoE 专家并行、DSpark 草稿解码加速、批次不变推理、确定性采样和结构化输出。这次开源的是离线推理部分，KV 缓存系统、预填充/解码分离和跨副本负载均衡不在其中。框架最初基于 vLLM 构建，许可证为 Apache 2.0。",
+      "impact": "这是给数据中心集群用的东西：要求 SM100 或昇腾 950、CUDA 13，官方测试用的是 4 卡预填充加 64 卡解码，你的 5090（消费级 Blackwell，不是 SM100）基本跑不起来，本地还是用 llama.cpp、vLLM 这类工具。值得看的是它的工程思路，比如批次不变推理和确定性采样，以后你做本地 Agent 想要「同样输入出同样结果」时可以参考。",
+      "applicability": "做大模型推理部署、关注 DeepSeek 技术栈或国产算力适配的开发者。",
+      "sourceName": "GitHub · deepseek-ai/DeepInfer",
+      "sourceUrl": "https://github.com/deepseek-ai/DeepInfer",
+      "publishedAt": "2026-10-20T17:30:19+08:00"
+    },
+    {
+      "id": "2026-10-20-ev-fal-flux-3-max",
+      "module": "news",
+      "category": "vision",
+      "title": "fal 联合 Black Forest Labs 推出视频模型 FLUX 3 Max：图生视频榜紧追 MiniMax H3，10 秒片段约 12 秒生成",
+      "summary": "据 VentureBeat 报道，生成式媒体平台 fal 于美国时间 10 月 19 日推出 FLUX 3 Max，这是在 Black Forest Labs 的 FLUX 3 Video 基础上由 fal 继续后训练和推理优化的视频模型。fal 公布的对比中，生成一段 10 秒视频约 12.45 秒，Seedance 2.5 要 277.80 秒，约快 22 倍。Artificial Analysis 图生视频榜（10 月 19 日查看）上，MiniMax H3（768p）1140 分居首，FLUX 3 Max（720p）与 Seedance 2.5 同为 1138 分，置信区间重叠。模型只通过 API 提供：文生视频、图生视频（可加尾帧）和最多 10 张图的关键帧接口，时长 5 到 20 秒，720p 输出、可放大到 1080p，音频可开关。11 月 7 日前打 2.5 折，720p 每秒 0.0425 美元（原价 0.17 美元）。报道提醒，速度和分数都是厂商口径，没有开放权重。",
+      "impact": "你做动画转真人一直用本地 MiniMax H3，这个榜上 H3 还是第一，说明本地这条路没选错。FLUX 3 Max 的价值在「快」：10 秒片段十几秒出，促销价约 3 元人民币一条，适合先用它快速试镜头、定构图，满意了再交给本地 H3 出正片。关键帧接口能塞 10 张图，可以拿 OP 分镜试一下连贯性。",
+      "applicability": "做 AI 视频、需要快速出样片或比较云端与本地视频模型的创作者。",
+      "sourceName": "VentureBeat",
+      "sourceUrl": "https://venturebeat.com/technology/fal-launches-flux-3-max-claiming-22-faster-ai-video-generation-than-seedance-2-5",
+      "publishedAt": "2026-10-20T06:29:00+08:00"
+    },
+    {
+      "id": "2026-10-20-ev-nvidia-germany-merz",
+      "module": "news",
+      "category": "nvidia",
+      "title": "黄仁勋与德国总理默茨同台：签署工业 AI 合作意向，英伟达再投四家德国初创",
+      "summary": "英伟达官方博客称，美国时间 10 月 19 日（北京时间 10 月 20 日凌晨）在柏林「投资德国峰会」上，德国总理默茨与经济、科研两部同英伟达签署联合意向声明，共同推进面向物理 AI 的前沿模型，并把英伟达与德国「工业 4.0 平台」的合作正式化。随后默茨与黄仁勋在柏林 Kraftwerk 对谈，默茨呼吁德国中小企业「打开大门，让 AI 用上你们的数据」；黄仁勋说 AI 只会增强而不是取代德国的制造经验。黄仁勋还宣布计划投资四家德国初创：机器人公司 Agile Robots、医院信息系统 Avelios Medical、为视频生成音效和配乐的 Mirelo，以及卫星公司 Reflex Aerospace，属于英伟达在欧洲近 100 亿美元投入的一部分。GTC 柏林大会 10 月 20 日至 22 日举行。",
+      "impact": "主要是产业和政策面的消息，对你用 5090 没有直接影响。值得留意的是 Mirelo 这种「给视频自动配音效」的方向拿到英伟达投资，你做动画转真人后期正缺这一环，可以关注它和同类开源工具，看能不能接进 ComfyUI 流程。",
+      "applicability": "关注英伟达欧洲布局、工业 AI 和 AI 视频音效的人。",
+      "sourceName": "NVIDIA Blog",
+      "sourceUrl": "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/",
+      "publishedAt": "2026-10-20T03:27:00+08:00"
+    },
+    {
+      "id": "2026-10-20-ev-amd-proxmox-gpu-passthrough",
+      "module": "news",
+      "category": "amd",
+      "title": "AMD 官方教程：用 Proxmox 把 Radeon 显卡直通给虚拟机，自建私有 GPU 云跑 ROCm",
+      "summary": "AMD 开发者网站于美国时间 10 月 19 日发布技术文章，手把手讲如何在 Proxmox VE 虚拟化平台上通过 VFIO 把 Radeon 显卡独占直通给虚拟机，再在虚拟机里装 ROCm 7.2 和 PyTorch 2.9.1。实测两套配置：Ryzen AI Max+ 395 的 Radeon 8060S 核显，以及 Threadripper PRO 9965WX 配 4 张 Radeon AI PRO R9700。文章认为，相比容器，虚拟机能隔离显卡故障、每次启动都有干净的驱动状态，还能用模板、快照、克隆和 REST API 批量开关 GPU 环境，适合 CI 和多人共享；单人单卡的交互使用则直接装系统更合适。要求 Radeon RX 7000 及以上独显或带核显的 Ryzen AI 处理器，虚拟机系统需用 Ubuntu 24.04 HWE 内核。",
+      "impact": "你的 7900 XTX 已经换下来，如果还没出手，可以拿它和这份教程搭一台 Proxmox 小服务器，专门跑 ROCm 实验或审片模型，弄坏了直接回滚快照，不影响 5090 主力机。如果不打算折腾，这条了解即可。",
+      "applicability": "手上有闲置 AMD 显卡、想搭家用 GPU 服务器或多环境测试的人。",
+      "sourceName": "AMD Developer",
+      "sourceUrl": "https://www.amd.com/en/developer/resources/technical-articles/2026/gpu-passthrough-on-proxmox-ve.html",
+      "publishedAt": "2026-10-20T00:00:00+08:00"
+    },
+    {
+      "id": "2026-10-20-ev-tibo-pro100-vs-course",
+      "module": "people",
+      "personId": "tibo",
+      "title": "Tibo 回应 Theo 的 1300 美元课程：不如买个 Pro 100 订阅，然后用 T3Code",
+      "summary": "知名开发者博主 Theo 北京时间 10 月 20 日早上发帖，说自己推出了一门 1300 美元的付费课程，还坦言「你不应该买它」并解释原因。OpenAI Codex 负责人 Tibo（@thsottiaux）当天 14:12 回复他：「换个做法：1）买一个 Pro 100 订阅；2）???；3）尽情用 T3Code。」这条回复约 18 万次浏览、1300 多个赞。几十分钟后，Tibo 又发了「Day 15」重置额度的帖子。",
+      "impact": "玩笑归玩笑，意思很清楚：与其花大钱买课，不如直接订阅 ChatGPT Pro 100，把 Codex 真正用到自己的项目里。你做 skill 和自动化流程本来就是边用边学，订阅额度比买课程更实在。",
+      "sourceName": "X / Tibo",
+      "sourceUrl": "https://x.com/thsottiaux/status/2112426606870585551",
+      "publishedAt": "2026-10-20T14:12:04+08:00"
+    },
     {
       "id": "2026-10-20-am-openai-low-resource-langs",
       "module": "news",
