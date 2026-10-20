@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-20T08:30:00+08:00",
+  "updatedAt": "2026-10-20T14:30:00+08:00",
   "items": [
     {
       "id": "2026-10-20-am-openai-low-resource-langs",
@@ -2009,6 +2009,103 @@
       "sourceName": "Elon Musk on X",
       "sourceUrl": "https://x.com/elonmusk/status/2110870806322360671",
       "publishedAt": "2026-10-16T07:09:52+08:00"
+    },
+    {
+      "id": "2026-10-20-pm-dhs-bans-deepseek",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "美国国土安全部下令：联邦民用机构全面移除 DeepSeek，连基于其模型做的工具也不能用",
+      "summary": "据 BBC 报道，美国国土安全部（DHS）于美国时间 10 月 19 日公开一项命令：联邦民用机构（包括财政部、国务院、司法部等）禁止使用 DeepSeek 的任何 AI 技术，借助其模型开发的技术也在禁用范围内；国防部下属机构不在此列。命令实际上自 7 月底起已生效，通知未具体说明安全顾虑。报道提到，特朗普政府此前多次批评中国 AI 企业，Anthropic 和 OpenAI 也曾指称包括 DeepSeek 在内的中国公司「复制」其模型；与此同时 Snowflake、Vercel、OpenRouter 等美国公司仍在产品中接入 DeepSeek。DeepSeek、DHS 与中国驻美使馆截至报道时均未回应。",
+      "impact": "对你个人使用 DeepSeek API 或本地跑开源权重没有直接影响，这条禁令只管美国联邦民用系统。但它说明「用了哪家基座模型」正在变成合规问题：以后如果你接海外外包或做给美国客户的 Agent 演示，最好提前问清对方对国产模型的限制，必要时准备一套可切换的模型配置。",
+      "applicability": "关注中美 AI 监管、用 DeepSeek 做产品或接海外项目的人。",
+      "sourceName": "BBC News",
+      "sourceUrl": "https://bbc.com/news/articles/cjkgeq0k1wevo",
+      "publishedAt": "2026-10-20T07:58:34+08:00"
+    },
+    {
+      "id": "2026-10-20-pm-deepseek-code-arena-webdev",
+      "module": "news",
+      "category": "models",
+      "title": "DeepSeek-V4.1-Flash-1017 登顶 Code Arena WebDev 开源模型第一，仅比 GPT-6 Sol 低 12 分",
+      "summary": "极客公园援引新智元报道，评测平台 Arena 于 10 月 19 日宣布，DeepSeek-V4.1-Flash-1017（Max）以 1670 分超过 Kimi K3（Max），成为 Code Arena: WebDev 榜单上排名最高的开源模型，同时高于 Muse Spark 1.3（Max）、Claude Opus 5（High）、Grok 4.7（xHigh）等闭源模型，只落后 GPT-6 Sol（Max）12 分，并进入榜单的「帕累托前沿」（没有其他模型能同时更便宜且得分更高）。定价方面，高峰时段每百万 Token 输入（缓存未命中）2 元、输出 8 元，空闲时段减半，缓存命中输入低至 0.02–0.04 元。",
+      "impact": "前端/网页生成这类活，现在用 DeepSeek Flash 性价比非常高，适合你给资讯站改页面、做小工具原型时先试一轮，复杂重构再交给 Codex。另外这和上面美国禁令放在一起，是很好的 X 选题：「被美国政府禁用的模型，刚拿下开源编程榜第一」。",
+      "applicability": "做网页、前端原型、关心 API 成本的开发者。",
+      "sourceName": "极客公园",
+      "sourceUrl": "http://geekpark.net/news/372568",
+      "publishedAt": "2026-10-20T09:01:44+08:00"
+    },
+    {
+      "id": "2026-10-20-pm-claude-gemini-carbon-terra-leaks",
+      "module": "news",
+      "category": "models",
+      "title": "The Information 爆料：Claude 新模型被评「重大飞跃」，谷歌内测 Gemini 4 Carbon，OpenAI 准备 GPT-6.1 Terra",
+      "summary": "量子位援引 The Information 报道：内测用户称新版 Claude 推理和直觉更好，擅长判断用户的真实意图，比如被要求修一个 bug 时，会找出导致这类 bug 的根本问题并询问是否一并修复；目前不清楚它属于 Fable 还是 Opus 系列。谷歌在内部编程平台 Jetski 上向员工开放了代号「Gemini 4 Carbon」的新模型数日，员工反馈「感觉与 Opus 5.5 相当」，编程优于 Argon、视觉理解更强。另有 GPT-6.1 Terra 出现在微软 Copilot 代码中，量子位推测它可能是给免费用户的更便宜模型。以上均为爆料，尚无官方发布。",
+      "impact": "未来一个月三家都可能出新模型，你现在别急着为某一家买长期套餐或年付；Codex、Claude 的订阅按月走，等新模型出来对比一下动画转真人和写代码的实际效果再定。做 X 内容时可以提前备好「新模型实测」的选题框架。",
+      "applicability": "依赖 Claude、Gemini、ChatGPT 做编程和内容的用户；以官方发布为准。",
+      "sourceName": "量子位",
+      "sourceUrl": "https://qbitai.com/2026/10/504314.html",
+      "publishedAt": "2026-10-20T09:09:43+08:00"
+    },
+    {
+      "id": "2026-10-20-pm-apple-pro-and-tell-oct28",
+      "module": "news",
+      "category": "mac",
+      "title": "苹果确认 10 月 28 日「Pro and tell」发布活动：首款触屏 OLED MacBook Pro、M6 版 MacBook Pro 和 iMac 将亮相",
+      "summary": "彭博社 Mark Gurman 报道，苹果于美国时间 10 月 19 日确认将于 10 月 28 日在洛杉矶举办产品发布活动，主题为「Pro and tell」。预计发布首款触控屏 MacBook Pro（OLED 屏、带灵动岛，搭载 M5 Pro / M5 Max，沿用 MacBook Pro 命名而非传闻中的「MacBook Ultra」）、搭载 M6 的入门款 14 英寸 MacBook Pro、M6 iMac，以及换 OLED 屏的新 iPad mini。媒体体验活动定于太平洋时间上午 10 点开始，即北京时间 10 月 29 日凌晨 1 点。彭博称苹果零售店准备 11 月 6 日开卖新品。",
+      "impact": "你的 MacBook Pro 已经是 M5 Pro，新款触屏版芯片同样是 M5 Pro/Max，跑本地模型的算力不会有代差，不必为它换机。真正值得看的是 M6 入门款的内存与带宽规格，如果性价比高，可以考虑替换 16GB 的 Mac mini M4 作为常驻跑模型的机器。",
+      "applicability": "Mac 用户、考虑升级或用 Mac 跑本地模型的人；具体规格以 10 月 29 日发布为准。",
+      "sourceName": "Bloomberg（via Yahoo Finance）",
+      "sourceUrl": "https://finance.yahoo.com/technology/articles/apple-announces-oct-28-event-163302694.html",
+      "publishedAt": "2026-10-20T00:33:00+08:00"
+    },
+    {
+      "id": "2026-10-20-pm-tenstorrent-6-2b",
+      "module": "news",
+      "category": "nvidia",
+      "title": "英伟达挑战者 Tenstorrent 融资 15 亿美元、估值 62 亿美元，主攻开源模型推理和视频生成芯片",
+      "summary": "TechCrunch 报道，Jim Keller 领导的推理芯片公司 Tenstorrent 完成 15 亿美元融资，估值 62 亿美元，比 2024 年底的 26 亿美元翻了一倍多。本轮由 Trace Capital 与 Innovation X 领投，Fidelity、T. Rowe Price、SanDisk 等参投。五个月前英特尔和高通曾有意以最高约 50 亿美元估值收购，Keller 对彭博表示，公司在证明 Galaxy 服务器能跑 DeepSeek 模型后决定保持独立，新资金将用于扩产面向开源权重模型和视频生成的芯片。",
+      "impact": "短期不影响你买卡，个人本地部署仍是英伟达（5090）最省心。但「专门跑开源模型 + 视频生成」的推理芯片拿到大钱，意味着未来一两年云端跑 Wan、H3 这类视频模型的租用价格可能继续下降，你做动画转真人时可以多留意非英伟达云的报价。",
+      "applicability": "关注 AI 芯片格局、租云端算力跑开源模型的人。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips",
+      "publishedAt": "2026-10-20T02:37:00+08:00"
+    },
+    {
+      "id": "2026-10-20-pm-lemonade-43-3-rocm-10-1",
+      "module": "news",
+      "category": "amd",
+      "title": "AMD Lemonade 43.3 候选版：升级 ROCm 10.1.0，Windows 上可看 AMD 显卡占用和显存",
+      "summary": "AMD 主导的本地大模型服务 Lemonade 于北京时间 10 月 20 日 11:23 发布 v2026.43.3 候选版。主要变化：底层升级到 ROCm 10.1.0；图像后端 TheNoise 在 Linux 和 Windows 的 AMD 显卡上转为 Core 级别；改图支持多张参考图并自动选尺寸，新增 Qwen-Image-2.1 Turbo INT8；GET /v1/stats 新增实时推理指标（活跃请求数、估算 tok/s）；Windows 上的 system-stats 现在能和 NVIDIA 一样报告 AMD 显卡占用与显存。破坏性变更：多卡机器上 system-stats 改为按总显存报告主卡，依赖旧字段的监控需要调整。候选版 Windows 安装包未签名。",
+      "impact": "如果 7900 XTX 还留在手边（或装进别的机器），这版 ROCm 10.1 加 Windows 显存监控对跑 Qwen-Image 很实用。多卡混插（比如 5090 加 AMD 卡）时注意主卡判定逻辑变了。候选版未签名，想稳妥就等正式版。",
+      "applicability": "用 AMD 显卡在 Windows 或 Linux 本地跑大模型、图像模型的人。",
+      "sourceName": "GitHub · lemonade-sdk/lemonade",
+      "sourceUrl": "https://github.com/lemonade-sdk/lemonade/releases/tag/candidate-v2026.43.3",
+      "publishedAt": "2026-10-20T11:23:02+08:00"
+    },
+    {
+      "id": "2026-10-20-pm-musk-x-ranking-model",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克：X 时间线推荐换上新的 AI 排序模型，专门推「被人读完」的帖子",
+      "summary": "埃隆·马斯克北京时间 10 月 20 日 10:41 发帖称，X 的时间线推荐有两项重要改动：一是新的 AI/SI 排序模型，能更准确地预测用户会在一条帖子上停留多久；二是新的召回模型，专门训练来挑出用户会从头读到尾的帖子。他还称用户活跃时长在指数增长，几乎每天都在创新高。随后他补充说，重写 X 的安卓客户端也是一件大事，「它烂了太久」。",
+      "impact": "这条直接关系到你运营 @bocaix2c：算法在奖励「停留时长」和「读完率」，而不只是点赞。发 AI 资讯解读时，开头一句就给结论、正文写短段落、让人愿意读到底，比堆标签和短促的口号更容易被推。可以拿接下来几条帖子的曝光数据对比验证。",
+      "applicability": "在 X 上做内容、关心推荐流量的创作者。",
+      "sourceName": "X · Elon Musk",
+      "sourceUrl": "https://x.com/elonmusk/status/2112373713937084809",
+      "publishedAt": "2026-10-20T10:41:54+08:00"
+    },
+    {
+      "id": "2026-10-20-pm-tibo-day15-reset",
+      "module": "people",
+      "personId": "tibo",
+      "title": "Tibo 28 天挑战第 15 天：先说「我们完了」，几小时后改口「还在做」并重置额度",
+      "summary": "OpenAI Codex 负责人 Tibo（@thsottiaux）北京时间 10 月 20 日凌晨 3:45 引用 OpenAI Developers 的「Here's what we're cooking with Codex」帖子，只写了一句「Day 15/ We're cooked」，引发 2700 多条回复、超 150 万次浏览，不少人以为挑战要中断。14:33 他再发「Day 15/ Nevermind, we're still cooking... and reset. Enjoy.」，表示第 15 天照常进行，并重置了额度。",
+      "impact": "又一次重置，你今天下午如果 Codex 额度紧张，现在可以把排队的长任务（比如动画转真人的批量镜头）放出来跑。挑战到 11 月 1 日结束，后面还有约两周，重度任务可以继续卡着重置节奏安排。",
+      "applicability": "Codex 重度用户。",
+      "sourceName": "X · Tibo",
+      "sourceUrl": "https://x.com/thsottiaux/status/2112432076767289678",
+      "publishedAt": "2026-10-20T14:33:48+08:00"
     }
   ]
 }
