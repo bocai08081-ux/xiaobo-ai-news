@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-20T05:03:18Z",
-  "updatedLabel": "10/20 13:03",
+  "updatedAt": "2026-10-20T11:53:59Z",
+  "updatedLabel": "10/20 19:53",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,24 @@
     }
   ],
   "posts": [
+    {
+      "id": "b176269ad108c9b7",
+      "personId": "musk",
+      "title": "最新，马斯克警告人类将被AI“一击拿下”",
+      "summary": "一边警告深渊，一边贩卖凝视深渊的门票。这就是马斯克。",
+      "context": "上文来自36氪的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是36氪。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "36氪",
+      "sourceUrl": "https://36kr.com/p/4034110000108423?f=rss",
+      "linkLabel": "查看原文",
+      "timeLabel": "10/20 19:31",
+      "publishedAt": "2026-10-20T11:31:59Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "e338168ad79e81f0",
       "personId": "tibo",
