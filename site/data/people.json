@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-19T13:43:36Z",
-  "updatedLabel": "10/19 21:43",
+  "updatedAt": "2026-10-20T05:03:18Z",
+  "updatedLabel": "10/20 13:03",
   "people": [
     {
       "id": "tibo",
@@ -37,24 +37,6 @@
       "publishedAt": "2026-10-19T00:00:42Z",
       "tags": [
         "英伟达",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "229c8a6e8ad530f2",
-      "personId": "musk",
-      "title": "iPhone Duo 一秒售罄，发货排到明年；马斯克：考虑自建电商平台；谷歌创始人：AI 正开始自己造自己",
-      "summary": "极客公园报道了这件事：iPhone Duo 一秒售罄，发货排到明年；马斯克：考虑自建电商平台；谷歌创始人：AI 正开始自己造自己。",
-      "context": "上文来自极客公园的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是极客公园。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "极客公园",
-      "sourceUrl": "http://geekpark.net/news/372488",
-      "linkLabel": "查看原文",
-      "timeLabel": "10/17 08:22",
-      "publishedAt": "2026-10-17T00:22:32Z",
-      "tags": [
-        "AI 模型",
         "转述"
       ],
       "pinned": false
