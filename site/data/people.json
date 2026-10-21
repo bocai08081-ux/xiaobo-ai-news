@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-21T12:05:41Z",
-  "updatedLabel": "10/21 20:05",
+  "updatedAt": "2026-10-21T17:26:02Z",
+  "updatedLabel": "10/22 01:26",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,24 @@
     }
   ],
   "posts": [
+    {
+      "id": "08b176fb81176452",
+      "personId": "musk",
+      "title": "Muse豆包遭集体“拉黑”，AI还能替我办事吗？",
+      "summary": "个人Agent被企业“堵门”！Meta绕道，阿里内修，马斯克要再造亚马逊。",
+      "context": "上文来自36氪的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是36氪。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "36氪",
+      "sourceUrl": "https://36kr.com/p/4035541955384194?f=rss",
+      "linkLabel": "查看原文",
+      "timeLabel": "10/21 20:38",
+      "publishedAt": "2026-10-21T12:38:24Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "992e176472e85c5f",
       "personId": "musk",
