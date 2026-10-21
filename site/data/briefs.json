@@ -1,13 +1,71 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-21T08:30:00+08:00",
+  "updatedAt": "2026-10-21T14:30:00+08:00",
   "items": [
+    {
+      "id": "2026-10-21-pm-fasth3-omni-open",
+      "module": "news",
+      "category": "vision",
+      "featured": true,
+      "title": "FastH3 Omni 开源：MiniMax H3 全参考模式蒸馏到 8 步，提速 5.6 到 11.9 倍，有 RTX 5090 配方和 ComfyUI 权重",
+      "summary": "加州大学圣地亚哥分校 Hao AI Lab 的 FastVideo 团队和 Nuva Lab 于 10 月 20 日开源 FastH3 Omni，这是 MiniMax H3 的蒸馏加速版，保留完整的「全参考」输入：最多 9 张参考图、3 段参考视频和 3 段人声或音乐参考，一次生成 5 到 15 秒、24 帧、带同步立体声的视频。它用并行解码蒸馏（PDD）加分布匹配蒸馏（DMD），把原版 50 次 Transformer 计算降到 8 次；官方在 8 张 GB200 上测了 27 组对照任务，端到端延迟比原版低 5.6 到 11.9 倍，例如单图生成 15 秒视频从 139.69 秒降到 14.14 秒。训练用了 64 张 B300、约 7800 GPU 小时。本地方面，官方给了 RTX 5090（32GB）专用的 NVFP4 QAD 权重和 rtx-5090 配方，默认 480p，需要把文本编码器卸载到内存并预先算好 AdaLN 表；ComfyUI 有 FP8 和 NVFP4 两种原生权重，推荐 8 步采样、引导 1.0、视频 shift 12、音频 shift 3。北京时间 10 月 21 日中午 Hugging Face 上还新增了 Apple Silicon 用的 MLX 版本。团队称面向本地部署的详细教程计划 10 月 21 日发布。",
+      "impact": "这条几乎是为你的 5090 写的：你现在本地跑 MiniMax H3 做动画转真人，最大的痛点就是慢和吃显存，FastH3 Omni 官方直接给了 5090 的 NVFP4 配方，ComfyUI 里换上 FP8 或 NVFP4 权重、步数改成 8 就能先试。建议拿之前出问题的几个镜头做同提示词、同种子的对比，先看人物一致性和口型有没有掉，再决定是否替换主流程。注意 NVFP4 是 Blackwell 专用，5080 和 5070 Ti 也是 Blackwell 可以试，Mac 那边可以等 MLX 版本的说明出来再看。按惯例，跑之前先查 ComfyUI 队列并释放显存。",
+      "applicability": "本地用 ComfyUI 跑 MiniMax H3 视频、手上有 RTX 50 系显卡或 Apple Silicon 大内存 Mac 的创作者。原版 H3 的社区许可条款同样适用。",
+      "sourceName": "Hao AI Lab FastVideo 博客",
+      "sourceUrl": "https://haoailab.com/blogs/fastvideo-omniref-update/",
+      "publishedAt": "2026-10-21T03:18:10+08:00"
+    },
+    {
+      "id": "2026-10-21-pm-google-torchtpu-open-source",
+      "module": "news",
+      "category": "nvidia",
+      "title": "谷歌开源 TorchTPU：PyTorch 原生跑 TPU，改一行设备配置即可迁移，继亚马逊之后再撬英伟达 CUDA 护城河",
+      "summary": "TechCrunch 北京时间 10 月 21 日 02:38 报道，谷歌在 PyTorch 大会上宣布 TorchTPU 正式开源。它是和 Meta PyTorch 团队合作开发的 TPU 原生后端，用 torch.device(\"tpu\") 即可调用，支持 eager 模式、torch.compile 和分布式训练，已验证约 450 个 ATen 算子和 Hugging Face 下载量最高的 5000 个模型（含 Qwen、DeepSeek、Gemma、Whisper、CLIP 等）。Hugging Face Transformers v5 里传 device_map=\"tpu\" 就能部署，Diffusers 也能原生运行；vLLM、SGLang、TorchTitan、Ray 都已接入。谷歌还推出预览版「TPU agent suite」，帮开发者自动迁移和排错。亚马逊前一天刚发布类似的 TorchNeuron，并在向 PyTorch 主仓库提交代码，把部分功能和英伟达芯片解耦。TechCrunch 认为开发者不会因此马上大规模放弃英伟达，但两家正明确地削弱英伟达的优势。",
+      "impact": "对你本地玩卡影响不大，TPU 只在谷歌云上租得到，你的 5090 和 ComfyUI 生态短期还是 CUDA 最省心。值得关注的是趋势：PyTorch 越来越不绑死英伟达，以后 AMD、TPU、Trainium 上跑同一套代码会更容易，云端租算力的选择和价格可能变多；如果哪天要批量跑视频而本地不够用，可以把 TPU 云也列进比价名单。",
+      "applicability": "用 PyTorch 训练或部署模型、在考虑云端算力来源的开发者；关注英伟达生态格局的人。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers",
+      "publishedAt": "2026-10-21T02:38:00+08:00"
+    },
+    {
+      "id": "2026-10-21-pm-anthropic-draft-s1-loss",
+      "module": "news",
+      "category": "models",
+      "title": "Anthropic 招股书草案曝光：上半年收入 163 亿美元，净亏损超 800 亿美元，其中 720 亿是会计费用",
+      "summary": "路透社北京时间 10 月 21 日 03:40 援引《华尔街日报》报道，Anthropic 最新 IPO 招股书草案显示，公司 2026 年上半年净亏损超过 800 亿美元（《华尔街日报》称为 807 亿美元），去年同期为 130 亿美元。亏损中约 720 亿美元来自其融资时发行的可转换票据等金融工具估值变动产生的会计费用，并非经营现金支出。同期收入从 11 亿美元跳到 163 亿美元，AI 基础设施支出接近翻两番至约 90 亿美元；草案还显示公司未来几年可能为算力投入多达 7500 亿美元。路透社表示 Anthropic 未回应置评、其本身也未能独立核实；另据路透社此前报道，Anthropic 告诉投资者第三季度收入环比增长 45% 至 168 亿美元，并在调整后口径下实现盈利。",
+      "impact": "这些数字说明两件事：Claude 的收入增长非常快，公司短期不会缺钱停服；但算力成本极高，未来定价、额度和高峰期限流大概率仍会收紧。你在用 Claude 或其他大模型写代码、做内容时，别把流程押在单一家的额度上，保留 Codex、本地模型这类备选更稳。",
+      "applicability": "Claude 订阅或 API 用户、关注 AI 公司上市和行业泡沫讨论的人。",
+      "sourceName": "Reuters（StreetInsider 转载）",
+      "sourceUrl": "https://www.streetinsider.com/Reuters/Anthropic+logged+net+loss+of+over+%2480+billion+in+first+half+of+2026%2C+WSJ+reports/27210198.html",
+      "publishedAt": "2026-10-21T03:40:00+08:00"
+    },
+    {
+      "id": "2026-10-21-pm-tibo-day16-prompt-cache",
+      "module": "people",
+      "personId": "tibo",
+      "title": "Tibo Day 16：API 提示缓存可选 12 小时；Codex 和 Work 登录用户的缓存永久保留，隔几小时回来也保证命中",
+      "summary": "OpenAI Codex 负责人 Tibo（@thsottiaux）北京时间 10 月 21 日 09:10 发帖（他的连更第 16 天），转发 OpenAI Developers 的公告：API 现在可以选择 12 小时的提示缓存，适合 dots 这类全天复用上下文的常驻智能体，即使请求间隔几个小时，共享的指令、工具和上下文也能按更便宜的缓存输入价计费。Tibo 补充说，对登录 Codex 和 Work 的用户，缓存会一直保留，回到旧对话或隔几小时继续都没有额外代价，保证命中缓存。帖子发出约 5 小时浏览超 116 万次、点赞 1 万多。",
+      "impact": "这对你很实用：你之前担心 Codex 跑动画转真人 skill 时 token 消耗太大，现在长会话中途停几个小时再回来，不会因为缓存失效重新按全价算上下文。不过缓存只省重复上下文的钱，反复用 view_image 看大图和单会话过长的问题还在，之前定的短会话、命令化方案照样值得执行。",
+      "sourceName": "X / Tibo",
+      "sourceUrl": "https://x.com/thsottiaux/status/2112712984644784534",
+      "publishedAt": "2026-10-21T09:10:02+08:00"
+    },
+    {
+      "id": "2026-10-21-pm-musk-spacex-q3",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克祝贺 SpaceX 三季度财报：收入 146 亿美元、同比增长 161%，AI 业务因收购 Cursor 和 Grok Bot 等新增 67 亿美元",
+      "summary": "马斯克北京时间 10 月 21 日 13:40 转发 SpaceX 官方的三季度要点并写道「Congrats SpaceX team!」。SpaceX 公布的 2026 年第三季度数据：收入 146 亿美元，同比增长 161%；首次执行有收入的星舰任务，一次送入 26 颗 Starlink V3 卫星，新增下行容量约为一次猎鹰 9 号星链发射的 10 倍；「超级智能」解决方案和基础设施收入同比新增 67 亿美元，来源包括云服务协议、收购 Cursor，以及 Grok、Grok Bot 等模型和应用；连接业务收入同比增长 69%、经营利润增长 99%；截至 9 月 30 日，名义算力规模达到 1.7 吉瓦。这也呼应了他前一天说的「2028 年收入 1 万亿美元不再不可能」。",
+      "impact": "你日常用的 Cursor 和 Grok Bot 现在都算在 SpaceX 的 AI 业务里，而且是增长主力之一，短期内这两款产品大概率会继续加功能、加算力，不太会被砍。如果你在 X 上做 AI 内容，SpaceX 财报加马斯克的表态是中文圈很容易引发讨论的选题。",
+      "sourceName": "X / Elon Musk",
+      "sourceUrl": "https://x.com/elonmusk/status/2112781132387529005",
+      "publishedAt": "2026-10-21T13:40:50+08:00"
+    },
     {
       "id": "2026-10-21-am-nvidia-rtx-pro-5500-china",
       "module": "news",
       "category": "nvidia",
-      "featured": true,
       "title": "英伟达 RTX PRO 5500 在国内遭疯抢：84GB 显存、订单传超 300 万张，5090 渠道价被推到 5 万元以上",
       "summary": "雷峰网北京时间 10 月 20 日 18:27 报道，英伟达面向中国市场的第二张 84GB 专业工作站卡 RTX PRO 5500 尚未批量交付，国内订购规模据业内人士称已超过 300 万张，而英伟达每季度对华供应上限约 50 万张。按官方理论参数和受访者数据，它在 FP4、FP8 精度下的算力约是 RTX PRO 6000D 的两倍，并支持 MIG，可切成两块各 42GB 显存的实例。预期交付报价集中在 8 万至 12 万元，大厂采购价约 8.5 万元；交付时间说法不一，从 11 月底到明年一季度都有。文章还提到海外爆料称英伟达可能把 GB202 芯片转给 RTX PRO 系列、不再给 RTX 5090 分配产能，此事未获英伟达确认，但 5090 国内电商售价已突破 5 万元、一个月涨超 50%，部分渠道报到约 5.7 万元。受访者均为匿名。",
       "impact": "你手上的 5090 正处在涨价和停产传闻的风口，短期内很难再买到同价位的卡，好好用、注意散热和供电就是最划算的。文章也提到，如果 RTX PRO 5500 上量，5090 的价格泡沫可能被戳破，所以如果你打算再加一张 5090 或出手其他显卡，别急着在高位追，等 5500 交付后的行情再说。",
