@@ -1,8 +1,67 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-20T20:30:00+08:00",
+  "updatedAt": "2026-10-21T08:30:00+08:00",
   "items": [
+    {
+      "id": "2026-10-21-am-nvidia-rtx-pro-5500-china",
+      "module": "news",
+      "category": "nvidia",
+      "featured": true,
+      "title": "英伟达 RTX PRO 5500 在国内遭疯抢：84GB 显存、订单传超 300 万张，5090 渠道价被推到 5 万元以上",
+      "summary": "雷峰网北京时间 10 月 20 日 18:27 报道，英伟达面向中国市场的第二张 84GB 专业工作站卡 RTX PRO 5500 尚未批量交付，国内订购规模据业内人士称已超过 300 万张，而英伟达每季度对华供应上限约 50 万张。按官方理论参数和受访者数据，它在 FP4、FP8 精度下的算力约是 RTX PRO 6000D 的两倍，并支持 MIG，可切成两块各 42GB 显存的实例。预期交付报价集中在 8 万至 12 万元，大厂采购价约 8.5 万元；交付时间说法不一，从 11 月底到明年一季度都有。文章还提到海外爆料称英伟达可能把 GB202 芯片转给 RTX PRO 系列、不再给 RTX 5090 分配产能，此事未获英伟达确认，但 5090 国内电商售价已突破 5 万元、一个月涨超 50%，部分渠道报到约 5.7 万元。受访者均为匿名。",
+      "impact": "你手上的 5090 正处在涨价和停产传闻的风口，短期内很难再买到同价位的卡，好好用、注意散热和供电就是最划算的。文章也提到，如果 RTX PRO 5500 上量，5090 的价格泡沫可能被戳破，所以如果你打算再加一张 5090 或出手其他显卡，别急着在高位追，等 5500 交付后的行情再说。",
+      "applicability": "关注显卡行情、手上有或打算买 5090 的本地部署玩家，以及做算力租赁的人。",
+      "sourceName": "雷峰网",
+      "sourceUrl": "https://leiphone.com/category/chips/STx9ZzfDNh5W80Bm.html",
+      "publishedAt": "2026-10-20T18:27:00+08:00"
+    },
+    {
+      "id": "2026-10-21-am-manga2animate",
+      "module": "news",
+      "category": "vision",
+      "title": "Manga2Animate 论文：用「创作者 + 审核者」多智能体，把漫画忠实改编成动画",
+      "summary": "台湾阳明交通大学团队在 Hugging Face Papers 发布论文 Manga2Animate（10 月 18 日发表，10 月 20 日提交到每日论文）。作者认为现有方法要么只把漫画当文字读，丢了角色和画风；要么直接把漫画页塞给视频模型，读错分格结构、剧情跑偏。他们把任务拆成两个中间产物：动画脚本和视觉分镜，每一步都由一个创作者智能体生成，再由配对的审核者智能体对照原漫画分格检查，用选择和双层反馈逐步修正，最后才合成动画。论文称实验和用户研究显示，生成结果比现有最好方法更忠于原作、镜头之间更一致。项目页和代码已公开。",
+      "impact": "这和你做动画转真人的思路很接近：先拆脚本和分镜、每步有人（或模型）对照原片审核，而不是直接把原画丢给视频模型。你现在的 skill 用 Codex 反复看图审片很费 token，可以参考它「创作者和审核者配对、只在中间产物上审」的结构，把审片前移到分镜阶段，交给本地视觉模型初筛。",
+      "applicability": "做漫画或动画改编、AI 视频分镜流程和多智能体审片的创作者。",
+      "sourceName": "Hugging Face Papers",
+      "sourceUrl": "https://huggingface.co/papers/2610.26851",
+      "publishedAt": "2026-10-19T04:00:00+08:00"
+    },
+    {
+      "id": "2026-10-21-am-lightroom-open-eyes",
+      "module": "news",
+      "category": "vision",
+      "title": "Adobe Lightroom 手机版上线「睁眼」一键修复：用生成式 AI 把闭眼照片改成睁眼",
+      "summary": "据 The Verge 北京时间 10 月 20 日 21:06 报道，Adobe 宣布 iOS、iPadOS 和 Android 版 Lightroom 新增 Open Eyes 快捷操作：应用检测到照片里有人闭眼时，会在画面上弹出图标，点一下就用生成式 AI 补出睁开的眼睛，并参考你 Lightroom 图库里同一个人的其他照片，让眼睛的颜色、大小和形状与本人一致，光线和姿态也能匹配。Photoshop Elements 早有类似功能，但那是从另一张照片里拼眼睛，效果看两张图差多少。免费版用户可以试用两次，之后需订阅含 AI 额度的 Creative Cloud 套餐。",
+      "impact": "对你来说主要是个参考：「用同一人的其他照片当参考来补局部」正是保持角色一致性的思路。你做真人版 OP 时，如果某帧人物闭眼或表情崩了，可以在 ComfyUI 里用同角色参考图加局部重绘修复，不必整段重跑 H3。",
+      "applicability": "修人像照片的手机用户、做 AI 视频后期修帧的创作者。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://theverge.com/tech/1014246/adobe-lightroom-mobile-ai-quick-action-open-eyes-closed-blink-repair",
+      "publishedAt": "2026-10-20T21:06:00+08:00"
+    },
+    {
+      "id": "2026-10-21-am-tibo-usage-limit-40k-accounts",
+      "module": "people",
+      "personId": "tibo",
+      "title": "Tibo：周末额度消耗过快是个 bug，约 4 万个账号的用量限制和所选套餐对不上",
+      "summary": "OpenAI Codex 负责人 Tibo（@thsottiaux）北京时间 10 月 21 日 01:10 发帖回应：有用户反映周末额度掉得比预期快，团队排查后发现约 40,000 个账号存在不一致，实际执行的用量限制与他们选择的套餐不符。帖子没有说明补偿或修复时间。发出约 7 个小时内获超 72 万次浏览、9000 多个赞和 2100 多条回复。",
+      "impact": "如果你这个周末用 Codex 跑动画转真人或 skill 改造时觉得额度掉得特别快，可能就是这个问题，不完全是你的流程太费 token。可以去账户页核对一下当前套餐和用量显示是否正确，再留意 Tibo 和 OpenAI 后续有没有重置额度或补偿。",
+      "sourceName": "X / Tibo",
+      "sourceUrl": "https://x.com/thsottiaux/status/2112592264686149749",
+      "publishedAt": "2026-10-21T01:10:20+08:00"
+    },
+    {
+      "id": "2026-10-21-am-musk-spacex-1t-2028",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克：SpaceX 2028 年收入达到 1 万亿美元「不再不可能」，比他 6 月的预期提前两年",
+      "summary": "马斯克北京时间 10 月 21 日 06:05 发帖：「听起来很疯狂，但 SpaceX 在 2028 年实现 1 万亿美元收入已经不再不可能。」配图是他 2026 年 6 月 14 日的旧帖截图，当时他说 SpaceX 也许能在 2030 年达到约 1 万亿美元收入，这次等于把时间提前了两年。发帖前几小时，SpaceX 在 X 上直播了 2026 年第三季度财报说明会。同一晚他还发帖称大规模算力上线的难点不只是「缺电」，而是「每件事在极高速度下都很难」，并转发了 Grok Bot 的更新清单。这条帖子数小时内约 140 万次浏览、近 3 万个赞。",
+      "impact": "主要是资本和产业层面的表态，对你的本地部署没有直接影响。值得注意的是他反复强调算力上线难，说明大厂之间抢算力还会持续，这也是你那张 5090 一直在涨价的大背景。",
+      "sourceName": "X / Elon Musk",
+      "sourceUrl": "https://x.com/elonmusk/status/2112666467712073815",
+      "publishedAt": "2026-10-21T06:05:12+08:00"
+    },
     {
       "id": "2026-10-20-ev-deepseek-deepinfer",
       "module": "news",
