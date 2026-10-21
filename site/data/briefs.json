@@ -1,8 +1,68 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-21T14:30:00+08:00",
+  "updatedAt": "2026-10-21T20:30:00+08:00",
   "items": [
+    {
+      "id": "2026-10-21-ev-nvidia-flare-local-inference",
+      "module": "news",
+      "category": "nvidia",
+      "featured": true,
+      "title": "英伟达低调开源本地推理服务器 Flare：专为 Blackwell 工作站显卡，Rust 运行时不需要 Python，Windows 可原生跑",
+      "summary": "英伟达在 GitHub 上新开了 NVIDIA/flare-local-inference 仓库（北京时间 10 月 21 日凌晨 01:09 创建，Apache 2.0 许可），没有发正式公告，英伟达开发者论坛上有用户最先发帖介绍。Flare 是面向 SM120/SM121 架构 Blackwell 显卡（RTX PRO 6000 Blackwell、DGX Spark 等）的本地大模型推理服务器，主打长对话、编程智能体和反复调用工具的场景。它分两步：先用 PyTorch、Transformers 和 FlashInfer 准备模型、调优算子并提前捕获 CUDA Graph，打成一个运行包；再由 Rust 写的运行时直接加载服务，运行时不依赖 Python。文档里已有 Qwen3.8 27B（NVFP4）、Qwen3.8 Flash、DeepSeek V4.1 Flash、GLM 和 Nemotron 3.5 Bolt 74B-A9B 等配方，提供兼容 OpenAI 和 Anthropic Messages 的接口。Windows 11 上可以原生编译，运行时直接调用显卡驱动，不需要 Python、CUDA 工具包或 WSL；单卡的 Qwen3.8 27B 配方也能在 Windows 上准备。官方提醒它只覆盖选定的模型，覆盖面远不如 vLLM，建议用自己的模型和负载对比。截至发稿仓库约 349 星。",
+      "impact": "你的 5090 用的是 GB202 芯片，和文档点名的 RTX PRO 6000 Blackwell 同属 SM120，理论上在 Flare 的支持范围内，而且它能在 Windows 原生跑，不用折腾 WSL。可以先试单卡 Qwen3.8 27B NVFP4 这个配方，接到 Codex 或 Claude Code 这类编程智能体上，和你现在用的 llama.cpp 或 Ollama 比一比速度。注意 32GB 显存装不下大的 Flash 模型配方，而且项目刚开源、文档以官方工作站为主，遇到问题要有自己排查的准备。按惯例，跑之前先查 ComfyUI 队列并释放显存。",
+      "applicability": "手上有 RTX 50 系或 RTX PRO Blackwell 显卡、想在本地给编程智能体跑模型的开发者。",
+      "sourceName": "GitHub / NVIDIA",
+      "sourceUrl": "https://github.com/NVIDIA/flare-local-inference",
+      "publishedAt": "2026-10-21T01:09:40+08:00"
+    },
+    {
+      "id": "2026-10-21-ev-nvidia-gtc-berlin-dsx-pod",
+      "module": "news",
+      "category": "nvidia",
+      "title": "英伟达 GTC 柏林发布 DSX POD：集装箱式 Vera Rubin AI 工厂在工厂预装测试，现场部署从半年缩到最快 14 天",
+      "summary": "英伟达北京时间 10 月 21 日 17:34 在 GTC 柏林大会上发布 DSX POD，这是一套参考设计，把完整的 Vera Rubin AI 工厂（算力、网络、布线、机柜供电和液冷）在合作伙伴的工厂里装进模块化集装箱，出厂前完成接线、管路和功能验证，运到已准备好电力和冷却的场地后直接接入。英伟达称这能把部署时间从六个月缩短到最快 14 天，让客户更早开始产出 token、产生收入。合作伙伴包括戴尔、HPE、联想、施耐德电气、维谛、富士康、技嘉、广达、纬创、Anduril 等，计划 2027 年初在全球交付。黄仁勋说：AI 工厂创造价值是从开始产出 token 的那一刻算起，而不是建完的那一刻。",
+      "impact": "这是数据中心级别的产品，和你的本地显卡没有直接关系。它说明英伟达的重心仍在大规模算力交付上，了解行业走向即可，不需要做什么。",
+      "applicability": "关注 AI 基础设施、英伟达业务走向和显卡行情的读者。",
+      "sourceName": "NVIDIA 新闻稿（GlobeNewswire）",
+      "sourceUrl": "https://www.globenewswire.com/news-release/2026/10/21/3385267/0/en/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europe-s-infrastructure-deployment.html",
+      "publishedAt": "2026-10-21T17:34:00+08:00"
+    },
+    {
+      "id": "2026-10-21-ev-kapitsa-v020-apple-silicon",
+      "module": "news",
+      "category": "mac",
+      "title": "开源 Mac 推理引擎 Kapitsa 发布 v0.2.0：M4 Pro 上 Qwen3.6 35B-A3B 达 154 tok/s，16GB Mac 也能跑 35B",
+      "summary": "Nace.ai 团队开源的 Kapitsa（Apache 2.0）是专为 Apple Silicon 写的 Metal 推理引擎，只支持 Qwen 和英伟达 Nemotron 两个模型家族，以便针对每种架构定制算子。北京时间 10 月 21 日 12:20 发布 v0.2.0，新增 Nemotron 3 Nano 4B 和 Nano 9B v2，并让 Qwen3.6-35B-A3B 在 16GB 内存的 Mac 上用 2 到 3 位量化的专家层运行（M1 Pro 上 52.6 tok/s，llama.cpp 为 38）。官方在 2024 款 M4 Pro 48GB MacBook Pro 上测得：Qwen3.6 35B-A3B 4 位 154 tok/s（Ollama 89、LM Studio 86），Qwen3.8 27B 4 位 63 tok/s（Ollama 32）；M5 Max 128GB 上 35B-A3B 为 281 tok/s。提速主要来自定制 Metal 算子、DFlash2 等投机解码、适配混合架构模型的缓存，以及 27B 的部分预填充放到神经网络引擎上跑。作者也说 Qwen3.8 27B 在 M5 Max 上不是最快（102 对比 mlx-serve 的 130），并提醒不要迷信跑分，可以用 kapitsa bench 自测。安装方式是 brew install nace-ai/tap/kapitsa，可直接接 opencode、Claude Code、Codex。仓库 10 月 16 日创建，目前约 194 星。",
+      "impact": "这条对你的两台 Mac 都有用：MacBook M5 Pro 64GB 可以直接试 Qwen3.6 35B-A3B 和 Qwen3.8 27B，你 HF 缓存里已经有 35B-A3B，可以对比现在的 MLX 速度；Mac mini M4 16GB 也能用它的低位量化跑 35B-A3B。适合给 Codex 或 Claude Code 当本地备用模型。项目还很新、星数不多，先当实验工具，别替换主力流程。",
+      "applicability": "用 Apple Silicon Mac 跑本地编程智能体、主要用 Qwen 或 Nemotron 模型的用户。",
+      "sourceName": "GitHub / nace-ai",
+      "sourceUrl": "https://github.com/nace-ai/kapitsa/releases/tag/v0.2.0",
+      "publishedAt": "2026-10-21T12:20:07+08:00"
+    },
+    {
+      "id": "2026-10-21-ev-amd-intel-onednn-pytorch",
+      "module": "news",
+      "category": "amd",
+      "title": "AMD 和英特尔联手：PyTorch 的 x86 CPU 优化统一到 oneDNN，AMD 把 ZenDNN 并入，两家还合作新矩阵指令 ACE",
+      "summary": "AMD 北京时间 10 月 20 日晚间宣布与英特尔合作，把两家各自为 PyTorch 做的 x86 CPU 优化合并到开源深度学习库 oneDNN 里，并把 oneDNN 定为 PyTorch 在 x86 上的默认加速库。AMD 会把自家 ZenDNN 的优化并入 oneDNN，并以指导委员会成员身份加入负责管理 oneDNN 的 UXL 基金会。这一步由 x86 生态顾问组推动，目的是让开发者在 AMD 和英特尔 CPU 上走同一条软件路径，减少碎片化。两家还在合作开发下一代 x86 指令集扩展 AI Compute Extensions（ACE），专门加速 AI 里的矩阵乘法，未来会通过 oneDNN 更新接入 PyTorch。红帽的 PyTorch 大使 Stephen Watt 称这是消除生态碎片的重要一步。",
+      "impact": "这是 CPU 端的事，不涉及 Radeon 显卡和 ROCm。你的台式机是英特尔 i7-12700K，以后 PyTorch 在 CPU 上跑小模型、预处理或显存不够时卸载到内存的那部分，可能会因为统一优化而稍快一点，但不用为此做任何改动，等 PyTorch 正常升级即可。",
+      "applicability": "在 x86 CPU 上跑 PyTorch 推理或训练的开发者。",
+      "sourceName": "AMD Newsroom",
+      "sourceUrl": "https://newsroom.amd.com/news/amd-intel-collaborate-simplify-ai-development-on-x86-cpus-pytorch/",
+      "publishedAt": "2026-10-20T23:52:05+08:00"
+    },
+    {
+      "id": "2026-10-21-ev-trump-wolfspeed-nc-chips",
+      "module": "people",
+      "personId": "trump",
+      "title": "特朗普在北卡集会宣布：五角大楼投 15 亿美元支持当地芯片生产，实为 Wolfspeed 一笔尚未敲定的有条件贷款",
+      "summary": "特朗普北京时间 10 月 21 日上午在北卡罗来纳州格林维尔的集会上说，国防部（现称战争部）将投资 15 亿美元在北卡生产「尖端」半导体芯片。据当地电视台 WXII 和 The Hill 报道，这指的是战争部战略资本办公室 10 月 7 日已宣布的一笔有条件贷款承诺：向总部在达勒姆的 Wolfspeed 提供最长 30 年、最多 15 亿美元的融资，用于碳化硅材料、宽禁带功率器件和氮化镓产线，并侧重国家安全用途。Wolfspeed 向美国证监会提交的文件显示，这笔贷款还需要尽职调查、正式协议、国会授权和拨款等多项条件，目前并未到位。商务部长卢特尼克同台宣布，石英加工企业 Sibelco 将在北卡新建工厂，投资达「数亿美元」。",
+      "impact": "这是选举集会上对旧消息的重新包装，碳化硅和氮化镓主要用在功率器件和射频上，不是 AI 计算芯片，和你的显卡、本地模型都没有直接关系。当人物动态了解即可，不必当成美国 AI 芯片产能的新增量。",
+      "sourceName": "The Hill",
+      "sourceUrl": "https://thehill.com/homenews/administration/6161642-trump-pentagon-semiconductor-investment/",
+      "publishedAt": "2026-10-21T09:26:00+08:00"
+    },
     {
       "id": "2026-10-21-pm-fasth3-omni-open",
       "module": "news",
