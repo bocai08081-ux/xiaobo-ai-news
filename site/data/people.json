@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-22T05:06:10Z",
-  "updatedLabel": "10/22 13:06",
+  "updatedAt": "2026-10-22T12:09:51Z",
+  "updatedLabel": "10/22 20:09",
   "people": [
     {
       "id": "tibo",
@@ -24,6 +24,24 @@
   ],
   "posts": [
     {
+      "id": "5efc5ca612989483",
+      "personId": "musk",
+      "title": "利润暴跌四成，也挡不住马斯克的AI野心",
+      "summary": "36氪报道了这件事：利润暴跌四成，也挡不住马斯克的AI野心。",
+      "context": "上文来自36氪的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是36氪。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "36氪",
+      "sourceUrl": "https://36kr.com/p/4036832147149952?f=rss",
+      "linkLabel": "查看原文",
+      "timeLabel": "10/22 18:26",
+      "publishedAt": "2026-10-22T10:26:36Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
       "id": "0f82efe964104e1e",
       "personId": "musk",
       "title": "微软员工数十年来首次下降；沃尔玛/山姆推出 Agent 购物接口；推动 SpaceX 和特斯拉合并，马斯克财富有望暴涨",
@@ -35,24 +53,6 @@
       "linkLabel": "查看原文",
       "timeLabel": "10/22 08:48",
       "publishedAt": "2026-10-22T00:48:32Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "992e176472e85c5f",
-      "personId": "musk",
-      "title": "停止加薪！大众计划冻结全球大量员工薪酬至2030年；突发！美国发布DeepSeek禁令；马斯克：明年向全美儿童赠送SpaceX股票",
-      "summary": "要闻提示 1.停止加薪！大众计划冻结员工薪酬至2030年，涉及全球大量员工 2.突发！",
-      "context": "上文来自雷峰网的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "雷峰网",
-      "sourceUrl": "https://leiphone.com/category/zaobao/Y7039p8HsmmeQClm.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "10/20 18:39",
-      "publishedAt": "2026-10-20T10:39:00Z",
       "tags": [
         "AI 模型",
         "转述"
