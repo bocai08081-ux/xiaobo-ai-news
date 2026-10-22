@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-22T12:09:51Z",
-  "updatedLabel": "10/22 20:09",
+  "updatedAt": "2026-10-22T17:23:48Z",
+  "updatedLabel": "10/23 01:23",
   "people": [
     {
       "id": "tibo",
@@ -23,24 +23,6 @@
     }
   ],
   "posts": [
-    {
-      "id": "5efc5ca612989483",
-      "personId": "musk",
-      "title": "利润暴跌四成，也挡不住马斯克的AI野心",
-      "summary": "36氪报道了这件事：利润暴跌四成，也挡不住马斯克的AI野心。",
-      "context": "上文来自36氪的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是36氪。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "36氪",
-      "sourceUrl": "https://36kr.com/p/4036832147149952?f=rss",
-      "linkLabel": "查看原文",
-      "timeLabel": "10/22 18:26",
-      "publishedAt": "2026-10-22T10:26:36Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
     {
       "id": "0f82efe964104e1e",
       "personId": "musk",
