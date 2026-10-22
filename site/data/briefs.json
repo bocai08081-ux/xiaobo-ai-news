@@ -1,8 +1,71 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-22T14:30:00+08:00",
+  "updatedAt": "2026-10-22T20:30:00+08:00",
   "items": [
+    {
+      "id": "2026-10-22-ev-php2shell-patch-the-planet",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "PHP 爆出两个 9.2 分远程执行漏洞：OpenAI「Patch the Planet」用 GPT-5.6 Sol 找到，全球多国网站紧急下线打补丁",
+      "summary": "OpenAI 北京时间 10 月 21 日 15:00 发文披露：过去两个月它牵头维护者、研究者和安全厂商组成联盟，处理 PHP 的严重漏洞。安全公司 Calif 在 OpenAI 的「Patch the Planet」计划里用 GPT-5.6 Sol 找到了其中一个关键缺陷，Wiz 也独立发现并报告了两个漏洞；修复由 PHP 维护者主导发布，Wiz、Cloudflare 等提供研究和防护准备。OpenAI 称这是近年影响最大的安全问题之一，并开放了一个检查 PHP 版本的 Codex skill，另拿出 10 亿美元补贴额度给资源有限的防守方使用 Daybreak。它还提醒，这只是已发现并在修的多个重大漏洞之一，预计未来几个月类似发现会大幅增加。爱范儿 10 月 22 日报道补充：两个漏洞代号 PHP2Shell，编号 CVE-2026-109618 和 CVE-2026-109619，PHP 基金会评分 9.2（满分 10），因信息提前泄露，PHP 基金会在 21 日晚 10 点提前发布紧急补丁；约 69% 的网站后端用 PHP，芬兰、荷兰等多国政府网站，niconico、pixiv 和部分任天堂服务都临时下线升级，近半网站仍在用已停止支持、拿不到补丁的旧版 PHP。",
+      "impact": "你的 rAthena 私服如果带了 FluxCP 之类的 PHP 网页（注册、排行榜、后台），今晚就该查 PHP 版本并升级到官方补丁版本，旧分支没补丁就只能升大版本或先关掉对外网页。其他用到 PHP 的建站、WordPress 也一样。资讯站本身是 GitHub Pages 静态站，不受影响。",
+      "applicability": "自己运营网站、游戏私服后台或 WordPress 的人。",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities",
+      "publishedAt": "2026-10-21T15:00:00+08:00"
+    },
+    {
+      "id": "2026-10-22-ev-openai-models-google-cloud",
+      "module": "news",
+      "category": "models",
+      "featured": false,
+      "title": "OpenAI 模型和 Codex 将上架 Google Cloud Model Garden，之后还会进 Antigravity 和 Gemini Agent",
+      "summary": "OpenAI 北京时间 10 月 21 日 20:00 宣布与 Google Cloud 合作，把前沿模型和 Codex 智能体工作流放进 Google Cloud 的 Model Garden。企业可以通过 Google Cloud Marketplace 购买，并用已有的 GCP 承诺消费额度抵扣，同时用上 Google Cloud 的访问控制和数据治理。OpenAI 还表示，它的模型很快会出现在 Google 的 Antigravity 编程工具和 Gemini Agent 里，让企业客户按任务选模型。正式可用计划在未来几周内，目前可以申请访问。公告最后强调，微软仍是 OpenAI 的主要云合作伙伴。",
+      "impact": "对你个人影响不大，主要是企业采购渠道多了一条。值得留意的是 Antigravity 以后能直接选 OpenAI 模型，如果你在用或想试 Google 的编程工具，可以不用为换模型而换工具。",
+      "applicability": "用 Google Cloud 或 Google 编程工具的开发者和企业。",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/openai-models-google-cloud",
+      "publishedAt": "2026-10-21T20:00:00+08:00"
+    },
+    {
+      "id": "2026-10-22-ev-lemonade-thenoise-rocm",
+      "module": "news",
+      "category": "amd",
+      "featured": false,
+      "title": "Lemonade v2026.43.3：TheNoise 图像后端在 AMD ROCm 上转正，Windows 也能看 AMD 显卡占用和显存",
+      "summary": "AMD 支持的本地 AI 服务 Lemonade 北京时间 10 月 22 日 02:32 发布 v2026.43.3。主要更新：TheNoise 图像生成后端升为 Core 级别，在 Linux 和 Windows 的 AMD 显卡 ROCm 环境下正式支持；图像编辑现在可以一次传多张参考图，自动选尺寸并无损透传；GET /v1/stats 新增实时推理指标，能看到进行中的请求数和估算的每秒 token；Windows 上的系统状态现在也会报告 AMD 显卡占用率和显存（此前只有 NVIDIA）。有两处不兼容改动：多显卡机器上 system-stats 改为报告显存最大的那块卡，而不是占用最高的那块；依赖 guest 级后端的模型在装好该后端前会被隐藏，拉取时返回 model_not_supported。",
+      "impact": "你的 7900 XTX 已经从台式机换下来了，如果之后把它装到别的机器上跑本地模型或出图，Lemonade 现在在 Windows 上也能用 ROCm 跑图像生成和多图编辑，是个省事的选项。5090 那台用不上这次更新。",
+      "applicability": "用 AMD 显卡在本地跑大模型或出图的人。",
+      "sourceName": "GitHub / Lemonade",
+      "sourceUrl": "https://github.com/lemonade-sdk/lemonade/releases/tag/v2026.43.3",
+      "publishedAt": "2026-10-22T02:32:06+08:00"
+    },
+    {
+      "id": "2026-10-22-ev-lmstudio-119-ane-prefill",
+      "module": "news",
+      "category": "mac",
+      "featured": false,
+      "title": "LM Studio 1.1.9：新增神经网络引擎预填充控制，GGUF 和 MLX 加载前做兼容检查，LM Link 更省流量",
+      "summary": "LM Studio 北京时间 10 月 22 日凌晨发布 1.1.9 版更新说明。和本地跑模型相关的改动有：支持的模型可以控制是否用神经网络引擎（Neural Engine）做预填充；加载 GGUF 和 MLX 模型前会做运行时兼容检查，并可设置最大内存上限；llama.cpp 扩展包更新到 2.61.0 和 2.62.0；同一引擎的不同模型格式共享运行时版本选择；按需发现 MCP 工具以减少上下文占用。远程连接功能 LM Link 降低了带宽占用，修复了大文件传输时断连，并对版本不兼容给出更清楚的错误。另外还加了助手回复本地朗读、CSV/TSV 预览，以及命令行工具 lms 与应用共用安装。",
+      "impact": "你的 MacBook M5 Pro 64GB 跑 MLX 模型时可以试试新的神经网络引擎预填充开关，看长提示词的首字延迟有没有改善；内存上限设置也能避免大模型把整机内存吃满。用 LM Link 从 Mac 连台式机的话，这版更稳。",
+      "applicability": "在 Mac 上用 LM Studio 跑本地模型的人。",
+      "sourceName": "LM Studio",
+      "sourceUrl": "https://lmstudio.ai/changelog/bionic-v1.1.9",
+      "publishedAt": "2026-10-22T02:33:49+08:00"
+    },
+    {
+      "id": "2026-10-22-ev-tibo-day17-reset",
+      "module": "people",
+      "personId": "tibo",
+      "title": "Tibo 28 天挑战第 17 天：「以为我们忘了？今天是重置日」，并提醒趁早申请 Daybreak Blue",
+      "summary": "OpenAI Codex 负责人 Tibo（@thsottiaux）北京时间 10 月 22 日 14:55 发帖：「Day 17/ Bet you thought we forgot, but no, it's reset day today.」意思是第 17 天照常进行，今天重置用量额度。他同时提醒大家去申请 Daybreak Blue（OpenAI 面向安全防守方的更宽松网络安全配置），说只要 15 分钟，「你可不想在事故处理到一半时才去弄」。这条帖子发出几小时内浏览超过 105 万次，点赞 9200 多，回复 1600 多。前一天 OpenAI 刚披露了 PHP 重大漏洞的协同修复。",
+      "impact": "你的 Codex 额度今天又被重置了，手上排着的大任务（比如 skill 改造、资讯站维护）可以趁这波额度跑掉。如果你会用 Codex 查自己服务器的安全问题，Daybreak Blue 值得提前申请。",
+      "sourceName": "X / Tibo",
+      "sourceUrl": "https://x.com/thsottiaux/status/2113162277688070445",
+      "publishedAt": "2026-10-22T14:55:22+08:00"
+    },
     {
       "id": "2026-10-22-pm-recursive-flint",
       "module": "news",
