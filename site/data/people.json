@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-21T17:26:02Z",
-  "updatedLabel": "10/22 01:26",
+  "updatedAt": "2026-10-22T05:06:10Z",
+  "updatedLabel": "10/22 13:06",
   "people": [
     {
       "id": "tibo",
@@ -24,17 +24,17 @@
   ],
   "posts": [
     {
-      "id": "08b176fb81176452",
+      "id": "0f82efe964104e1e",
       "personId": "musk",
-      "title": "Muse豆包遭集体“拉黑”，AI还能替我办事吗？",
-      "summary": "个人Agent被企业“堵门”！Meta绕道，阿里内修，马斯克要再造亚马逊。",
-      "context": "上文来自36氪的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是36氪。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "36氪",
-      "sourceUrl": "https://36kr.com/p/4035541955384194?f=rss",
+      "title": "微软员工数十年来首次下降；沃尔玛/山姆推出 Agent 购物接口；推动 SpaceX 和特斯拉合并，马斯克财富有望暴涨",
+      "summary": "极客公园报道了这件事：微软员工数十年来首次下降；沃尔玛/山姆推出 Agent 购物接口；推动 SpaceX 和特斯拉合并，马斯克财富有望暴涨。",
+      "context": "上文来自极客公园的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是极客公园。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "极客公园",
+      "sourceUrl": "http://geekpark.net/news/372711",
       "linkLabel": "查看原文",
-      "timeLabel": "10/21 20:38",
-      "publishedAt": "2026-10-21T12:38:24Z",
+      "timeLabel": "10/22 08:48",
+      "publishedAt": "2026-10-22T00:48:32Z",
       "tags": [
         "AI 模型",
         "转述"
@@ -55,24 +55,6 @@
       "publishedAt": "2026-10-20T10:39:00Z",
       "tags": [
         "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "e338168ad79e81f0",
-      "personId": "tibo",
-      "title": "早报｜曝苹果机械臂版HomeView正在开发/蔚来三季度销量首次超BBA/英伟达否认RTX 5090停产",
-      "summary": "爱范儿报道了这件事：早报｜曝苹果机械臂版HomeView正在开发/蔚来三季度销量首次超BBA/英伟达否认RTX 5090停产。",
-      "context": "上文来自爱范儿的公开报道，不是 @thsottiaux 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是爱范儿。只因为标题或摘要提到了Tibo，才收进人物动态。",
-      "sourceName": "爱范儿",
-      "sourceUrl": "https://ifanr.com/1684815",
-      "linkLabel": "查看原文",
-      "timeLabel": "10/19 08:00",
-      "publishedAt": "2026-10-19T00:00:42Z",
-      "tags": [
-        "英伟达",
         "转述"
       ],
       "pinned": false
