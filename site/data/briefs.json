@@ -1,8 +1,98 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-23T14:30:00+08:00",
+  "updatedAt": "2026-10-23T20:30:00+08:00",
   "items": [
+    {
+      "id": "2026-10-23-ev-openai-legacy-shutdown",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "OpenAI 今日关停一批旧模型：o1、o3-mini、gpt-4-turbo、gpt-image-1 等调用会直接失败",
+      "summary": "按 OpenAI 弃用页，2026 年 10 月 23 日一批「Legacy GPT」快照正式下线，包括 o1 / o1-pro、o3-mini、o4-mini、gpt-4o-2024-05-13、gpt-4-turbo（及别名）、gpt-4-0613、gpt-4.1-nano、gpt-3.5-turbo-0125、gpt-image-1，以及基于这些底座的微调模型。官方建议迁到 gpt-5.6-sol / terra / luna 或 gpt-image-2.5。同日 Gemini 的 deep-research-pro-preview-12-2025 也到期。",
+      "impact": "菠菜若还有脚本、Comfy 节点或旧项目硬编码这些 model id，今天起会报错；先全局搜一遍再改到新 id，别等线上挂了再查。",
+      "applicability": "凡直接调 OpenAI API、把 model 写死在配置里的本地工具链都要核。",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://developers.openai.com/api/docs/deprecations",
+      "publishedAt": "2026-10-23T08:00:00+08:00"
+    },
+    {
+      "id": "2026-10-23-ev-mistral-voxtral-3",
+      "module": "news",
+      "category": "models",
+      "title": "Mistral 发布 Voxtral 3：语音转写 + TTS + 基于 LiveKit 的实时语音智能体 SDK",
+      "summary": "Mistral 在 10 月 20 日前后推出 Voxtral 3 语音家族（公开预览）：离线/实时转写、带情感与方言控制的 TTS，以及把听、想、调工具、说串成一条实时管线的 Voice Agents SDK。转写覆盖 50+ 语言，Mini Transcribe 批价约 0.0035 美元/分钟，语音智能体 API 从约 0.04 美元/分钟起。可走欧盟托管 API，也可自建。",
+      "impact": "做语音助手、客服或直播字幕时多了一个可自托管的欧洲选项；想对比 OpenAI / 讯飞语音栈时值得跑一轮延迟和中文效果。",
+      "sourceName": "Mistral AI",
+      "sourceUrl": "https://mistral.ai/news/voxtral-3/",
+      "publishedAt": "2026-10-20T12:00:00+08:00"
+    },
+    {
+      "id": "2026-10-23-ev-xcode-272-json",
+      "module": "news",
+      "category": "mac",
+      "title": "Xcode 27.2 上线面向智能体与合并的 JSON 工程格式 project.xcproj",
+      "summary": "Apple 在 Xcode 27.2 引入基于 JSON 的工程配置（project.xcproj），替代难 diff 的 pbxproj：变更更可读、合并冲突更少，也方便编码智能体读写工程结构。另提供 Swift 包编解码。新建项目可默认用新格式；旧项目可在检查器里迁移。迁移前需确认 CocoaPods、fastlane、Tuist 等工具已支持。",
+      "impact": "在 Mac 上用 Codex / 本地 Agent 改 iOS 工程会轻松很多；多人协作也少踩 pbxproj 合并坑。上 Xcode 27 前先核一下依赖工具链。",
+      "sourceName": "InfoQ",
+      "sourceUrl": "https://www.infoq.com/news/2026/10/xcode-json-project-format/",
+      "publishedAt": "2026-10-12T12:00:00+08:00"
+    },
+    {
+      "id": "2026-10-23-ev-nvidia-rubin-ultra-nvl576",
+      "module": "news",
+      "category": "nvidia",
+      "title": "英伟达在 OCP 再谈 Rubin Ultra NVL576：用 CPO 与 NVLink 7 把 576 颗 GPU 串成一个域",
+      "summary": "据科技新报 10 月 23 日报道，英伟达在 OCP 2026（10 月 22 日）进一步披露 Vera Rubin Ultra NVL576：借助共封装光学（CPO）与 NVLink 7，把跨多机柜的 576 颗 GPU 连成单一 NVLink 域，面向 10 兆参数级模型，并主打每瓦性能。路线图标称约 15 EFLOPS FP4 推理、5 EFLOPS FP8 训练；单卡最高约 1TB HBM4E。规格仍属路线图，量产前可能再调。",
+      "impact": "5090 桌面用户短期用不上，但说明下一代机柜级互联会更依赖光学；关注本地部署与云租卡价时，把「单机柜 NVL72」和「跨柜 NVL576」分开看。",
+      "sourceName": "TechNews 科技新报",
+      "sourceUrl": "https://technews.tw/2026/10/23/nvidia-to-connect-576-rubin-ultra-gpus-using-cpo-to-create-one-giant-gpu/",
+      "publishedAt": "2026-10-23T16:00:00+08:00"
+    },
+    {
+      "id": "2026-10-23-ev-amd-mi350-rccl-ll",
+      "module": "news",
+      "category": "amd",
+      "title": "AMD MI350 多卡 AllReduce 用 RCCL LL 协议可能算错：先设 NCCL_PROTO=LL128,Simple",
+      "summary": "ROCm 10.1.0 把一条已知问题标成已核实：在 Instinct MI350 系列多卡上，RCCL 的 LL 协议做 AllReduce 可能产出错误结果，分布式训练与推理都可能中招。官方临时办法是环境变量 NCCL_PROTO=LL128,Simple，禁用 LL、保留 LL128 与 Simple。调优 CSV 可能自动选中 LL，因此即使用户没手选也会踩坑。截至 10 月 22 日仍未给出正式修复日期。",
+      "impact": "菠菜若在 AMD 卡上跑多卡 vLLM / 训练，升级到 ROCm 10.1 后先核对实际加载的 librccl，并加上这行环境变量；单卡本地生图一般不受影响。",
+      "sourceName": "Joho no Todai",
+      "sourceUrl": "https://joho-todai.com/en/amd-mi350-multi-gpu-rccl-bug-fix/",
+      "publishedAt": "2026-10-22T16:00:00+08:00"
+    },
+    {
+      "id": "2026-10-23-ev-tibo-day18",
+      "module": "people",
+      "personId": "tibo",
+      "title": "Tibo 第 18 天：Decisions API 已正式开放，并预告「明天 PST 上午 10 点前」还有小船一起登陆",
+      "summary": "OpenAI 的 Tibo（@thsottiaux）发帖写 Day 18：Decisions API 已 GA、OpenResponses 进入 Linux 基金会、性能有改进、Uber 全面押注 Codex 与 Work；同时又说「yes… that’s a reset」。跟帖补一句：明天 PST 上午 10 点前会和「一艘小船」一起登陆。",
+      "impact": "说明 OpenAI 仍在用每日挑战节奏推产品；「小船」具体是什么要等到北京时间 10 月 24 日晚间前后再看官方发布。",
+      "sourceName": "Tibo on X",
+      "sourceUrl": "https://x.com/thsottiaux/status/2113492187770175603",
+      "publishedAt": "2026-10-23T12:46:19+08:00"
+    },
+    {
+      "id": "2026-10-23-ev-musk-spacex-tesla-merger",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克确认 SpaceX 与特斯拉在评估合并：称「战略上说得通」，但强调股东说了算",
+      "summary": "洛杉矶时报 10 月 22 日报道，马斯克在 SpaceX 三季报电话会上确认双方董事会已成立特别委员会评估合并可能，目标是把 SpaceX 的算力、Starlink 与 AI 能力和特斯拉的 Robotaxi、自动驾驶与 Optimus 放到一起。他明确说自己因利益冲突不参与委员会，并称外界若当成「板上钉钉」是过度解读。报道指合并若做成或成史上最大企业并购之一。",
+      "impact": "对关注 Grok / Cursor 打包订阅和特斯拉算力叙事的人：合并会改变 AI 基建归属，但监管与中欧审批仍是硬门槛，短期别按「已合并」做决策。",
+      "sourceName": "Los Angeles Times",
+      "sourceUrl": "https://www.latimes.com/business/story/2026-10-22/behind-elon-musks-plans-for-mega-merger-of-spacex-tesla",
+      "publishedAt": "2026-10-22T18:00:00+08:00"
+    },
+    {
+      "id": "2026-10-23-ev-trump-starlink-ukraine-still",
+      "module": "people",
+      "personId": "trump",
+      "title": "特朗普称马斯克已恢复乌克兰 Starlink 后，乌方仍称限制未解除",
+      "summary": "BBC 10 月 23 日报道：特朗普称马斯克「已经改回来」，但不愿证实是否亲自打电话。乌克兰国防部消息人士对 BBC 表示，仍在记录无人机在约 161 公里/时速度下掉线的情况，目前「无法确认限制已解除」。泽连斯基当天早些时候也表示系统尚未完全恢复，并在等美国务卿答复。",
+      "impact": "人物动态上，白宫表态与前线体感仍不一致；追这条新闻时以乌方实测为准，别只转特朗普原话。",
+      "sourceName": "BBC",
+      "sourceUrl": "https://www.bbc.com/news/articles/cq74pjpmx0e8o",
+      "publishedAt": "2026-10-23T19:00:00+08:00"
+    },
     {
       "id": "2026-10-23-pm-anthropic-agent-skills-aaif",
       "module": "news",
