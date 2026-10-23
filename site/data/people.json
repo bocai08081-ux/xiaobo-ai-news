@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-22T17:23:48Z",
-  "updatedLabel": "10/23 01:23",
+  "updatedAt": "2026-10-23T05:05:48Z",
+  "updatedLabel": "10/23 13:05",
   "people": [
     {
       "id": "tibo",
@@ -22,24 +22,5 @@
       "initial": "特"
     }
   ],
-  "posts": [
-    {
-      "id": "0f82efe964104e1e",
-      "personId": "musk",
-      "title": "微软员工数十年来首次下降；沃尔玛/山姆推出 Agent 购物接口；推动 SpaceX 和特斯拉合并，马斯克财富有望暴涨",
-      "summary": "极客公园报道了这件事：微软员工数十年来首次下降；沃尔玛/山姆推出 Agent 购物接口；推动 SpaceX 和特斯拉合并，马斯克财富有望暴涨。",
-      "context": "上文来自极客公园的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是极客公园。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "极客公园",
-      "sourceUrl": "http://geekpark.net/news/372711",
-      "linkLabel": "查看原文",
-      "timeLabel": "10/22 08:48",
-      "publishedAt": "2026-10-22T00:48:32Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    }
-  ]
+  "posts": []
 }
