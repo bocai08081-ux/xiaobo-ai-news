@@ -1,8 +1,72 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-22T20:30:00+08:00",
+  "updatedAt": "2026-10-23T08:30:00+08:00",
   "items": [
+    {
+      "id": "2026-10-23-am-openai-decisions-api-ga",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "OpenAI Decisions API 正式开放：GPT-6 Luna 专做分类、路由、打分，比 Responses API 快约 10 倍，只收输入费",
+      "summary": "OpenAI 10 月 22 日宣布 Decisions API 结束公测、正式可用（开发者社区公告发于北京时间 10 月 23 日 04:51）。它基于 GPT-6 Luna，专门回答「答案范围有限」的问题：给一段文字、图片或 JSON，返回概率（是或否）、从固定选项里挑一个，或按评分标准打分，适合内容分类、请求路由、决定智能体下一步。官方称比通过 Responses API 调用 GPT-6 Luna 快最多 10 倍。正式版新增：和 GPT-Live 语音原生集成、提示缓存、美国和欧盟数据驻留、直接传 JSON、题目说明里可带图片，每次请求最多 400 个问题（公测时 200 个）。价格是每百万输入 token 0.10 美元，缓存输入 0.01 美元，输出不收费。客户案例里，Datadog 用它在执行智能体生成的命令前打风险分，p95 延迟比前沿模型快 40 倍；Sierra 在客服对话里选下一步动作，p95 低于 280 毫秒。",
+      "impact": "你那套动画转真人流程里「审片初筛」这一步（判断镜头是否崩坏、角色是否走样），如果不想本地挂 32B 视觉模型，可以把截图丢给 Decisions API 让它打分，按输入计费、输出免费，比让 Codex 反复看图省得多。资讯站的选题分类、打标签也能用它批量跑。",
+      "applicability": "做自动化流程、需要大量快速判断或分类的开发者。",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/decisions-api",
+      "publishedAt": "2026-10-23T04:51:08+08:00"
+    },
+    {
+      "id": "2026-10-23-am-deepseek-15b-round",
+      "module": "news",
+      "category": "models",
+      "featured": false,
+      "title": "彭博：DeepSeek 新融资约 150 亿美元（约 1000 亿元），宁德时代、腾讯在潜在投资方之列",
+      "summary": "TechCrunch 北京时间 10 月 22 日 21:11 援引彭博报道：就在美国下令联邦民用机构从系统中移除 DeepSeek 技术两天后，这家杭州 AI 公司完成了约 150 亿美元（约 1000 亿元人民币）融资，是国内规模最大的融资之一，潜在投资方包括宁德时代和腾讯。DeepSeek 6 月刚以 500 亿美元估值融了 70 多亿美元，7 月又传出以约 710 亿美元估值再融 15 亿美元，并计划最早明年在国内上市。报道说新资金将用于 AI 基础设施和面向国内外市场的开源模型。创始人梁文锋据 WireScreen 分析仍持有国内运营主体约 81.6% 的股份。DeepSeek 暂未回应置评。",
+      "impact": "DeepSeek 手里钱多了，开源模型和推理框架（比如前几天开源的 DeepInfer）大概率会更新得更勤，对你在 5090 上本地跑开源大模型是好事。你 lxb 那个邮箱里有 DeepSeek 的账号邮件，API 价格或新模型有变化时值得留意。",
+      "applicability": "关注国产大模型、用 DeepSeek API 或本地部署其开源模型的人。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions",
+      "publishedAt": "2026-10-22T21:11:00+08:00"
+    },
+    {
+      "id": "2026-10-23-am-switch2-codex-jailbreak",
+      "module": "news",
+      "category": "models",
+      "featured": false,
+      "title": "Switch 2 疑似被破解：作者称用 OpenAI Codex 帮忙，借《SmileBASIC 4》跑起魔改版《马力欧赛车 世界》",
+      "summary": "The Verge 北京时间 10 月 23 日 01:21 报道：任天堂 Switch 2 看起来已被越狱，改机作者 Sammy Hajhamid（网名 pepsipu）展示了一个魔改版《马力欧赛车 世界》，加入了玉桂狗、愤怒的小鸟红鸟、彼得·格里芬和《我的世界》史蒂夫等角色。他说这个名为「ns2jb」的越狱是在 OpenAI Codex 帮助下做出来的。它是纯软件的「不完美越狱」，每次开机都要从游戏里重新运行，目前需要《SmileBASIC 4》这款编程游戏（也有人说不是必需）。报道认为它对普通玩家来说仍很复杂，影响多大还在争论，但如果改机圈继续用 AI 辅助，可能会引出一连串新漏洞。",
+      "impact": "这是「AI 写代码找漏洞」又一个很出圈的例子，和前两天 PHP 漏洞事件一脉相承，适合拿来做 X 或 B 站的选题。你自己做 RO 私服和汉化，也可以试试让 Codex 帮你逆向分析客户端或找服务端的安全问题。",
+      "applicability": "玩游戏改机、做汉化和逆向，或关注 AI 安全话题的人。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://theverge.com/games/1016862/nintendo-switch-2-jailbreak-ai",
+      "publishedAt": "2026-10-23T01:21:00+08:00"
+    },
+    {
+      "id": "2026-10-23-am-nvidia-ai-lobbying-record",
+      "module": "news",
+      "category": "nvidia",
+      "featured": false,
+      "title": "英伟达、Anthropic、OpenAI 三季度游说开支均创纪录：英伟达 220 万美元居首，苹果也首破 300 万",
+      "summary": "The Verge 北京时间 10 月 22 日 23:50 报道：美国联邦披露文件显示，7 到 9 月 Anthropic、OpenAI 和英伟达都创下各自单季游说开支最高纪录，三家合计近 600 万美元。英伟达花得最多，220 万美元，是它首次单季超过 200 万，游说内容包括 6G 网络、「负责任的 AI 设计」、竞争政策、量子计算和出口管制；Anthropic 210 万美元，涉及儿童网络安全法案、AI Overwatch 法案里的出口管制条款、数据中心电费由开发者承担的法案等；OpenAI 150 万美元，重点是前沿模型的网络安全评估、AI 安全监管框架和信息共享的反垄断保护。苹果同季也创纪录，花了 310 万美元，首次单季超过 300 万。",
+      "impact": "英伟达在出口管制上花钱游说，直接关系到国内能买到什么卡、什么价格。你刚换上 5090，又在出 5080，显卡行情和政策走向值得持续关注。",
+      "applicability": "关注显卡价格、出口管制和 AI 政策的人。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://theverge.com/policy/1016585/openai-anthropic-nvidia-lobbying-records",
+      "publishedAt": "2026-10-22T23:50:30+08:00"
+    },
+    {
+      "id": "2026-10-23-am-musk-try-grok-bot",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克连发两条推 Grok Bot：转发「10 分产品」好评并写「Try Grok @Bot」",
+      "summary": "马斯克北京时间 10 月 23 日 00:22 转发用户 Liam 的帖子（「Grok Bot 真的改变了我的生活，我的 Bot 现在几乎参与我工作和生活的每件事」），只配了一句「Grok @Bot」；02:00 又转发 Alex Slater 的评价「Grok Bot 超级好用，设计得很漂亮，10/10 的产品」，写道「Try Grok @Bot」，这条几小时内浏览约 357 万次。02:14 他还对另一条介绍 Grok Bot 用法的帖子回了句「True」，那条帖子说多数人把 Grok Bot 当聊天机器人用，但它有自己的电脑、你离开时也能继续干活。同一晚他其余的帖子多是美国中期选举相关的政治内容。",
+      "impact": "马斯克这几天密集给 Grok Bot 站台，说明 xAI 正在全力推这个产品，后续功能更新可能会很快。你本身就在用好几个 Bot 分工协作，这类亲身经验很适合写成 X 上的中文体验帖蹭这波热度。",
+      "applicability": "关注 xAI 和 AI 智能体产品的人。",
+      "sourceName": "X / Elon Musk",
+      "sourceUrl": "https://x.com/elonmusk/status/2113329537509449744",
+      "publishedAt": "2026-10-23T02:00:00+08:00"
+    },
     {
       "id": "2026-10-22-ev-php2shell-patch-the-planet",
       "module": "news",
