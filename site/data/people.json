@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-26T05:03:36Z",
-  "updatedLabel": "10/26 13:03",
+  "updatedAt": "2026-10-26T13:21:53Z",
+  "updatedLabel": "10/26 21:21",
   "people": [
     {
       "id": "tibo",
@@ -22,24 +22,5 @@
       "initial": "特"
     }
   ],
-  "posts": [
-    {
-      "id": "3a6d4d56b07ec851",
-      "personId": "musk",
-      "title": "宁德时代董秘被打？知情人士回应；怕担责先跑路？娃哈哈集团董事长许思敏离职；DeepSeek完成近1000亿元融资，宁德时代、腾讯参投",
-      "summary": "要闻提示 1.不少备孕人群购买！“好健康”牡蛎精被海关检出污染物，山姆紧急召回 2.宁德时代董秘被打？",
-      "context": "上文来自雷峰网的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "雷峰网",
-      "sourceUrl": "https://leiphone.com/category/zaobao/IlrVRbBiK9Klcuj1.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "10/23 19:16",
-      "publishedAt": "2026-10-23T11:16:00Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    }
-  ]
+  "posts": []
 }
