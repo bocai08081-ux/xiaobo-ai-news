@@ -1,8 +1,81 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-27T14:35:00+08:00",
+  "updatedAt": "2026-10-27T20:35:00+08:00",
   "items": [
+    {
+      "id": "2026-10-27-ev-nvidia-meta-muse-3b",
+      "module": "news",
+      "category": "nvidia",
+      "featured": true,
+      "title": "英伟达与 Meta 扩大 Muse 合作：加码 Vera Rubin/Vera CPU，并拟向 Meta 股权认购 30 亿美元",
+      "summary": "英伟达 Newsroom 10 月 26 日（美东次日凌晨见稿）宣布，将与 Meta 扩大在 Muse 及 Muse 系列模型上的合作，优化训练与推理、降低总拥有成本，并评估 OpenShell 参考架构与 NVIDIA Sentry 等智能体安全与行为监控能力。Meta 计划扩大部署 Vera Rubin、Vera CPU，以及 Spectrum-X 与 BlueField-4。英伟达还将向 Meta 股权发行认购 30 亿美元。黄仁勋与扎克伯格均强调个人智能体与端到端基础设施。",
+      "impact": "这把「个人超级智能」产品叙事，直接绑到 Rubin/Vera 机架与智能体安全栈。对菠菜：关注 Muse 系 Agent 的算力与安全底座，以及 Meta 大额股权融资里芯片厂入股如何影响显卡与云端供给预期。",
+      "applicability": "关心英伟达下一代机架、智能体安全参考架构，或 Meta Muse 生态的读者。",
+      "sourceName": "NVIDIA Newsroom",
+      "sourceUrl": "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth",
+      "publishedAt": "2026-10-27T13:52:00+08:00"
+    },
+    {
+      "id": "2026-10-27-ev-nvidia-simplismart",
+      "module": "news",
+      "category": "nvidia",
+      "title": "英伟达参投印度推理优化初创 Simplismart：B 轮约 1400 万美元，估值约 1 亿美元",
+      "summary": "TechCrunch 10 月 27 日报道，班加罗尔初创 Simplismart 完成约 1400 万美元全额初级 B 轮，Dallas Venture Capital 领投，英伟达、Accel、Shastra VC、Micromax 参投，投后估值约 1 亿美元。公司软件夹在模型与算力之间，自动按 SLA/TCO 调优推理；自称近半年年化经常性收入跑率增长约 14 倍，逾半数收入来自美国，客户含 InVideo、HeyGen、Higgsfield 等。英伟达还在 Dynamo 推理软件等方向与其做技术对接。",
+      "impact": "芯片巨头反向投资「少用一点 GPU」的软件，说明推理效率与交付 SLA 正在变成独立生意。对菠菜：本地/小团队若要压 serving 成本，可关注这类中间层；也侧面说明视频生成等业务的 GPU 账单压力仍大。",
+      "applicability": "做推理部署、视频生成或想压 GPU 账单的开发者与小团队。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/27/nvidia-backs-indian-startup-helping-companies-run-ai-models-with-fewer-gpus",
+      "publishedAt": "2026-10-27T19:00:00+08:00"
+    },
+    {
+      "id": "2026-10-27-ev-ant-lingguang-2",
+      "module": "news",
+      "category": "models",
+      "title": "蚂蚁发布灵光 2.0：主打「能管事」的 Personal Agent，可跨会话盯票价与账单",
+      "summary": "据雷峰网 10 月 27 日报道，蚂蚁集团发布灵光 2.0，定位「能管事的个人 AI 助理」：用户把需持续关注的事项放进「帮我管」后，系统靠跨会话记忆、长程调度与工具连接在后台跟进，例如盯机票涨跌、拆支付宝账单揪出遗忘订阅，并内置出行、会员、钉钉/飞书/邮箱/米家等常见服务，长尾任务再走独立电脑、浏览器与 MCP/CLI。文章将其对照 Meta Muse，强调接中国账户与服务生态。",
+      "impact": "Personal Agent 从「一次交作业」转向「长期替你惦记」。对菠菜：可对照自己用 Grok Bot/Codex 做邮件摘要、盯订阅的习惯；也留意国内大厂把支付与生活服务嵌进 Agent 后，授权与自动续费风险。",
+      "applicability": "关注个人智能体、支付宝生态或想用 AI 盯长期琐事的读者。",
+      "sourceName": "雷峰网",
+      "sourceUrl": "https://www.leiphone.com/category/industrynews/PubkEap5yOtdT59V.html",
+      "publishedAt": "2026-10-27T17:56:00+08:00"
+    },
+    {
+      "id": "2026-10-27-ev-bedrock-gpt61-terra",
+      "module": "news",
+      "category": "models",
+      "title": "AWS：OpenAI GPT-6.1 Terra 已在 Amazon Bedrock 正式可用，上下文最高约 100 万 token",
+      "summary": "AWS 10 月 26 日宣布 GPT-6.1 Terra 在 Amazon Bedrock 正式可用。官方复述 OpenAI 定位：相对 GPT-5.6 Terra 强化视觉推理、电脑操控与事实性，Agents’ Last Exam 中等推理下高出约 15 个百分点且速度约为 GPT-6 Astra / 6.1 Sol 的三倍以上；输入输出单价至少比 6.1 Sol 与 5.6 Terra 低约 50%。支持最长约 100 万输入 token，接受文本与图像；也可把 ChatGPT Work / Codex 配到 Bedrock 上跑该模型。",
+      "impact": "Terra 不只在 ChatGPT/API，企业也可走 Bedrock 的区域、审计与权限控件。对菠菜：若要用更便宜的电脑操控模型做自动化，多了一条 AWS 托管路径；注意与直连 OpenAI API 的价差与功能差异。",
+      "applicability": "已在 AWS 上跑 Agent，或需要企业治理控件的团队。",
+      "sourceName": "Amazon Web Services",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2026/10/openai-gpt-6-1-terra-on-amazon-bedrock/",
+      "publishedAt": "2026-10-26T12:00:00+08:00"
+    },
+    {
+      "id": "2026-10-27-ev-apple-oled-touch-mbp",
+      "module": "news",
+      "category": "mac",
+      "title": "Gurman：苹果周三「Pro and tell」将亮相触控 OLED MacBook Pro，或贵约 500 美元",
+      "summary": "MacRumors 援引彭博 Mark Gurman 10 月 25 日 Power On：苹果计划在 10 月 28 日洛杉矶「Pro and tell」（太平洋时间上午 10 点）发布 14/16 英寸触控 OLED MacBook Pro，外观接近现款但更轻，刘海改为 Dynamic Island，芯片仍为今年 3 月的 M5 Pro / M5 Max；美区现款起价 2499/2999 美元，新款起价或再高约 500 美元。macOS Golden Gate 将按触控/触控板习惯动态调整界面；现款 mini-LED 机型会暂时保留。",
+      "impact": "明天就能对上真机与定价。对菠菜：若在看换机，先分清「触控 OLED + M5 Pro/Max」与传闻中的入门 M6 非触控线；本地跑 MLX/Comfy 仍更看统一内存与散热，触控本身帮助有限。",
+      "applicability": "计划买 MacBook Pro、关心 macOS 触控改造的读者。",
+      "sourceName": "MacRumors",
+      "sourceUrl": "https://www.macrumors.com/2026/10/25/macbook-pro-with-touchscreen-on-wednesday/",
+      "publishedAt": "2026-10-25T22:30:00+08:00"
+    },
+    {
+      "id": "2026-10-27-ev-manus-ai-native",
+      "module": "news",
+      "category": "models",
+      "title": "Manus 联创张涛发文《用 Manus 改造 Manus》：内部用自家 Agent 重构研发与产品流程",
+      "summary": "多家中文媒体 10 月 26–27 日转述，Manus 联合创始人、产品合伙人张涛（HideCloud）在公众号发长文《用 Manus 改造 Manus》，复盘团队如何用自家 Agent 改造研发、产品与市场：统一工作区让 AI 跨仓库理解全局、本地验证、查线上并走发布；工程师可并行处理十余个需求，约一半产品经理能独立上线功能。文章被视作 Manus 2.0「Automations / 云电脑 / 协作」方向的组织宣言，强调人从流程中挪到流程上方把关。",
+      "impact": "Agent 公司开始公开讲「用自己产品改造自己」。对菠菜：做动画转真人、本地工作流时，可借鉴「统一工作区 + 人只审关键决策」；也提醒评估自动化覆盖率时要看真实组织改造，不只看 Demo。",
+      "applicability": "关注 Agent 产品、AI Native 团队协作的创业者与开发者。",
+      "sourceName": "XiaoHu.AI",
+      "sourceUrl": "https://xiaohu.ai/article/manus-ai-native-org/",
+      "publishedAt": "2026-10-27T08:49:00+08:00"
+    },
     {
       "id": "2026-10-27-pm-meta-95b-equity",
       "module": "news",
