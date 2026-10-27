@@ -1,8 +1,90 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-24T14:35:00+08:00",
+  "updatedAt": "2026-10-27T08:34:29+08:00",
   "items": [
+    {
+      "id": "2026-10-27-am-anthropic-s1-filed",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "Anthropic 正式向 SEC 提交 S-1：拟纳斯达克上市代码 ANT，上半年收入 163 亿美元",
+      "summary": "10 月 26 日，Anthropic, PBC 正式向美国证交会提交 Form S-1，拟在纳斯达克 Global Select 上市，股票代码 ANT；股数与定价区间尚未确定，主承销商为高盛与摩根士丹利。公司官网同步公告。据 CNBC 对招股书的解读，2026 年上半年收入约 162.9 亿美元（同比大增），同期净亏损约 807 亿美元，其中约 724 亿美元为可转债等估值上升带来的会计费用；截至 9 月 30 日，年消费 10 万美元以上的企业客户超过 1.19 万家，净收入留存约 900%。招股书尚未生效，现阶段不可售股。",
+      "impact": "Claude 阵营迈入公开市场节奏，和 OpenAI 的 IPO 赛跑更明确。菠菜做资讯站与工具选型时，可把 Anthropic 的财务与治理结构（公益公司、Founder LLC 投票权等）当成后续跟踪线索，不必急着押注发行价。",
+      "applicability": "适合关心 Claude / 大厂上市进度的读者；具体发行规模与定价以生效招股书为准。",
+      "sourceName": "Anthropic",
+      "sourceUrl": "https://www.anthropic.com/news/s1-sec",
+      "publishedAt": "2026-10-26T21:00:00+08:00"
+    },
+    {
+      "id": "2026-10-27-am-openai-gpt61-terra",
+      "module": "news",
+      "category": "models",
+      "title": "OpenAI 发布 GPT-6.1 Terra：主打电脑操控与视觉，API 输入价降到每百万 token 1 美元",
+      "summary": "OpenAI 推出 GPT-6.1 Terra，强调细致视觉推理、精确电脑操控，以及更自然的写作。官方称标准 API 价格比 GPT-5.6 Terra 与 GPT-6.1 Sol 低约 50%：输入 1 美元/百万 token、缓存输入 0.05 美元、输出 5 美元；在 Agents’ Last Exam 等评测上，中等推理强度下比 5.6 Terra 高约 15 个百分点且成本约三分之一，并称任务完成速度约为 GPT-6 Astra / 6.1 Sol 的三倍以上。即日起向 Plus、Pro、Enterprise、Edu 用户在 ChatGPT Work 与 Codex 开放，API 模型名为 gpt-6.1-terra。复杂编码仍建议用 6.1 Sol 或 6 Astra。",
+      "impact": "对菠菜这种大量用 Agent / 电脑操控、又在意额度的人很对口：同一订阅额度能干更多活，本地工作流里也可拿它当「又快又便宜」的电脑操控档，重活再上 Sol/Astra。",
+      "applicability": "ChatGPT Work、Codex 与 API；本地纯离线场景不适用。",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "publishedAt": "2026-10-27T02:22:00+08:00"
+    },
+    {
+      "id": "2026-10-27-am-apple-core-advanced-mac",
+      "module": "news",
+      "category": "mac",
+      "title": "苹果端侧 Core Advanced 实测：约 20B 参数、闪存驻留，长请求后内存约 2GiB",
+      "summary": "前 Hugging Face 首席布道师 Julien Simon 在 M3 Max（48GB）MacBook Pro、macOS 27.0.1 上从外部观测 Apple Intelligence 的 AFM 3 Core Advanced：约 200 亿参数的稀疏架构，每次请求激活约 10–40 亿；权重主要放在闪存，按 prompt 选专家而非逐 token 换入。长请求结束后约 2 秒，主模型与安全模型合计约占 2.0 GiB 内存，同机上可比开源 MoE 约 15 GiB；20 道数学题能耗约为其测试中最佳开源构建的三分之一，但数学正确率落后。模型面向摘要、抽取、改写等短任务，苹果文档仍把基础数学、写代码、逻辑推理列为应避开的能力。",
+      "impact": "菠菜的 MacBook / Mac mini 若已上 macOS 27，系统自带模型更适合轻量文本活；要跑代码、数学或可钉死版本的本地模型，仍应继续用 MLX / Ollama 等开源栈，别指望 Core Advanced 替代。",
+      "applicability": "需支持 Apple Intelligence 的 M3 及更新 Mac（报道称约需 12GB 起）；不可用权重做微调或钉版本。",
+      "sourceName": "AI Realist",
+      "sourceUrl": "https://www.airealist.ai/p/exploring-apple-on-device-model",
+      "publishedAt": "2026-10-25T20:00:00+08:00"
+    },
+    {
+      "id": "2026-10-27-am-grok-odyssey-ep1",
+      "module": "news",
+      "category": "vision",
+      "title": "Grok Imagine 放出 AI 版《奥德赛》第一集约 7 分钟，马斯克此前承诺「全片」",
+      "summary": "TechCrunch 报道，距马斯克宣称要用 Grok 做「历史准确」全长《奥德赛》约三个月后，Grok Imagine 账号发布约 7 分钟片段，称为系列第一集，并与 Wonder Studios、导演 Dev Walker 合作。评论认为个别镜头接近真人实拍，但整体缺乏叙事张力与人物感染力，旁白冗长、对白生硬；目前远未达到此前「完整电影」的宣传口径。",
+      "impact": "对菠菜做动画转真人、长镜头叙事是个对照样本：短片能「看起来像」，不等于能撑住节奏与情感。本地 H3 / ComfyUI 流程仍要抓住参考视频驱动动作，别只靠文生视频堆时长。",
+      "applicability": "关注 AI 长视频与叙事质量的创作者；片段在 X 上可看。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/25/grok-releases-the-first-seven-minutes-of-its-ai-generated-odyssey",
+      "publishedAt": "2026-10-26T05:31:00+08:00"
+    },
+    {
+      "id": "2026-10-27-am-musk-spacex-40b-gpu-debt",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克：SpaceX 已敲定约 400 亿美元债务买 GPU，并警告超 200 家 neocloud 将洗牌",
+      "summary": "马斯克 10 月 25 日在 X 表示，SpaceX 已完成约 400 亿美元债务融资用于采购 GPU，强调公司具备投资级信用，并有 Starlink 与发射等非数据中心收入；随后说明资金主要为可赎回债务，GPU 预计 2027 年一、二季度到货。CNBC 称 SpaceX 周一监管文件显示与 Apollo 管理实体签署约 400 亿美元 GPU 融资约束承诺。马斯克还称近几周债市几乎切断「没有数据中心以外实质收入」的公司融资，并预测 200 多家 neocloud 将出现大规模倒闭与整合。",
+      "impact": "算力融资紧缩叙事升温。菠菜跟显卡行情、本地 5090 部署关系不大，但若关注云端租卡或 neocloud 股价波动，可以把马斯克这番话当风险提示，而非交易指令。",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html",
+      "publishedAt": "2026-10-26T08:37:00+08:00"
+    },
+    {
+      "id": "2026-10-27-am-tibo-day22-terra",
+      "module": "people",
+      "personId": "tibo",
+      "title": "Tibo 第 22 天：宣布 Terra 回归，写作与电脑操控显著更好，额度约为 6.1 Sol 的两倍",
+      "summary": "OpenAI 的 Tibo（@thsottiaux）发帖「Day 22/ Terra is back!」，称这是他们第一款在写作、个性与请求 nuance 上明显更好的模型，电脑操控很强，并在 API 与订阅上给出约为 GPT-6.1 Sol 两倍的用量。帖文与同日 OpenAI 正式发布 GPT-6.1 Terra 相互印证；此前一天（Day 21）他只写了「今天是重置日」。",
+      "impact": "和官方 Terra 发布对齐：菠菜若在 ChatGPT Work / Codex 里抢额度，这轮重置 + 双倍用量值得马上试电脑操控与文案类任务。",
+      "sourceName": "X / Tibo",
+      "sourceUrl": "https://x.com/thsottiaux/status/2114800277677092936",
+      "publishedAt": "2026-10-27T03:24:11+08:00"
+    },
+    {
+      "id": "2026-10-27-am-trump-navy-si-term",
+      "module": "people",
+      "personId": "trump",
+      "title": "美海军与海军陆战队发文：官方文件尽量改称「超级智能 / SI」，不再用 AI",
+      "summary": "据《星条旗报》10 月 23 日报道，美国海军行政备忘录要求网站、公文、训练材料等在法律允许范围内，用「Super Intelligence」和「SI」替换「Artificial Intelligence」和「AI」；海军陆战队亦有类似宣布。报道称此举落实特朗普上月对行政部门的要求，陆军与空军也在过渡。特朗普曾在联合国演讲中称「artificial」听起来像假的。",
+      "impact": "政策与话术层面的继续落地，短期不改变模型能力，但读美军、白宫材料时会更多看到 SI 表述；和菠菜日常本地部署无直接关系。",
+      "sourceName": "Stars and Stripes",
+      "sourceUrl": "https://www.stripes.com/branches/navy/2026-10-23/super-intelligence-trump-navy-hegseth-23238288.html",
+      "publishedAt": "2026-10-23T12:00:00+08:00"
+    },
     {
       "id": "2026-10-24-pm-kimi-k31-pro",
       "module": "news",
