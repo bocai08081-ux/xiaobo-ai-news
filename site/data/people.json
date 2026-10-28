@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-27T18:10:05Z",
-  "updatedLabel": "10/28 02:10",
+  "updatedAt": "2026-10-28T05:58:27Z",
+  "updatedLabel": "10/28 13:58",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,24 @@
     }
   ],
   "posts": [
+    {
+      "id": "508b538adf050321",
+      "personId": "musk",
+      "title": "马斯克最新访谈：人类未来还能控制 AI 吗？",
+      "summary": "钛媒体报道了这件事：马斯克最新访谈：人类未来还能控制 AI 吗？",
+      "context": "上文来自钛媒体的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是钛媒体。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "钛媒体",
+      "sourceUrl": "https://tmtpost.com/8184044.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "10/28 13:55",
+      "publishedAt": "2026-10-28T05:55:30Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "c7c3c23e4594af89",
       "personId": "musk",
