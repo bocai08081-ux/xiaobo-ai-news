@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-27T20:35:00+08:00",
+  "updatedAt": "2026-10-28T08:35:00+08:00",
   "items": [
     {
       "id": "2026-10-27-ev-nvidia-meta-muse-3b",
@@ -3235,6 +3235,89 @@
       "sourceName": "X · Tibo",
       "sourceUrl": "https://x.com/thsottiaux/status/2112432076767289678",
       "publishedAt": "2026-10-20T14:33:48+08:00"
+    },
+    {
+      "id": "2026-10-28-am-openai-eth-math",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "OpenAI：内部模型宣称证伪指数时间假设（ETH），并证明全维局部光滑/挂谷猜想",
+      "summary": "OpenAI 于 10 月 26 日发布三组科学结果：谐波分析方面，模型给出 Sogge 局部光滑猜想在所有空间维数的证明（并因而解决全维挂谷猜想与 Stein 限制猜想），并附 Lean 形式化；计算复杂性方面，模型给出指数时间假设（ETH）为假的自然语言反证，且已 Lean 形式化，由 Impagliazzo、Paturi、Williams 领衔的外部小组负责审读解释；物理方面涉及四维规范场与费米子量子场论的存在性证明，材料暂缓公开。官方强调这些手稿应视为「原始研究数据」，独立验证仍在进行。",
+      "impact": "若 ETH 反证经得起检验，会动摇大量以 ETH 为假设的条件硬度结果，也是「AI 做原创科研」最重磅的公开主张之一。对菠菜：短线不必改工作流，但值得盯验证结论；本地/创作侧更直接的是同日的 Genie、Terra 等产品新闻。",
+      "applicability": "关注科研进展与复杂性理论的读者；日常写代码用模型的人可当背景情报。",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+      "publishedAt": "2026-10-27T08:00:00+08:00"
+    },
+    {
+      "id": "2026-10-28-am-genie-4",
+      "module": "news",
+      "category": "vision",
+      "title": "谷歌 DeepMind 发布 Genie 4：实时世界模型，首次原生音频与自然语言改场景",
+      "summary": "DeepMind 宣布 Genie 4：可实时交互的世界模型，画面更真实，并首次原生生成环境音、音乐与可互动对话；可用自然语言实时改天气、机位或加入人物/物体，背后由 Gemini 家族（含 Gemini Omni、Gemini 3.8 Flash）协助维持场景连贯。目前以受信测试者研究预览放出，随后将向 Google AI Ultra 的 Project Genie 与 Gemini API / AI Studio 早期伙伴开放。官方承认长会话后物体一致性、可读文字与复杂物理仍会漂。",
+      "impact": "世界模型从「短片段演示」往「可玩、可听、可改」再进一步，和菠菜做的动画转真人 / 参考视频驱动动作是同一赛道的上游能力。短期还进不了本地 5090 工作流，但提示词与「边生成边用语言改场景」的交互值得盯。",
+      "applicability": "做视频/世界模拟、机器人仿真或创意预演的人；需 Ultra 或受邀预览，非本地开源。",
+      "sourceName": "Google DeepMind",
+      "sourceUrl": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "publishedAt": "2026-10-28T00:30:00+08:00"
+    },
+    {
+      "id": "2026-10-28-am-apple-iwork-assistant",
+      "module": "news",
+      "category": "mac",
+      "title": "苹果 Creator Studio：Pages / Keynote / Numbers 加入智能助手，并支持 MCP",
+      "summary": "苹果新闻稿称 Creator Studio 更新将为 Keynote、Pages、Numbers 带来基于苹果自研模型与 OpenAI 的文档内智能助手（测试版）：可按文档上下文写稿、改幻灯与动画、算表与推荐图表；三款应用还加入 MCP，允许外部 AI Agent 读写并执行自动化。需 Apple Intelligence 兼容设备与 iOS/iPadOS/macOS 27，助手目前以美式英语为主；现有订阅者 11 月起可免费更新。",
+      "impact": "菠菜有 MacBook，若开了 Creator Studio，办公文档可少切 ChatGPT 窗口；MCP 意味着以后可用自己的 Agent 直接改 Keynote/Numbers。注意助手与 Siri AI 是两套，且绑订阅与系统版本。",
+      "applicability": "Apple Creator Studio 订阅用户；普通 iWork 免费用户暂无。",
+      "sourceName": "Apple Newsroom",
+      "sourceUrl": "https://www.apple.com/newsroom/2026/10/apple-creator-studio-adds-powerful-new-ai-features-and-even-more-creative-tools/",
+      "publishedAt": "2026-10-27T21:50:00+08:00"
+    },
+    {
+      "id": "2026-10-28-am-amd-meta-helios",
+      "module": "news",
+      "category": "amd",
+      "title": "AMD 与 Meta 加码超智基础设施：Helios 机架已在 Meta 测试，并拟认购 10 亿美元股权",
+      "summary": "AMD 10 月 27 日新闻稿称，与 Meta 在 CPU/GPU/网络/系统/软件上深化合作：Helios 机架级方案已在 Meta 安装测试，迈向更大部署；EPYC 支撑 Muse 个人 AI 代理的专用算力环境，Instinct GPU 已用于训练与推荐，并为 Meta 定制优化 GPU；ROCm 对 Muse Spark Open、Muse Glimmer 等提供 Day-0 支持。此外 AMD 将向 Meta 股权发行认购 10 亿美元（英伟达同日亦有更大额认购叙事）。",
+      "impact": "云端「英伟达一家独大」叙事继续被 Meta 多供应商策略冲淡。对菠菜：本地仍是 5090 为主，但 ROCm / Day-0 模型支持说明 AMD 软件栈在追；若以后捡二手 MI 卡或看 Lemonade/ROCm 生态，这是正面信号。",
+      "applicability": "关注 AMD ROCm、云端算力格局或 Meta Muse 生态的人。",
+      "sourceName": "AMD Newsroom",
+      "sourceUrl": "https://newsroom.amd.com/news/amd-meta-advance-strategic-partnership-power-metas-ai-infrastructure/",
+      "publishedAt": "2026-10-27T21:15:00+08:00"
+    },
+    {
+      "id": "2026-10-28-am-mai-image-27",
+      "module": "news",
+      "category": "vision",
+      "title": "微软 MAI Image 2.7：图像编辑榜上超过 GPT Image 2.5 Flare，Arena 编辑榜第三",
+      "summary": "微软 AI 发布 MAI Image 2.7 图像编辑模型：强调换风格/打光、改图内文字符号、增强修复，以及对物体—光照—场景联动的理解。Artificial Analysis 图像编辑榜升至第 2，Arena Edit 预览第 3；相对 2.6 在全部 10 类用例与 7 类编辑动作上均有提升，场景与风格项领先幅度最大。",
+      "impact": "云端修图又多一个强对手。菠菜做封面/分镜修图时，可把 MAI 2.7 放进「改字、换光、换场景」候选，和本地 ComfyUI 工作流互补，而不是替代。",
+      "applicability": "需要云端图像编辑 API 或 Microsoft 生态的创作者。",
+      "sourceName": "Microsoft AI",
+      "sourceUrl": "https://microsoft.ai/news/mai-image-2-7-debut",
+      "publishedAt": "2026-10-28T02:06:00+08:00"
+    },
+    {
+      "id": "2026-10-28-am-musk-grok-bot-features",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克转发「Grok Bot 新功能」：主推 Pages、Vault 与内置视频生成",
+      "summary": "10 月 28 日凌晨（北京时间），马斯克引用 Matt Palmer 的「What's New in Grok Bot」视频发帖「New features in Grok @Bot」。视频梳理 Pages（可共同编辑的报告/看板）、Vault（安全记住登录与支付并代填）、内置文生/图生视频，以及 1Password、更深的 iPhone/HomeKit 权限、X Spaces/Lists、新角色形象等。同日他另回复用户吐槽付费墙流程「重大失败，马上修」。",
+      "impact": "菠菜本人就在用小黑管邮件与订阅，Pages/Vault 正是「少切应用、让 Bot 代填」的方向；视频生成也可对照本地 H3 工作流看云端能补哪一块。付费墙吐槽说明产品还在磨。",
+      "sourceName": "X / Elon Musk",
+      "sourceUrl": "https://x.com/elonmusk/status/2115119252785303813",
+      "publishedAt": "2026-10-28T00:31:41+08:00"
+    },
+    {
+      "id": "2026-10-28-am-trump-ban-ai-term",
+      "module": "people",
+      "personId": "trump",
+      "title": "特朗普称将「禁止」文件使用 AI/Artificial Intelligence，改推 Super Intelligence",
+      "summary": "The Verge 10 月 27 日报道，特朗普在 Truth Social 称很快会正式禁止在相关文件中使用「AI/Artificial Intelligence」一词，改用「Super Intelligence / SI」，并质问《华尔街日报》何时改称。法律上他主要能约束行政部门用语；早前海军等已开始在公文里倾向用 SI。这与白宫此前「开启超级智能时代」的行政口径一脉相承。",
+      "impact": "对菠菜做中文 AI 资讯站：人物动态栏目要习惯「SI」与「AI」混用，翻译时注明原词即可，不必改站点分类名。政策噪声大于产品实质。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/policy/1019628/trump-wants-everyone-to-stop-saying-ai",
+      "publishedAt": "2026-10-28T00:46:00+08:00"
     }
   ]
 }
