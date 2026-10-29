@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-28T13:17:52Z",
-  "updatedLabel": "10/28 21:17",
+  "updatedAt": "2026-10-29T06:05:14Z",
+  "updatedLabel": "10/29 14:05",
   "people": [
     {
       "id": "tibo",
@@ -22,5 +22,42 @@
       "initial": "特"
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "id": "fdc3cb9f7fdf711d",
+      "personId": "musk",
+      "title": "早报｜触屏MacBook Pro发布，发光logo回归/Gemini 4 Carbon发布，超越Opus 5.5/马斯克招寿司厨师，每天需能站立10小时",
+      "summary": "爱范儿报道了这件事：早报｜触屏MacBook Pro发布，发光logo回归/Gemini 4 Carbon发布，超越Opus 5.5/马斯克招寿司厨师，每天需能站立10小时。",
+      "context": "上文来自爱范儿的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是爱范儿。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "爱范儿",
+      "sourceUrl": "https://ifanr.com/1686590",
+      "linkLabel": "查看原文",
+      "timeLabel": "10/29 08:00",
+      "publishedAt": "2026-10-29T00:00:32Z",
+      "tags": [
+        "Mac",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "f010b1f4f0325865",
+      "personId": "musk",
+      "title": "马斯克有一则新动态，来自The Verge",
+      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「xAI is buying out homeowners who promise not to sue over data center noise」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自The Verge的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是The Verge。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/1020596/xai-mississippi-neighborhood-data-center-lawsuit",
+      "linkLabel": "查看原文",
+      "timeLabel": "10/28 22:44",
+      "publishedAt": "2026-10-28T14:44:00Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    }
+  ]
 }
