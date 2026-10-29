@@ -1,8 +1,102 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-29T08:35:00+08:00",
+  "updatedAt": "2026-10-29T14:40:00+08:00",
   "items": [
+    {
+      "id": "2026-10-29-pm-openai-pro200-halve",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "OpenAI：ChatGPT Pro $200 额度明日起腰斩，Codex/Work 从 Plus 的 20 倍降到 10 倍",
+      "summary": "多家报道与用户邮件显示，自 2026-10-30 起，ChatGPT Pro $200 套餐内 Codex 与 ChatGPT Work 额度从 Plus 的 20 倍下调为 10 倍，聊天里 GPT-6 Pro 周消息上限从 200 条减至 100 条，月费仍为 200 美元。符合条件的老订阅可保留旧额度至 10 月 29 日，并获一次性约 62500 积分（官方折合约 2500 美元，有效期至 2026-12-31）。公开帮助中心只写「用量会更低、价格不变」；具体倍数与积分数字主要来自订阅邮件与媒体转述。Tibo 对「会不会取消砍半」的回应是「概率低，但不是零」。",
+      "impact": "你若在用 ChatGPT Pro 跑 Codex/动画工作流，明天起套餐内额度大约腰斩；先看用量页或 Codex /status，本周已吃掉一半以上就要准备 Pro $500、买积分，或把重活转到 API/本机模型。补偿积分年底清零，别拖到明年再花。",
+      "applicability": "现有 Pro $200 订户（尤其 9/22–9/29 窗口内活跃过的老用户）；Plus 与 Pro $100 不受此次调整。",
+      "sourceName": "artemcmd",
+      "sourceUrl": "https://artemcmd.dev/en/blog/codex-pro-200-limits-cut-october-30/",
+      "publishedAt": "2026-10-29T12:13:00+08:00"
+    },
+    {
+      "id": "2026-10-29-pm-tibo-pro200-cancel-odds",
+      "module": "people",
+      "personId": "tibo",
+      "title": "Tibo：取消 Pro $200 额度砍半的概率「低，但不是零」",
+      "summary": "有人在 X 上问 OpenAI 取消 200 美元套餐额度砍半的概率有多大，Tibo（@thsottiaux）回复「Low, but not zero」。同日他继续推进 Day 24：转发 ChatGPT 官方「可以给 Dot 发短信」能力，称像给任何人发信息一样方便，可用文字、语音甚至「Hey Siri, text Iggy…」远程丢任务。",
+      "impact": "额度砍半大概率按计划在 10 月 30 日落地，别赌取消；同时留意 Dot 短信通道是否方便你远程派活。",
+      "sourceName": "Tibo on X",
+      "sourceUrl": "https://x.com/thsottiaux/status/2115649073302904875",
+      "publishedAt": "2026-10-29T11:37:00+08:00"
+    },
+    {
+      "id": "2026-10-29-pm-xhs-seal",
+      "module": "news",
+      "category": "models",
+      "title": "小红书企业 AI 助理 Seal：基于 OpenClaw 三天内测、一个月全员覆盖",
+      "summary": "InfoQ 刊发小红书架构师孟洪进分享：团队基于开源 OpenClaw 二次开发企业级个人助理 Seal，三人三天做出内测，春节后一周扩到 2000 公测名额（五分钟抢光），约一个月全员覆盖。重点讲云端沙箱隔离、敏感数据路由、Self-GC 降 Token、Auto 模型路由（约省 69% 模型成本），以及 Memory Wiki 与 Skillhub（上线一个多月超 9000 个 Skill）。",
+      "impact": "可对照自家 Agent/助手落地：安全与成本要前置，记忆比「万能 Skill 自迭代」更急；Skillhub/共享产物思路也适合你做内部或社区工具分发。",
+      "applicability": "做企业 Agent、内部助手或技能市场的团队；对个人创作者可当「从 Demo 到全员」的参考样本。",
+      "sourceName": "InfoQ",
+      "sourceUrl": "https://infoq.cn/article/eOqH5GJ5R6UuZGtlhL53",
+      "publishedAt": "2026-10-29T17:58:00+08:00"
+    },
+    {
+      "id": "2026-10-29-pm-aws-strands",
+      "module": "news",
+      "category": "models",
+      "title": "亚马逊云科技开源 Strands Decider 2B 与 Strands Box：轻量决策器 + 策略沙箱",
+      "summary": "InfoQ 中文报道：AWS 开源 Strands Decider 2B（约 20 亿参数决策模型，基于 Qwen3.5-2B 换指针头+LoRA，专做多选项评分/路由/护栏，RTX 3090 中位延迟约 115ms）与开发者预览版 Strands Box（内核隔离 + Dogwood 策略，约束 Shell/Python/MCP/网络）。两者面向智能体「怎么选」和「能不能做」，不替代通用大模型生成。",
+      "impact": "本地 Agent 可把路由/护栏从大模型提示词里拆出来，用小模型+策略层控风险；与你在本机跑助手、技能扫描的方向一致，可留意冷启动与并发限制。",
+      "applicability": "自建 Agent 编排、需要工具调用护栏的本地/云端部署。",
+      "sourceName": "InfoQ",
+      "sourceUrl": "https://infoq.cn/article/YmgmEh686wTClmj3PY8o",
+      "publishedAt": "2026-10-29T16:00:00+08:00"
+    },
+    {
+      "id": "2026-10-29-pm-musk-bot-amazon-bypass",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克回应「亚马逊封锁 Grok Bot」：让 Bot 去别处更便宜地买",
+      "summary": "用户 jamesdouma 发帖称亚马逊锁掉其 Grok Bot 后，Bot 改从其他网站以更低价买了同款。马斯克引用回复：「That's what I do too. Just have @Bot buy it somewhere else at a lower price.」同日他还多次转发并喊话「Try Grok Bot」。",
+      "impact": "Agent 网购会撞平台风控；你若用助手下单，要盯订单隐私与封禁绕行风险，别把支付信息随便丢给聊天框。",
+      "sourceName": "Elon Musk on X",
+      "sourceUrl": "https://x.com/elonmusk/status/2115632219712811226",
+      "publishedAt": "2026-10-29T10:30:02+08:00"
+    },
+    {
+      "id": "2026-10-29-pm-tibo-day24-dot-sms",
+      "module": "people",
+      "personId": "tibo",
+      "title": "Tibo 第 24 天：给 Dot 发短信，像给人发信息一样派活",
+      "summary": "Tibo 转发 ChatGPT 官方能力并点评：现在可以像给任何人发短信一样联系自己的 Dot，方便转发、留言、语音，甚至用「Hey Siri, text Iggy to …」远程丢任务。这是他 28 天挑战的 Day 24 更新。",
+      "impact": "若你跟 ChatGPT Dot/助手联动，短信入口降低「打开 App 才能派活」的门槛；注意短信通道的权限与隐私边界。",
+      "sourceName": "Tibo on X",
+      "sourceUrl": "https://x.com/thsottiaux/status/2115622002581188681",
+      "publishedAt": "2026-10-29T09:49:26+08:00"
+    },
+    {
+      "id": "2026-10-29-pm-nvidia-skillspector",
+      "module": "news",
+      "category": "nvidia",
+      "title": "英伟达开源 SkillSpector：安装前扫描 Agent Skill 的安全风险",
+      "summary": "NVIDIA/SkillSpector（Apache-2.0）面向 Claude Code、Codex、Gemini CLI、MCP 等技能包，在安装前做静态（可选 LLM）扫描：提示注入、数据外泄、权限提升、供应链与 MCP 投毒等约 71 类模式，输出风险分与终端/JSON/Markdown/SARIF 报告。官方称在研究数据集子集中约 26.1% 技能含漏洞、5.2% 疑似恶意。GitHub 于 10 月 28 日前后发布 v2.13.2 等维护版。",
+      "impact": "你本地和团队大量用 skills：装第三方技能前先扫一遍，尤其是会读文件、跑命令或接 MCP 的包，降低供应链风险。",
+      "applicability": "使用 Claude Code / Codex / Cursor skills / MCP 的开发者与团队。",
+      "sourceName": "GitHub / NVIDIA",
+      "sourceUrl": "https://github.com/NVIDIA/SkillSpector",
+      "publishedAt": "2026-10-28T22:19:00+08:00"
+    },
+    {
+      "id": "2026-10-29-pm-gemini-robotics-er2",
+      "module": "news",
+      "category": "vision",
+      "title": "谷歌云上线 Gemini Robotics ER 2 公测：机器人「高层大脑」进企业平台",
+      "summary": "Google Cloud 宣布 Gemini Robotics Embodied Reasoning 2（基于 Gemini 3.5 Flash 的具身推理模型）在 Gemini 平台公测：把 VLA/导航等当工具编排，连续视频里做任务进度判定与关键帧定位（官方称关键事件帧定位准确率约 91.3%、平均帧距约 0.96 秒），支持多机协作与自然语言改指令。波士顿动力 Spot、ASTAR 实验室、Arm 等披露合作场景。",
+      "impact": "偏工业/具身方向；若你跟进机器人或「视频理解驱动动作」，这是云上可调的高层规划层，和端侧 VLA 分工清晰。",
+      "applicability": "机器人/具身智能研发与企业试点；普通桌面创作者可当行业动态了解。",
+      "sourceName": "Google Cloud Blog",
+      "sourceUrl": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-robotics-embodied-reasoning-2-is-now-available-on-google-cloud",
+      "publishedAt": "2026-10-27T12:00:00+08:00"
+    },
     {
       "id": "2026-10-29-am-gemini-4-carbon",
       "module": "news",
