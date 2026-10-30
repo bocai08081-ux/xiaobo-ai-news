@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-30T06:06:03Z",
-  "updatedLabel": "10/30 14:06",
+  "updatedAt": "2026-10-30T13:14:56Z",
+  "updatedLabel": "10/30 21:14",
   "people": [
     {
       "id": "tibo",
@@ -23,42 +23,6 @@
     }
   ],
   "posts": [
-    {
-      "id": "dc5779ecdcb74249",
-      "personId": "tibo",
-      "title": "Tibo有一则新动态，来自Hacker News",
-      "summary": "Hacker News报道了与AI 模型有关的新动态，原文标题是「OpenAI: We are doubling all usage limits for all Pro 100/200/500 tiers」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "这条链到本人的公开帖子。帖子本身可能很短，卡片里的说明是编辑补上的上下文，不是帖子原文。",
-      "sourceNote": "原帖来自 @thsottiaux。卡片标题和说明是中文整理，时间已换算成北京时间。",
-      "sourceName": "Hacker News",
-      "sourceUrl": "https://twitter.com/thsottiaux/status/2115850175868727621",
-      "linkLabel": "查看原帖",
-      "timeLabel": "10/30 01:13",
-      "publishedAt": "2026-10-29T17:13:33Z",
-      "tags": [
-        "AI 模型",
-        "原帖"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "39531de25d35c73d",
-      "personId": "trump",
-      "title": "31岁女工程师猝死，其生前按ChatGPT指示减药，还被告知「完全没必要担心」；美国一公司招人遛机器狗：时薪20美元，不用铲屎但得扛狗回来",
-      "summary": "要闻提示 1.31岁女工程师猝死，其生前按ChatGPT指示减药，还被告知“完全没有必要担心” 2.网友发视频称“医生用豆包开药”，涉事医院回应 3.米哈游通告：游戏泄密人员被判赔100万元 4.三家车企拟入选国家级名单：小米汽车位列第一 5.云鲸智能迎来品牌十周年：定位全球AI智能清洁专家，服务超600万家庭 6.…",
-      "context": "上文来自雷峰网的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "雷峰网",
-      "sourceUrl": "https://leiphone.com/category/zaobao/ZWf8n2mgF0X5Rkfj.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "10/29 19:38",
-      "publishedAt": "2026-10-29T11:38:00Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
     {
       "id": "fdc3cb9f7fdf711d",
       "personId": "musk",
