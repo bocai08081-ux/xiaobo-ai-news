@@ -1,8 +1,81 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-31T14:40:00+08:00",
+  "updatedAt": "2026-10-31T20:31:10+08:00",
   "items": [
+    {
+      "id": "2026-10-31-ev-cursor-claude-code-backdoor",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "Cursor 市场：Anthropic.claude-code 2.1.312/313 遭植入 SSH 后门，已下架并重建市场",
+      "summary": "Cursor 官方安全公告称，2026-10-29 太平洋时间约 2:27–13:35，Cursor VS Code 扩展市场中的 Anthropic.claude-code 2.1.312 与 2.1.313（非 Anthropic 官方构建）被植入恶意代码：收集主机/用户信息、尝试写入攻击者 SSH 公钥（注释 svc-telemetry）、建立反向 SSH 隧道与持久化。多数机器因无管理员权限无法真正打开本地 SSH；攻击者服务器已被关停。Solidot 转述估计约 11 小时窗口、约 5000 名受影响用户。Cursor 已移除恶意版本、轮换密钥并重建市场。",
+      "impact": "波波若在该时间窗从 Cursor 市场装过 Claude Code 扩展，应按公告用 grep/脚本查 authorized_keys 里的 svc-telemetry，并跑官方 remediation；日常扩展只信官方渠道，更新后留意市场安全通告。",
+      "applicability": "Cursor / VS Code 扩展安全、Claude Code 用户、本机开发环境排查。",
+      "sourceName": "Cursor",
+      "sourceUrl": "https://cursor.com/blog/claude-code-extension-security-notice",
+      "publishedAt": "2026-10-31T02:30:00+08:00"
+    },
+    {
+      "id": "2026-10-31-ev-openai-astra-law-pricing",
+      "module": "news",
+      "category": "models",
+      "title": "OpenAI 定价页新增 gpt-6-astra-law：与 Astra 同价，$10/$50 每百万 token，促销至少到年底",
+      "summary": "OpenAI 开发者定价文档现设「Legal model configurations」专区，列出 gpt-6-astra-law：输入 $10、输出 $50、缓存输入 $1（每百万 token），与通用 GPT-6 Astra 同价；文案写明促销至少持续至 2026-12-31。Astra for Law 早前以 Trusted Access 面向律所推出，API 此前标「即将推出」，现已挂上模型 ID 与标价。",
+      "impact": "对菠菜日常创作影响有限；若关注垂直行业模型与 API 货架，说明 OpenAI 开始把「法律配置」当正式可计费 SKU 卖，同价不另加法律溢价（至少促销期内）。",
+      "applicability": "OpenAI API、法律垂直模型、企业采购报价对照。",
+      "sourceName": "OpenAI",
+      "sourceUrl": "https://developers.openai.com/api/docs/pricing",
+      "publishedAt": "2026-10-31T17:00:00+08:00"
+    },
+    {
+      "id": "2026-10-31-ev-openai-funding-11b",
+      "module": "news",
+      "category": "models",
+      "title": "WSJ：OpenAI 本轮融资约拿到 110 亿美元承诺，远低于原 300 亿目标，估值下修至约 1.25 万亿",
+      "summary": "据华尔街日报报道、Investing.com 转述，OpenAI 最新一轮融资目前约获 110 亿美元承诺，不及原定约 300 亿美元目标；估值目标由约 1.4 万亿美元下调至约 1.25 万亿，融资目标亦缩至最多约 200 亿，并计划继续向家族办公室与高净值个人募资。报道称 AI 扩产财务可持续性受质疑，且 Anthropic 二季度营收约 116 亿、环比翻倍并录得小幅营业利润，同期 OpenAI 营收约 67 亿、环比约增 18%。",
+      "impact": "资本市场对「无限烧算力」更挑剔，可能影响云厂商与 GPU 扩产节奏；订阅与 API 价格战、额度政策也会跟着融资压力波动，菠菜盯 Codex/ChatGPT 套餐变化时宜当背景。",
+      "applicability": "AI 产业资本开支、OpenAI/Anthropic 竞争、订阅与算力成本预期。",
+      "sourceName": "Investing.com",
+      "sourceUrl": "https://www.investing.com/news/company-news/openai-raises-just-11bn-of-30bn-target-as-ai-investor-appetite-cools--wsj-4989165",
+      "publishedAt": "2026-10-31T15:26:00+08:00"
+    },
+    {
+      "id": "2026-10-31-ev-anthropic-junk-rating",
+      "module": "news",
+      "category": "models",
+      "title": "TechCrunch：Blackstone 预计 Anthropic IPO 后获「高垃圾级」信用评级，融资成本或上升",
+      "summary": "TechCrunch 援引金融时报称，Blackstone（近期约 630 亿美元 Anthropic 芯片融资交易的锚定投资者）向投资者表示，预计 Anthropic 上市后获得高档垃圾级（double B 区间）评级；此前其曾预期 2027 年前可达投资级。Anthropic 与 Blackstone 均拒评。高垃圾级通常意味着债务融资更贵、更难，而公司过去一年大举签算力合同已令部分投资者不安。Anthropic 本周已正式提交上市文件。",
+      "impact": "Claude 侧资本结构与算力合同成本若走高，可能间接影响企业级定价与供应；与 OpenAI 融资遇冷同属「AI 烧钱可持续性」叙事，适合当产业背景而非操作信号。",
+      "applicability": "Anthropic IPO、AI 数据中心债务、Claude 生态观察。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/10/30/anthropic-expected-to-receive-high-junk-rating-from-credit-agencies-following-ipo-report-says/",
+      "publishedAt": "2026-10-31T05:52:00+08:00"
+    },
+    {
+      "id": "2026-10-31-ev-amd-monai-instinct",
+      "module": "news",
+      "category": "amd",
+      "title": "AMD：Life Science 26.08 为五款 MONAI Model Zoo 包提供 Instinct GPU 验证推理（ROCm 叠加层）",
+      "summary": "AMD ROCm 博客（2026-10-30）宣布，在 AMD Life Science 26.08 中为 Vista3D、SwinUNETR BTCV、wholeBody_ct、pancreas_ct_dints、spleen_deepedit 五款 MONAI 包提供 Early Access 验证推理：通过 inference_rocm 叠加 channels-last 3D、BF16 AMP 与 torch.compile，不改权重与推理逻辑，并达到上游 Dice 门槛。MI355X + ROCm 10.0 上 p50 延迟从约 3.6 ms（脾脏）到约 3287 ms（胰腺）；亦支持 MI300X/MI325X。代码在 AMD-Ecosystem/monai-model-zoo。",
+      "impact": "对菠菜消费级 Radeon/本机视频生成帮助有限，但是 ROCm 医疗影像栈成熟度信号；若以后在 Instinct 或 ROCm 环境跑 3D 分割，可直接用官方叠加配置少踩坑。",
+      "applicability": "AMD Instinct / ROCm、MONAI 医学影像、开源推理优化。",
+      "sourceName": "AMD ROCm Blogs",
+      "sourceUrl": "https://rocm.blogs.amd.com/artificial-intelligence/monai-zoo-2608/README.html",
+      "publishedAt": "2026-10-30T20:00:00+08:00"
+    },
+    {
+      "id": "2026-10-31-ev-musk-orbital-compute",
+      "module": "people",
+      "personId": "musk",
+      "title": "马斯克：轨道算力月底部署量或在 2028 年末超过地面，2029 远超",
+      "summary": "马斯克在回复 SpaceX 估值讨论帖时称：「地面算力相对轨道算力将不值一提。轨道算力每月部署量大概在 2028 年末超过地面，到 2029 年会远超。」（原文 Terrestrial compute will be peanuts compared to orbital compute…）发布时间约 2026-10-31 10:41 北京时间。",
+      "impact": "延续「太空数据中心/轨道算力」叙事，和谷歌 Suncatcher 同日话题可对照；对菠菜本地 5090 部署无直接操作意义，适合当人物与产业远景素材。",
+      "applicability": "人物动态、太空算力叙事、与地面 GPU 扩产对照。",
+      "sourceName": "X · Elon Musk",
+      "sourceUrl": "https://x.com/elonmusk/status/2116359819258990946",
+      "publishedAt": "2026-10-31T10:41:15+08:00"
+    },
     {
       "id": "2026-10-31-am-nvidia-open-h3-regenerate",
       "module": "news",
