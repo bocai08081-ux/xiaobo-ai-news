@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-31T12:51:58Z",
-  "updatedLabel": "10/31 20:51",
+  "updatedAt": "2026-11-01T06:29:25Z",
+  "updatedLabel": "11/01 14:29",
   "people": [
     {
       "id": "tibo",
@@ -24,19 +24,19 @@
   ],
   "posts": [
     {
-      "id": "fdc3cb9f7fdf711d",
-      "personId": "musk",
-      "title": "早报｜触屏MacBook Pro发布，发光logo回归/Gemini 4 Carbon发布，超越Opus 5.5/马斯克招寿司厨师，每天需能站立10小时",
-      "summary": "爱范儿报道了这件事：早报｜触屏MacBook Pro发布，发光logo回归/Gemini 4 Carbon发布，超越Opus 5.5/马斯克招寿司厨师，每天需能站立10小时。",
-      "context": "上文来自爱范儿的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是爱范儿。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "爱范儿",
-      "sourceUrl": "https://ifanr.com/1686590",
+      "id": "665c47f064444b3f",
+      "personId": "tibo",
+      "title": "Tibo 28连更后，OpenAI合并额度池，计费聊天开始了",
+      "summary": "从「重置公司」到「token 公司」，Tibo 一语成谶。",
+      "context": "上文来自36氪的公开报道，不是 @thsottiaux 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是36氪。只因为标题或摘要提到了Tibo，才收进人物动态。",
+      "sourceName": "36氪",
+      "sourceUrl": "https://36kr.com/p/4050682558714755?f=rss",
       "linkLabel": "查看原文",
-      "timeLabel": "10/29 08:00",
-      "publishedAt": "2026-10-29T00:00:32Z",
+      "timeLabel": "11/01 14:00",
+      "publishedAt": "2026-11-01T06:00:59Z",
       "tags": [
-        "Mac",
+        "AI 模型",
         "转述"
       ],
       "pinned": false
