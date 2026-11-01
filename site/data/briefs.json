@@ -1,8 +1,69 @@
 {
   "schemaVersion": 1,
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-10-31T20:31:10+08:00",
+  "updatedAt": "2026-11-01T08:40:00+08:00",
   "items": [
+    {
+      "id": "2026-11-01-am-intel-pc-memory-ai",
+      "module": "news",
+      "category": "models",
+      "featured": true,
+      "title": "英特尔一日跌约 29%：AI 抢内存拖累 PC，数据中心又卡在供应",
+      "summary": "CNBC 与 Axios 报道，英特尔三季报后股价单日重挫约 28%–29%（约至 65 美元），为 1974 年以来最差单日之一。公司预计全球 PC 出货 2026 年约降 12%、2027 年再降约 10%，并把放缓部分归因于 AI 数据中心抢购导致的内存涨价与短缺，以及企业 IT 预算被 AI 支出挤压；数据中心与 AI 营收同比大增约 78% 至约 73 亿美元，但服务器芯片供应不足（含以色列工厂爆炸影响约 6 亿美元收入），四季度指引约 150–160 亿美元低于市场预期。戴尔、惠普、联想等 PC 股同日走弱。",
+      "impact": "把「内存荒」从奥特曼口头争议落到财报数字：本地高配机与消费级内存短期更贵更难买，云侧扩产也受服务器供应约束。菠菜做本地生成与买卡/买内存时，宜把涨价与交货期当常态，而不是等「很快回落」。",
+      "applicability": "关注本机大内存推理、显卡行情与 PC/笔记本采购节奏的读者。",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/10/31/intel-not-a-buy-after-drop.html",
+      "publishedAt": "2026-10-31T21:02:00+08:00"
+    },
+    {
+      "id": "2026-11-01-am-amd-falls-intel-pc",
+      "module": "news",
+      "category": "amd",
+      "title": "AMD 跟跌：英特尔预警 PC 疲软与服务器缺货，市场提前定价",
+      "summary": "Quartz 援引 MarketWatch 称，英特尔预警 PC 疲软与 Xeon 供应吃紧后，AMD 股价随半导体板块下挫（多家媒体称约跌 11% 量级）。英特尔客户端计算营收同比降约 5% 至约 81 亿美元，并称 PC 放缓至少持续到明年上半年；AMD 将于 11 月 3 日前后公布财报，市场关注其是否同受 PC 与内存成本拖累，以及数据中心业务能否对冲。",
+      "impact": "AMD 显卡/AI PC 叙事仍在，但「内存涨价 + PC 砍单」会传导到渠道价与整机配置。关注 Ryzen AI / Radeon 本机方案的读者，短期更应盯交货与套装价，而不是只看参数表。",
+      "applicability": "跟 AMD 本机 AI、显卡行情或准备换机的读者。",
+      "sourceName": "Quartz",
+      "sourceUrl": "https://qz.com/amd-stock-falls-intel-earnings-pc-server-supply-103026",
+      "publishedAt": "2026-10-31T01:00:00+08:00"
+    },
+    {
+      "id": "2026-11-01-am-anthropic-ipo-hyperscaler-fcf",
+      "module": "news",
+      "category": "models",
+      "title": "CNBC：超大规模云厂自由现金流承压，Anthropic 赴美股窗口更颠簸",
+      "summary": "CNBC 10 月 31 日称，Anthropic 公布招股书后数日，微软、谷歌、亚马逊季报加剧市场对 AI 基建烧钱的疑虑：亚马逊 trailing 12 个月自由现金流约负 424 亿美元，谷歌单季自由现金流约负 91 亿美元，微软自由现金流仍正但连续两季明显回落并计划发行约 250 亿美元债券。文章称多家拟 IPO 公司推迟或搁置，且 Anthropic 上半年净亏损约 800 亿美元、算力承诺与风险披露庞大；同时云业务增速仍强，分析认为「错过 Anthropic」的 FOMO 与资本结构疑虑并存。",
+      "impact": "和 Blackstone「垃圾级」评级预期同一条线：融资与云厂扩产节奏更挑刺，可能影响 Claude / API 产能与企业折扣谈判空间。订阅侧继续盯额度与价格波动，不必把「上市在即」当成利好确定。",
+      "applicability": "用 Claude / 关注 Anthropic 上市与云算力成本的读者。",
+      "sourceName": "CNBC",
+      "sourceUrl": "https://www.cnbc.com/2026/10/31/anthropic-ipo-ai-spending.html",
+      "publishedAt": "2026-10-31T19:00:00+08:00"
+    },
+    {
+      "id": "2026-11-01-am-jassy-6-8-models-bedrock",
+      "module": "news",
+      "category": "models",
+      "title": "亚马逊贾西：两三年内或有 6–8 个模型「够用」，客户会在同一应用里混用",
+      "summary": "CRN 援引亚马逊 2026 年三季报电话会称，CEO 安迪·贾西（Andy Jassy）预计未来两到三年会出现约 6–8 个彼此接近、至少能覆盖 95% 以上工作负载的模型，并强调「没有一统天下的单一工具」；多数客户会用多个模型，不少会在同一生成式应用里混用，按推理、编程、视觉、时延与单价切换。他借此阐述 Bedrock 多模型接入与换模需求，并称 Bedrock 有机会成长为「像 EC2 一样大」的业务；同期称 Bedrock token 量同比近 17 倍、财富 500 强客户支出近 7 倍。",
+      "impact": "对菠菜选模型的启示：别押单一厂牌，按任务路由（便宜的 Terra/Haiku 做量、重活再用 Opus/Astra）更符合云厂押注。本地部署仍可保留「主力 + 备胎」两套。",
+      "applicability": "做多模型路由、Agent 编排或评估 Bedrock / 云 API 的读者。",
+      "sourceName": "CRN",
+      "sourceUrl": "https://www.crn.com/news/ai/2026/amazon-q3-earnings-ceo-jassy-says-bedrock-could-become-as-big-as-ec2",
+      "publishedAt": "2026-10-31T22:30:00+08:00"
+    },
+    {
+      "id": "2026-11-01-am-ai-labs-shared-robots-optout",
+      "module": "news",
+      "category": "models",
+      "title": "OpenAI、谷歌、微软、Anthropic 同推 robots.txt 共用「拒训」信号",
+      "summary": "The Verge 报道，四家公司将采纳 IETF 推动的 robots.txt 共用策略令牌，让站点一次声明 AI 训练偏好，而不必逐个屏蔽爬虫；信号由 Anthropic 标准负责人 Kevin Kelley 提出。Anthropic 已开始遵守，OpenAI 称未来数月落地，谷歌与微软计划明年支持；微软还将区分「训练」与「接地（grounding）」退订，并称不影响必应搜索收录。Meta 通讯负责人表态支持共同信号，但未明确是否遵守。",
+      "impact": "资讯站与个人站点可开始规划共用令牌，同时保留 GPTBot 等逐爬虫规则。对菠菜的小波资讯站：先记时间表，等 OpenAI 落地细节再改 robots，避免只写了令牌却仍被旧爬虫抓训。",
+      "applicability": "运营内容站、需要控制训练抓取的读者。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+      "publishedAt": "2026-10-31T04:26:00+08:00"
+    },
     {
       "id": "2026-10-31-ev-cursor-claude-code-backdoor",
       "module": "news",
