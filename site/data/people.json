@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-01T13:41:32Z",
-  "updatedLabel": "11/01 21:41",
+  "updatedAt": "2026-11-02T06:30:56Z",
+  "updatedLabel": "11/02 14:30",
   "people": [
     {
       "id": "tibo",
@@ -22,24 +22,5 @@
       "initial": "特"
     }
   ],
-  "posts": [
-    {
-      "id": "665c47f064444b3f",
-      "personId": "tibo",
-      "title": "Tibo 28连更后，OpenAI合并额度池，计费聊天开始了",
-      "summary": "从「重置公司」到「token 公司」，Tibo 一语成谶。",
-      "context": "上文来自36氪的公开报道，不是 @thsottiaux 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是36氪。只因为标题或摘要提到了Tibo，才收进人物动态。",
-      "sourceName": "36氪",
-      "sourceUrl": "https://36kr.com/p/4050682558714755?f=rss",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/01 14:00",
-      "publishedAt": "2026-11-01T06:00:59Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    }
-  ]
+  "posts": []
 }
