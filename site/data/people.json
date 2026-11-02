@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-02T06:30:56Z",
-  "updatedLabel": "11/02 14:30",
+  "updatedAt": "2026-11-02T21:50:05Z",
+  "updatedLabel": "11/03 05:50",
   "people": [
     {
       "id": "tibo",
@@ -22,5 +22,24 @@
       "initial": "特"
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "id": "272a05aa5da7e445",
+      "personId": "musk",
+      "title": "马斯克有一则新动态，来自TechCrunch",
+      "summary": "TechCrunch报道了与AI 模型有关的新动态，原文标题是「Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自TechCrunch的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/03 00:23",
+      "publishedAt": "2026-11-02T16:23:21Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    }
+  ]
 }
