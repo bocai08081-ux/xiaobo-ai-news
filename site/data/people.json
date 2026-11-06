@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-06T07:04:59Z",
-  "updatedLabel": "11/06 15:04",
+  "updatedAt": "2026-11-06T19:35:44Z",
+  "updatedLabel": "11/07 03:35",
   "people": [
     {
       "id": "tibo",
@@ -24,17 +24,17 @@
   ],
   "posts": [
     {
-      "id": "1c9ad2ec8b566c08",
-      "personId": "trump",
-      "title": "孤立的特朗普，失控的AI",
-      "summary": "特朗普当然不甘心，但很多事已经不是他一个人说了算。",
-      "context": "上文来自钛媒体的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是钛媒体。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "钛媒体",
-      "sourceUrl": "https://tmtpost.com/8195763.html",
+      "id": "3a0d67d4c251fcf9",
+      "personId": "tibo",
+      "title": "OpenAI 「重置大神」换人了？Tibo 去救火，Andrew 上位",
+      "summary": "Tibo 不发糖了？因为Open AI 的内部安全烂透了 作者丨 高允毅 编辑丨岑 峰 OpenAI 的“赛博义父”好像换人了？",
+      "context": "上文来自雷峰网的公开报道，不是 @thsottiaux 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了Tibo，才收进人物动态。",
+      "sourceName": "雷峰网",
+      "sourceUrl": "https://leiphone.com/category/yanxishe/u5N6lCUT0bEfanp1.html",
       "linkLabel": "查看原文",
-      "timeLabel": "11/06 13:46",
-      "publishedAt": "2026-11-06T05:46:18Z",
+      "timeLabel": "11/06 17:11",
+      "publishedAt": "2026-11-06T09:11:00Z",
       "tags": [
         "AI 模型",
         "转述"
