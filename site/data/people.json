@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-05T20:09:09Z",
-  "updatedLabel": "11/06 04:09",
+  "updatedAt": "2026-11-06T07:04:59Z",
+  "updatedLabel": "11/06 15:04",
   "people": [
     {
       "id": "tibo",
@@ -24,17 +24,17 @@
   ],
   "posts": [
     {
-      "id": "e5fe4bf1b72b27a8",
-      "personId": "musk",
-      "title": "马斯克有一则新动态，来自The Verge",
-      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「17 better ways Elon Musk could have wasted $446 million」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自The Verge的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是The Verge。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "The Verge",
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/1026878/not-even-good-at-being-rich",
+      "id": "1c9ad2ec8b566c08",
+      "personId": "trump",
+      "title": "孤立的特朗普，失控的AI",
+      "summary": "特朗普当然不甘心，但很多事已经不是他一个人说了算。",
+      "context": "上文来自钛媒体的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是钛媒体。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "钛媒体",
+      "sourceUrl": "https://tmtpost.com/8195763.html",
       "linkLabel": "查看原文",
-      "timeLabel": "11/05 05:45",
-      "publishedAt": "2026-11-04T21:45:00Z",
+      "timeLabel": "11/06 13:46",
+      "publishedAt": "2026-11-06T05:46:18Z",
       "tags": [
         "AI 模型",
         "转述"
