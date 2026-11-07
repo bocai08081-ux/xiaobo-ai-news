@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-06T19:35:44Z",
-  "updatedLabel": "11/07 03:35",
+  "updatedAt": "2026-11-07T06:17:52Z",
+  "updatedLabel": "11/07 14:17",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,24 @@
     }
   ],
   "posts": [
+    {
+      "id": "dd0b393f9a77687e",
+      "personId": "musk",
+      "title": "马斯克官宣 Cybertruck 停产：销量不足预期一成；李飞飞团队推出世界模型「模拟掌机」；小米汽车成立国际事业部｜极客早知道",
+      "summary": "电动皮卡中道崩殂！马斯克宣布 Cybertruck 明年逐步停产：销量仅达预期一成 11 月 6 日消息，特斯拉 CEO 马斯克在社交平台 X 发文表示，公司将于明年年中前后，逐步收尾得州超级工厂的 Cybertruck 电动皮卡生产，为 Cybercab 车型扩产腾出产能空间。",
+      "context": "上文来自极客公园的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是极客公园。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "极客公园",
+      "sourceUrl": "http://geekpark.net/news/373639",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/07 08:48",
+      "publishedAt": "2026-11-07T00:48:25Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "3a0d67d4c251fcf9",
       "personId": "tibo",
