@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-08T06:23:27Z",
-  "updatedLabel": "11/08 14:23",
+  "updatedAt": "2026-11-08T13:42:03Z",
+  "updatedLabel": "11/08 21:42",
   "people": [
     {
       "id": "tibo",
@@ -42,6 +42,24 @@
       "pinned": false
     },
     {
+      "id": "86fd351c042e7ce1",
+      "personId": "musk",
+      "title": "GitHub不堪重负！OpenAI收购替代品，A社原地自研，马斯克也要搞",
+      "summary": "AI写代码太快，基础设施跟不上了。",
+      "context": "上文来自量子位的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是量子位。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "量子位",
+      "sourceUrl": "https://qbitai.com/2026/11/508449.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/07 17:38",
+      "publishedAt": "2026-11-07T09:38:56Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
       "id": "dd0b393f9a77687e",
       "personId": "musk",
       "title": "马斯克官宣 Cybertruck 停产：销量不足预期一成；李飞飞团队推出世界模型「模拟掌机」；小米汽车成立国际事业部｜极客早知道",
@@ -53,24 +71,6 @@
       "linkLabel": "查看原文",
       "timeLabel": "11/07 08:48",
       "publishedAt": "2026-11-07T00:48:25Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "3a0d67d4c251fcf9",
-      "personId": "tibo",
-      "title": "OpenAI 「重置大神」换人了？Tibo 去救火，Andrew 上位",
-      "summary": "Tibo 不发糖了？因为Open AI 的内部安全烂透了 作者丨 高允毅 编辑丨岑 峰 OpenAI 的“赛博义父”好像换人了？",
-      "context": "上文来自雷峰网的公开报道，不是 @thsottiaux 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了Tibo，才收进人物动态。",
-      "sourceName": "雷峰网",
-      "sourceUrl": "https://leiphone.com/category/yanxishe/u5N6lCUT0bEfanp1.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/06 17:11",
-      "publishedAt": "2026-11-06T09:11:00Z",
       "tags": [
         "AI 模型",
         "转述"
