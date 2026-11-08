@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-07T13:22:12Z",
-  "updatedLabel": "11/07 21:22",
+  "updatedAt": "2026-11-08T06:23:27Z",
+  "updatedLabel": "11/08 14:23",
   "people": [
     {
       "id": "tibo",
@@ -24,17 +24,17 @@
   ],
   "posts": [
     {
-      "id": "86fd351c042e7ce1",
+      "id": "d44fec61ccb764a3",
       "personId": "musk",
-      "title": "GitHub不堪重负！OpenAI收购替代品，A社原地自研，马斯克也要搞",
-      "summary": "AI写代码太快，基础设施跟不上了。",
-      "context": "上文来自量子位的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是量子位。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "量子位",
-      "sourceUrl": "https://qbitai.com/2026/11/508449.html",
+      "title": "马斯克有一则新动态，来自TechCrunch",
+      "summary": "TechCrunch报道了与AI 模型有关的新动态，原文标题是「After the midterms, things are looking rocky for Elon Musk and data centers」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自TechCrunch的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers",
       "linkLabel": "查看原文",
-      "timeLabel": "11/07 17:38",
-      "publishedAt": "2026-11-07T09:38:56Z",
+      "timeLabel": "11/08 06:07",
+      "publishedAt": "2026-11-07T22:07:22Z",
       "tags": [
         "AI 模型",
         "转述"
