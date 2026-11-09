@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-09T06:56:30Z",
-  "updatedLabel": "11/09 14:56",
+  "updatedAt": "2026-11-09T22:34:09Z",
+  "updatedLabel": "11/10 06:34",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,42 @@
     }
   ],
   "posts": [
+    {
+      "id": "7f2312c68d83aafd",
+      "personId": "trump",
+      "title": "特朗普有一则新动态，来自The Verge",
+      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Trump’s 60 Minutes interview touched on AI safety, threat to arrest an AI exec」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/09 23:50",
+      "publishedAt": "2026-11-09T15:50:38Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "9842d2a17118242a",
+      "personId": "musk",
+      "title": "无预警！ChatGPT突然大规模封号，包括付费用户；圆通总裁心疼儿子Tim：他比大多数人想象的辛苦；英伟达遭大劫案，价值超7千万元货物失踪",
+      "summary": "要闻提示 1.无预警！曝ChatGPT突然大规模封号，包括付费用户 2.圆通总裁心疼儿子Tim：他真的比大多数人想象的辛苦 3.马斯克：当年进中国建厂被要求合资，以特斯拉是婴儿为由拒绝了 4.智能指环售价2499元，称戴上后不容易被推倒？",
+      "context": "上文来自雷峰网的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "雷峰网",
+      "sourceUrl": "https://leiphone.com/category/zaobao/Z2uc8AJRp0PQO7Kb.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/09 18:32",
+      "publishedAt": "2026-11-09T10:32:00Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "ad9c604acd06dbb8",
       "personId": "musk",
@@ -60,24 +96,6 @@
       "pinned": false
     },
     {
-      "id": "86fd351c042e7ce1",
-      "personId": "musk",
-      "title": "GitHub不堪重负！OpenAI收购替代品，A社原地自研，马斯克也要搞",
-      "summary": "AI写代码太快，基础设施跟不上了。",
-      "context": "上文来自量子位的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是量子位。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "量子位",
-      "sourceUrl": "https://qbitai.com/2026/11/508449.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/07 17:38",
-      "publishedAt": "2026-11-07T09:38:56Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
       "id": "dd0b393f9a77687e",
       "personId": "musk",
       "title": "马斯克官宣 Cybertruck 停产：销量不足预期一成；李飞飞团队推出世界模型「模拟掌机」；小米汽车成立国际事业部｜极客早知道",
@@ -89,24 +107,6 @@
       "linkLabel": "查看原文",
       "timeLabel": "11/07 08:48",
       "publishedAt": "2026-11-07T00:48:25Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "3a0d67d4c251fcf9",
-      "personId": "tibo",
-      "title": "OpenAI 「重置大神」换人了？Tibo 去救火，Andrew 上位",
-      "summary": "Tibo 不发糖了？因为Open AI 的内部安全烂透了 作者丨 高允毅 编辑丨岑 峰 OpenAI 的“赛博义父”好像换人了？",
-      "context": "上文来自雷峰网的公开报道，不是 @thsottiaux 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了Tibo，才收进人物动态。",
-      "sourceName": "雷峰网",
-      "sourceUrl": "https://leiphone.com/category/yanxishe/u5N6lCUT0bEfanp1.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/06 17:11",
-      "publishedAt": "2026-11-06T09:11:00Z",
       "tags": [
         "AI 模型",
         "转述"
