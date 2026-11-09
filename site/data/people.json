@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-08T13:42:03Z",
-  "updatedLabel": "11/08 21:42",
+  "updatedAt": "2026-11-09T06:56:30Z",
+  "updatedLabel": "11/09 14:56",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,24 @@
     }
   ],
   "posts": [
+    {
+      "id": "ad9c604acd06dbb8",
+      "personId": "musk",
+      "title": "早报｜曝特努斯要求加快AI研发/Win 11优化8GB内存电脑流畅度/马斯克：SpaceX明年12月年化营收或超5000亿美元",
+      "summary": "· 苹果称超 10 万款应用已适配 iPhone Duo · Anthropic 拟于本周启动 IPO 路演 · 比亚迪李柯回应玛莎拉蒂收购传闻。",
+      "context": "上文来自爱范儿的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是爱范儿。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "爱范儿",
+      "sourceUrl": "https://ifanr.com/1688379",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/09 08:34",
+      "publishedAt": "2026-11-09T00:34:19Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "d44fec61ccb764a3",
       "personId": "musk",
@@ -71,6 +89,24 @@
       "linkLabel": "查看原文",
       "timeLabel": "11/07 08:48",
       "publishedAt": "2026-11-07T00:48:25Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "3a0d67d4c251fcf9",
+      "personId": "tibo",
+      "title": "OpenAI 「重置大神」换人了？Tibo 去救火，Andrew 上位",
+      "summary": "Tibo 不发糖了？因为Open AI 的内部安全烂透了 作者丨 高允毅 编辑丨岑 峰 OpenAI 的“赛博义父”好像换人了？",
+      "context": "上文来自雷峰网的公开报道，不是 @thsottiaux 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了Tibo，才收进人物动态。",
+      "sourceName": "雷峰网",
+      "sourceUrl": "https://leiphone.com/category/yanxishe/u5N6lCUT0bEfanp1.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/06 17:11",
+      "publishedAt": "2026-11-06T09:11:00Z",
       "tags": [
         "AI 模型",
         "转述"
