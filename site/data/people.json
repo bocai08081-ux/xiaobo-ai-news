@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-09T22:34:09Z",
-  "updatedLabel": "11/10 06:34",
+  "updatedAt": "2026-11-10T07:33:29Z",
+  "updatedLabel": "11/10 15:33",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,42 @@
     }
   ],
   "posts": [
+    {
+      "id": "e839cee26ff8f8df",
+      "personId": "trump",
+      "title": "突发，特朗普自曝警告某AI巨头CEO：准备坐牢吧",
+      "summary": "科技权贵也在总统的怒火射程内。",
+      "context": "上文来自36氪的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是36氪。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "36氪",
+      "sourceUrl": "https://36kr.com/p/4063523778450313?f=rss",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/10 15:16",
+      "publishedAt": "2026-11-10T07:16:02Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "1a76a51854451da2",
+      "personId": "trump",
+      "title": "特朗普有一则新动态，来自The Verge",
+      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Here’s what Trump said he knew about Jensen Huang」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://theverge.com/tech/1030446/trump-jensen-huang-press-conference",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/10 07:47",
+      "publishedAt": "2026-11-09T23:47:46Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "7f2312c68d83aafd",
       "personId": "trump",
@@ -71,42 +107,6 @@
       "linkLabel": "查看原文",
       "timeLabel": "11/09 08:34",
       "publishedAt": "2026-11-09T00:34:19Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "d44fec61ccb764a3",
-      "personId": "musk",
-      "title": "马斯克有一则新动态，来自TechCrunch",
-      "summary": "TechCrunch报道了与AI 模型有关的新动态，原文标题是「After the midterms, things are looking rocky for Elon Musk and data centers」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自TechCrunch的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/08 06:07",
-      "publishedAt": "2026-11-07T22:07:22Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "dd0b393f9a77687e",
-      "personId": "musk",
-      "title": "马斯克官宣 Cybertruck 停产：销量不足预期一成；李飞飞团队推出世界模型「模拟掌机」；小米汽车成立国际事业部｜极客早知道",
-      "summary": "电动皮卡中道崩殂！马斯克宣布 Cybertruck 明年逐步停产：销量仅达预期一成 11 月 6 日消息，特斯拉 CEO 马斯克在社交平台 X 发文表示，公司将于明年年中前后，逐步收尾得州超级工厂的 Cybertruck 电动皮卡生产，为 Cybercab 车型扩产腾出产能空间。",
-      "context": "上文来自极客公园的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是极客公园。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "极客公园",
-      "sourceUrl": "http://geekpark.net/news/373639",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/07 08:48",
-      "publishedAt": "2026-11-07T00:48:25Z",
       "tags": [
         "AI 模型",
         "转述"
