@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-11T06:50:27Z",
-  "updatedLabel": "11/11 14:50",
+  "updatedAt": "2026-11-11T19:45:41Z",
+  "updatedLabel": "11/12 03:45",
   "people": [
     {
       "id": "tibo",
@@ -22,5 +22,24 @@
       "initial": "特"
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "id": "b6497495cd4adac7",
+      "personId": "musk",
+      "title": "英伟达股价 2 天暴跌 10%",
+      "summary": "英伟达股价两天暴跌 10%。市场担忧该公司对黄仁勋的高度依赖，围绕“关键人物风险”的警惕情绪令相关股票走势分化。",
+      "context": "上文来自Solidot的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是Solidot。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "Solidot",
+      "sourceUrl": "https://solidot.org/story?sid=85854",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/11 15:11",
+      "publishedAt": "2026-11-11T07:11:17Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    }
+  ]
 }
