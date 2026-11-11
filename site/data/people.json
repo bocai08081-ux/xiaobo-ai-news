@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-10T19:53:14Z",
-  "updatedLabel": "11/11 03:53",
+  "updatedAt": "2026-11-11T06:50:27Z",
+  "updatedLabel": "11/11 14:50",
   "people": [
     {
       "id": "tibo",
@@ -22,24 +22,5 @@
       "initial": "特"
     }
   ],
-  "posts": [
-    {
-      "id": "9842d2a17118242a",
-      "personId": "musk",
-      "title": "无预警！ChatGPT突然大规模封号，包括付费用户；圆通总裁心疼儿子Tim：他比大多数人想象的辛苦；英伟达遭大劫案，价值超7千万元货物失踪",
-      "summary": "要闻提示 1.无预警！曝ChatGPT突然大规模封号，包括付费用户 2.圆通总裁心疼儿子Tim：他真的比大多数人想象的辛苦 3.马斯克：当年进中国建厂被要求合资，以特斯拉是婴儿为由拒绝了 4.智能指环售价2499元，称戴上后不容易被推倒？",
-      "context": "上文来自雷峰网的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "雷峰网",
-      "sourceUrl": "https://leiphone.com/category/zaobao/Z2uc8AJRp0PQO7Kb.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/09 18:32",
-      "publishedAt": "2026-11-09T10:32:00Z",
-      "tags": [
-        "英伟达",
-        "转述"
-      ],
-      "pinned": false
-    }
-  ]
+  "posts": []
 }
