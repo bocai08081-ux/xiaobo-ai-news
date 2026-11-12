@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-12T07:28:04Z",
-  "updatedLabel": "11/12 15:28",
+  "updatedAt": "2026-11-12T20:11:10Z",
+  "updatedLabel": "11/13 04:11",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,42 @@
     }
   ],
   "posts": [
+    {
+      "id": "11a9f97485e11126",
+      "personId": "trump",
+      "title": "特朗普有一则新动态，来自The Verge",
+      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Jensen Huang is out. What did China want from him?」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://theverge.com/podcast/1031260/nvidia-jensen-huang-resign-china-spy-scandal-ai-chips-trump",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/13 00:30",
+      "publishedAt": "2026-11-12T16:30:00Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "44722bd030259051",
+      "personId": "trump",
+      "title": "特朗普有一则新动态，来自TechCrunch",
+      "summary": "TechCrunch报道了与英伟达有关的新动态，原文标题是「Trump floats Apple chairman Tim Cook as Jensen Huang’s successor」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自TechCrunch的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/12/trump-floats-apple-chairman-tim-cook-as-jensen-huangs-successor",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/13 00:12",
+      "publishedAt": "2026-11-12T16:12:44Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "b6497495cd4adac7",
       "personId": "musk",
