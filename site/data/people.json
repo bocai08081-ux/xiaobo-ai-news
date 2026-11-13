@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-12T20:11:10Z",
-  "updatedLabel": "11/13 04:11",
+  "updatedAt": "2026-11-13T06:59:23Z",
+  "updatedLabel": "11/13 14:59",
   "people": [
     {
       "id": "tibo",
@@ -24,6 +24,24 @@
   ],
   "posts": [
     {
+      "id": "4e2810e47ea31ac4",
+      "personId": "trump",
+      "title": "特朗普有一则新动态，来自TechCrunch",
+      "summary": "TechCrunch报道了与英伟达有关的新动态，原文标题是「Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自TechCrunch的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/13 06:42",
+      "publishedAt": "2026-11-12T22:42:51Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
       "id": "11a9f97485e11126",
       "personId": "trump",
       "title": "特朗普有一则新动态，来自The Verge",
@@ -37,42 +55,6 @@
       "publishedAt": "2026-11-12T16:30:00Z",
       "tags": [
         "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "44722bd030259051",
-      "personId": "trump",
-      "title": "特朗普有一则新动态，来自TechCrunch",
-      "summary": "TechCrunch报道了与英伟达有关的新动态，原文标题是「Trump floats Apple chairman Tim Cook as Jensen Huang’s successor」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自TechCrunch的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/11/12/trump-floats-apple-chairman-tim-cook-as-jensen-huangs-successor",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/13 00:12",
-      "publishedAt": "2026-11-12T16:12:44Z",
-      "tags": [
-        "英伟达",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "b6497495cd4adac7",
-      "personId": "musk",
-      "title": "英伟达股价 2 天暴跌 10%",
-      "summary": "英伟达股价两天暴跌 10%。市场担忧该公司对黄仁勋的高度依赖，围绕“关键人物风险”的警惕情绪令相关股票走势分化。",
-      "context": "上文来自Solidot的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是Solidot。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "Solidot",
-      "sourceUrl": "https://solidot.org/story?sid=85854",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/11 15:11",
-      "publishedAt": "2026-11-11T07:11:17Z",
-      "tags": [
-        "英伟达",
         "转述"
       ],
       "pinned": false
