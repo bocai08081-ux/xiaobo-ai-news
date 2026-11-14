@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-14T06:47:46Z",
-  "updatedLabel": "11/14 14:47",
+  "updatedAt": "2026-11-14T18:20:47Z",
+  "updatedLabel": "11/15 02:20",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,24 @@
     }
   ],
   "posts": [
+    {
+      "id": "0bcca453470da9bc",
+      "personId": "musk",
+      "title": "英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！",
+      "summary": "量子位报道了这件事：英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！",
+      "context": "上文来自量子位的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是量子位。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "量子位",
+      "sourceUrl": "https://qbitai.com/2026/11/510297.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/14 18:08",
+      "publishedAt": "2026-11-14T10:08:08Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "be9c980053554ca7",
       "personId": "musk",
