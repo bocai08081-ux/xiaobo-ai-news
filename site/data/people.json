@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-14T18:20:47Z",
-  "updatedLabel": "11/15 02:20",
+  "updatedAt": "2026-11-15T06:52:20Z",
+  "updatedLabel": "11/15 14:52",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,42 @@
     }
   ],
   "posts": [
+    {
+      "id": "29c0264527f802c3",
+      "personId": "musk",
+      "title": "马斯克有一则新动态，来自钛媒体",
+      "summary": "钛媒体报道了这件事：Edge AI Daily 早报（11月15日）。",
+      "context": "上文来自钛媒体的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是钛媒体。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "钛媒体",
+      "sourceUrl": "https://tmtpost.com/8205610.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/15 09:09",
+      "publishedAt": "2026-11-15T01:09:35Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "9a736294c460795d",
+      "personId": "musk",
+      "title": "马斯克有一则新动态，来自TechCrunch",
+      "summary": "TechCrunch报道了与英伟达有关的新动态，原文标题是「Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自TechCrunch的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/15 05:41",
+      "publishedAt": "2026-11-14T21:41:22Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "0bcca453470da9bc",
       "personId": "musk",
@@ -73,24 +109,6 @@
       "publishedAt": "2026-11-13T14:47:16Z",
       "tags": [
         "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "4e2810e47ea31ac4",
-      "personId": "trump",
-      "title": "特朗普有一则新动态，来自TechCrunch",
-      "summary": "TechCrunch报道了与英伟达有关的新动态，原文标题是「Democrats launch Nvidia investigation, write scathing letter on Huang’s ‘scheme’ with Trump」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自TechCrunch的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/13 06:42",
-      "publishedAt": "2026-11-12T22:42:51Z",
-      "tags": [
-        "英伟达",
         "转述"
       ],
       "pinned": false
