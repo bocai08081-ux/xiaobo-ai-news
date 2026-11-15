@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-15T06:52:20Z",
-  "updatedLabel": "11/15 14:52",
+  "updatedAt": "2026-11-15T18:59:32Z",
+  "updatedLabel": "11/16 02:59",
   "people": [
     {
       "id": "tibo",
@@ -23,24 +23,6 @@
     }
   ],
   "posts": [
-    {
-      "id": "29c0264527f802c3",
-      "personId": "musk",
-      "title": "马斯克有一则新动态，来自钛媒体",
-      "summary": "钛媒体报道了这件事：Edge AI Daily 早报（11月15日）。",
-      "context": "上文来自钛媒体的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是钛媒体。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "钛媒体",
-      "sourceUrl": "https://tmtpost.com/8205610.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/15 09:09",
-      "publishedAt": "2026-11-15T01:09:35Z",
-      "tags": [
-        "英伟达",
-        "转述"
-      ],
-      "pinned": false
-    },
     {
       "id": "9a736294c460795d",
       "personId": "musk",
