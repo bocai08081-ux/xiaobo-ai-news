@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-15T18:59:32Z",
-  "updatedLabel": "11/16 02:59",
+  "updatedAt": "2026-11-16T06:54:43Z",
+  "updatedLabel": "11/16 14:54",
   "people": [
     {
       "id": "tibo",
@@ -53,24 +53,6 @@
       "linkLabel": "查看原文",
       "timeLabel": "11/14 18:08",
       "publishedAt": "2026-11-14T10:08:08Z",
-      "tags": [
-        "英伟达",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "be9c980053554ca7",
-      "personId": "musk",
-      "title": "9点1氪丨马斯克在X平台公开表态，将参与要求黄仁勋重返英伟达的请愿活动",
-      "summary": "马斯克在X平台公开表态，将参与要求黄仁勋重返英伟达的请愿活动。",
-      "context": "上文来自36氪的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是36氪。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "36氪",
-      "sourceUrl": "https://36kr.com/p/4068905666859912?f=rss",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/14 09:15",
-      "publishedAt": "2026-11-14T01:15:03Z",
       "tags": [
         "英伟达",
         "转述"
