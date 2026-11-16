@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-16T06:54:43Z",
-  "updatedLabel": "11/16 14:54",
+  "updatedAt": "2026-11-16T22:23:01Z",
+  "updatedLabel": "11/17 06:23",
   "people": [
     {
       "id": "tibo",
@@ -24,55 +24,73 @@
   ],
   "posts": [
     {
-      "id": "9a736294c460795d",
-      "personId": "musk",
-      "title": "马斯克有一则新动态，来自TechCrunch",
-      "summary": "TechCrunch报道了与英伟达有关的新动态，原文标题是「Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自TechCrunch的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/15 05:41",
-      "publishedAt": "2026-11-14T21:41:22Z",
-      "tags": [
-        "英伟达",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "0bcca453470da9bc",
-      "personId": "musk",
-      "title": "英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！",
-      "summary": "量子位报道了这件事：英伟达上演“奥特曼2.0”，员工集体请愿：让老黄回家！",
-      "context": "上文来自量子位的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是量子位。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "量子位",
-      "sourceUrl": "https://qbitai.com/2026/11/510297.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/14 18:08",
-      "publishedAt": "2026-11-14T10:08:08Z",
-      "tags": [
-        "英伟达",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "5d09d1e98e76f00d",
+      "id": "fbb28875c303365e",
       "personId": "trump",
-      "title": "特朗普有一则新动态，来自The Verge",
-      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「What’s really at stake in the Jensen Huang saga」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "The Verge",
-      "sourceUrl": "https://theverge.com/podcast/1032866/jensen-huang-nvidia-china-trump-vergecast",
+      "title": "特朗普有一则新动态，来自Hacker News",
+      "summary": "Hacker News报道了与英伟达有关的新动态，原文标题是「Nvidia, OpenAI and Anthropic to be named AI national champions, WSJ reports」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自Hacker News的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是Hacker News。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://thenextweb.com/news/ai-national-champions-nvidia-openai-anthropic-trump",
       "linkLabel": "查看原文",
-      "timeLabel": "11/13 22:47",
-      "publishedAt": "2026-11-13T14:47:16Z",
+      "timeLabel": "11/17 03:17",
+      "publishedAt": "2026-11-16T19:17:09Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "668b96b1a1259e1f",
+      "personId": "trump",
+      "title": "特朗普有一则新动态，来自TechCrunch",
+      "summary": "TechCrunch报道了与英伟达有关的新动态，原文标题是「Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自TechCrunch的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/17 03:12",
+      "publishedAt": "2026-11-16T19:12:02Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "9e76317c09cc6396",
+      "personId": "musk",
+      "title": "马斯克喊话“真男人自己管理内存”，三十年系统老将警告：Rust 也拦不住 AI 制造复杂性",
+      "summary": "InfoQ报道了这件事：马斯克喊话“真男人自己管理内存”，三十年系统老将警告：Rust 也拦不住 AI 制造复杂性。",
+      "context": "上文来自InfoQ的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是InfoQ。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "InfoQ",
+      "sourceUrl": "https://infoq.cn/article/FWqT2oGIEl9zlyJ7HXZF",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/16 22:28",
+      "publishedAt": "2026-11-16T14:28:15Z",
       "tags": [
         "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "162a965d7652a434",
+      "personId": "musk",
+      "title": "黄仁勋被曝考虑重返英伟达担任CEO！其硅谷盟友正施压董事会；女子因拒绝给HR带咖啡被取消面试，BOSS直聘回应；李牧青出任AI公司联席CEO",
+      "summary": "要闻提示 1.黄仁勋被曝考虑重返英伟达担任 CEO！其硅谷盟友正施压董事会 2.女子称因拒绝给HR带咖啡被取消面试，BOSS直聘回应：已暂停该招聘账号权限 3.董明珠：格力对文凭的考虑已逐步取消，本事才是硬通行证 4.腾讯 AI 李牧青离职，出任 AI 公司联席 CEO 5.韩路也来凑热闹！",
+      "context": "上文来自雷峰网的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "雷峰网",
+      "sourceUrl": "https://leiphone.com/category/zaobao/QP6ok2UwM4JBsMEx.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/16 19:21",
+      "publishedAt": "2026-11-16T11:21:00Z",
+      "tags": [
+        "英伟达",
         "转述"
       ],
       "pinned": false
