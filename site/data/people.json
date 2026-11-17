@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-17T08:12:49Z",
-  "updatedLabel": "11/17 16:12",
+  "updatedAt": "2026-11-17T21:08:29Z",
+  "updatedLabel": "11/18 05:08",
   "people": [
     {
       "id": "tibo",
@@ -23,42 +23,6 @@
     }
   ],
   "posts": [
-    {
-      "id": "fbb28875c303365e",
-      "personId": "trump",
-      "title": "特朗普有一则新动态，来自Hacker News",
-      "summary": "Hacker News报道了与英伟达有关的新动态，原文标题是「Nvidia, OpenAI and Anthropic to be named AI national champions, WSJ reports」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自Hacker News的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是Hacker News。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "Hacker News",
-      "sourceUrl": "https://thenextweb.com/news/ai-national-champions-nvidia-openai-anthropic-trump",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/17 03:17",
-      "publishedAt": "2026-11-16T19:17:09Z",
-      "tags": [
-        "英伟达",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "668b96b1a1259e1f",
-      "personId": "trump",
-      "title": "特朗普有一则新动态，来自TechCrunch",
-      "summary": "TechCrunch报道了与英伟达有关的新动态，原文标题是「Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自TechCrunch的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/17 03:12",
-      "publishedAt": "2026-11-16T19:12:02Z",
-      "tags": [
-        "英伟达",
-        "转述"
-      ],
-      "pinned": false
-    },
     {
       "id": "162a965d7652a434",
       "personId": "musk",
