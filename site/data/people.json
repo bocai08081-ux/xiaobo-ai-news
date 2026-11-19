@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-19T07:41:35Z",
-  "updatedLabel": "11/19 15:41",
+  "updatedAt": "2026-11-19T20:51:12Z",
+  "updatedLabel": "11/20 04:51",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,24 @@
     }
   ],
   "posts": [
+    {
+      "id": "011940cd3e6da3c2",
+      "personId": "musk",
+      "title": "钛媒体硅谷峰会震撼开启，马斯克背后传奇投资人、Google X创始人、全球AI及投资领军者齐聚斯坦福",
+      "summary": "Google X创始人、马斯克背后长期资本创始人、洛克菲勒国际主席、斯坦福顶尖科学家，哥伦比亚大学AI监管权威专家、还有多位AI创新与生命科技领军人物齐聚，提前预判2027，全球技术与资金将走向何处？",
+      "context": "上文来自钛媒体的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是钛媒体。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "钛媒体",
+      "sourceUrl": "https://tmtpost.com/8210519.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/19 18:05",
+      "publishedAt": "2026-11-19T10:05:15Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "74ced337548159bc",
       "personId": "musk",
@@ -55,42 +73,6 @@
       "publishedAt": "2026-11-18T19:40:36Z",
       "tags": [
         "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "e48dfd6c57c460dd",
-      "personId": "musk",
-      "title": "马斯克有一则新动态，来自The Verge",
-      "summary": "The Verge报道了与英伟达有关的新动态，原文标题是「What is Nvidia without AI’s sugar daddy in charge?」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自The Verge的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是The Verge。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "The Verge",
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/1036776/nvidia-earnings-kress-jensen-huang-petition",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/19 02:34",
-      "publishedAt": "2026-11-18T18:34:15Z",
-      "tags": [
-        "英伟达",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "bcaa5eedc5494b8b",
-      "personId": "musk",
-      "title": "黄仁勋打破沉默：为美国人身份自豪，愿意重返英伟达担任CEO；阿里调整员工回流政策：离职两次不得回流原集团；红果被曝筹备电视端独立APP",
-      "summary": "要闻提示 1.黄仁勋打破沉默：为美国人身份自豪，愿意重返英伟达担任CEO！英伟达董事会拒绝其回归 2.不让吃回头草了？",
-      "context": "上文来自雷峰网的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "雷峰网",
-      "sourceUrl": "https://leiphone.com/category/zaobao/OlqabqceGorcm242.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/18 08:56",
-      "publishedAt": "2026-11-18T00:56:00Z",
-      "tags": [
-        "英伟达",
         "转述"
       ],
       "pinned": false
