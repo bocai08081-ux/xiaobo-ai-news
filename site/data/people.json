@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-18T20:45:35Z",
-  "updatedLabel": "11/19 04:45",
+  "updatedAt": "2026-11-19T07:41:35Z",
+  "updatedLabel": "11/19 15:41",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,24 @@
     }
   ],
   "posts": [
+    {
+      "id": "74ced337548159bc",
+      "personId": "musk",
+      "title": "马斯克有一则新动态，来自TechCrunch",
+      "summary": "TechCrunch报道了与AI 模型有关的新动态，原文标题是「Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自TechCrunch的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/19 07:25",
+      "publishedAt": "2026-11-18T23:25:17Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "727d955cd223ff9b",
       "personId": "trump",
