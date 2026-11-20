@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-19T20:51:12Z",
-  "updatedLabel": "11/20 04:51",
+  "updatedAt": "2026-11-20T07:33:36Z",
+  "updatedLabel": "11/20 15:33",
   "people": [
     {
       "id": "tibo",
@@ -22,60 +22,5 @@
       "initial": "特"
     }
   ],
-  "posts": [
-    {
-      "id": "011940cd3e6da3c2",
-      "personId": "musk",
-      "title": "钛媒体硅谷峰会震撼开启，马斯克背后传奇投资人、Google X创始人、全球AI及投资领军者齐聚斯坦福",
-      "summary": "Google X创始人、马斯克背后长期资本创始人、洛克菲勒国际主席、斯坦福顶尖科学家，哥伦比亚大学AI监管权威专家、还有多位AI创新与生命科技领军人物齐聚，提前预判2027，全球技术与资金将走向何处？",
-      "context": "上文来自钛媒体的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是钛媒体。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "钛媒体",
-      "sourceUrl": "https://tmtpost.com/8210519.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/19 18:05",
-      "publishedAt": "2026-11-19T10:05:15Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "74ced337548159bc",
-      "personId": "musk",
-      "title": "马斯克有一则新动态，来自TechCrunch",
-      "summary": "TechCrunch报道了与AI 模型有关的新动态，原文标题是「Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自TechCrunch的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/19 07:25",
-      "publishedAt": "2026-11-18T23:25:17Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "727d955cd223ff9b",
-      "personId": "trump",
-      "title": "特朗普有一则新动态，来自The Verge",
-      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Trump’s latest land grab is an AI hub in the Philippines」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "The Verge",
-      "sourceUrl": "https://theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/19 03:40",
-      "publishedAt": "2026-11-18T19:40:36Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    }
-  ]
+  "posts": []
 }
