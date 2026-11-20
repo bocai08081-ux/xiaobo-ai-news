@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-20T07:33:36Z",
-  "updatedLabel": "11/20 15:33",
+  "updatedAt": "2026-11-20T20:35:29Z",
+  "updatedLabel": "11/21 04:35",
   "people": [
     {
       "id": "tibo",
@@ -22,5 +22,42 @@
       "initial": "特"
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "id": "08b074f7bce07f08",
+      "personId": "trump",
+      "title": "特朗普有一则新动态，来自The Verge",
+      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Trump threatens ‘tremendous tax’ for moving AI data centers outside the US」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/21 02:50",
+      "publishedAt": "2026-11-20T18:50:19Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "2ee91e12a9a8e1a6",
+      "personId": "trump",
+      "title": "特朗普有一则新动态，来自Hacker News",
+      "summary": "Hacker News报道了与AI 模型有关的新动态，原文标题是「Anthropic Founder Will Donate to Trump Accounts, Bessent Says」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自Hacker News的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是Hacker News。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://bloomberg.com/news/articles/2026-11-20/bessent-says-an-anthropic-founder-to-donate-will-trump-accounts",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/21 02:04",
+      "publishedAt": "2026-11-20T18:04:21Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    }
+  ]
 }
