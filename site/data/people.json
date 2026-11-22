@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-22T07:10:46Z",
-  "updatedLabel": "11/22 15:10",
+  "updatedAt": "2026-11-22T19:52:52Z",
+  "updatedLabel": "11/23 03:52",
   "people": [
     {
       "id": "tibo",
@@ -24,6 +24,24 @@
   ],
   "posts": [
     {
+      "id": "0e1816c3edb221bd",
+      "personId": "musk",
+      "title": "特朗普表态：英伟达Blackwell芯片可对华销售，但有个条件；OpenAI被曝入局智能手机赛道；DeepSeek第二轮千亿融资落地，31家出资方入局",
+      "summary": "要闻提示 1.OpenAI被曝入局智能手机赛道，富士康获组装订单 2.特朗普表态：英伟达Blackwell芯片可对华销售，但有个条件 3.DeepSeek千亿融资落地，31家出资方入股梁文锋搭建的持股平台 4.马斯克自称“中国超级粉丝”：首次到访深圳被震撼，特斯拉将继续在华提高产量 5.字节跳动拟追加5亿美元微软云服…",
+      "context": "上文来自雷峰网的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "雷峰网",
+      "sourceUrl": "https://leiphone.com/category/zaobao/qb1uol6hKvK6pRgF.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/22 18:15",
+      "publishedAt": "2026-11-22T10:15:00Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
       "id": "ee69adc4d2d1a384",
       "personId": "musk",
       "title": "Claude 的黎曼猜想证明获 Lean 官方认证，马斯克直呼惊人成就",
@@ -35,24 +53,6 @@
       "linkLabel": "查看原文",
       "timeLabel": "11/22 09:35",
       "publishedAt": "2026-11-22T01:35:14Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "d7d8ab58a0c4f4a5",
-      "personId": "musk",
-      "title": "马斯克有一则新动态，来自钛媒体",
-      "summary": "钛媒体报道了这件事：Edge AI Daily 早报（11月22日）。",
-      "context": "上文来自钛媒体的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是钛媒体。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "钛媒体",
-      "sourceUrl": "https://tmtpost.com/8213684.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/22 09:06",
-      "publishedAt": "2026-11-22T01:06:08Z",
       "tags": [
         "AI 模型",
         "转述"
