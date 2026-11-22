@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-21T19:34:14Z",
-  "updatedLabel": "11/22 03:34",
+  "updatedAt": "2026-11-22T07:10:46Z",
+  "updatedLabel": "11/22 15:10",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,42 @@
     }
   ],
   "posts": [
+    {
+      "id": "ee69adc4d2d1a384",
+      "personId": "musk",
+      "title": "Claude 的黎曼猜想证明获 Lean 官方认证，马斯克直呼惊人成就",
+      "summary": "爱范儿报道了这件事：Claude 的黎曼猜想证明获 Lean 官方认证，马斯克直呼惊人成就。",
+      "context": "上文来自爱范儿的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是爱范儿。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "爱范儿",
+      "sourceUrl": "https://ifanr.com/1690820",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/22 09:35",
+      "publishedAt": "2026-11-22T01:35:14Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "d7d8ab58a0c4f4a5",
+      "personId": "musk",
+      "title": "马斯克有一则新动态，来自钛媒体",
+      "summary": "钛媒体报道了这件事：Edge AI Daily 早报（11月22日）。",
+      "context": "上文来自钛媒体的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是钛媒体。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "钛媒体",
+      "sourceUrl": "https://tmtpost.com/8213684.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/22 09:06",
+      "publishedAt": "2026-11-22T01:06:08Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "08b074f7bce07f08",
       "personId": "trump",
