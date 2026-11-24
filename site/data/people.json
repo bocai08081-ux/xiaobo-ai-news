@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-23T07:56:18Z",
-  "updatedLabel": "11/23 15:56",
+  "updatedAt": "2026-11-24T00:07:54Z",
+  "updatedLabel": "11/24 08:07",
   "people": [
     {
       "id": "tibo",
@@ -24,17 +24,53 @@
   ],
   "posts": [
     {
-      "id": "0e1816c3edb221bd",
-      "personId": "musk",
-      "title": "特朗普表态：英伟达Blackwell芯片可对华销售，但有个条件；OpenAI被曝入局智能手机赛道；DeepSeek第二轮千亿融资落地，31家出资方入局",
-      "summary": "要闻提示 1.OpenAI被曝入局智能手机赛道，富士康获组装订单 2.特朗普表态：英伟达Blackwell芯片可对华销售，但有个条件 3.DeepSeek千亿融资落地，31家出资方入股梁文锋搭建的持股平台 4.马斯克自称“中国超级粉丝”：首次到访深圳被震撼，特斯拉将继续在华提高产量 5.字节跳动拟追加5亿美元微软云服…",
-      "context": "上文来自雷峰网的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "雷峰网",
-      "sourceUrl": "https://leiphone.com/category/zaobao/qb1uol6hKvK6pRgF.html",
+      "id": "012a59ac52869d1b",
+      "personId": "trump",
+      "title": "特朗普有一则新动态，来自The Verge",
+      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Trump engineered a risky comeback for Jensen Huang」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
       "linkLabel": "查看原文",
-      "timeLabel": "11/22 18:15",
-      "publishedAt": "2026-11-22T10:15:00Z",
+      "timeLabel": "11/24 06:25",
+      "publishedAt": "2026-11-23T22:25:12Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "537965d7de454e67",
+      "personId": "trump",
+      "title": "特朗普有一则新动态，来自The Verge",
+      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Welcome to elite impunity, Jensen Huang」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/24 06:09",
+      "publishedAt": "2026-11-23T22:09:26Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "b7175444dd039d16",
+      "personId": "musk",
+      "title": "马斯克有一则新动态，来自TechCrunch",
+      "summary": "TechCrunch报道了与英伟达有关的新动态，原文标题是「Elon Musk and others rejoice as Jensen Huang is reinstated at Nvidia amid scandal」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自TechCrunch的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/23/elon-musk-and-others-rejoice-as-jensen-huang-is-reinstated-at-nvidia-amid-scandal",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/24 05:47",
+      "publishedAt": "2026-11-23T21:47:41Z",
       "tags": [
         "英伟达",
         "转述"
@@ -42,17 +78,17 @@
       "pinned": false
     },
     {
-      "id": "ee69adc4d2d1a384",
+      "id": "f2e914f4d99e5bca",
       "personId": "musk",
-      "title": "Claude 的黎曼猜想证明获 Lean 官方认证，马斯克直呼惊人成就",
-      "summary": "爱范儿报道了这件事：Claude 的黎曼猜想证明获 Lean 官方认证，马斯克直呼惊人成就。",
-      "context": "上文来自爱范儿的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是爱范儿。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "爱范儿",
-      "sourceUrl": "https://ifanr.com/1690820",
+      "title": "马斯克有一则新动态，来自Hacker News",
+      "summary": "Hacker News报道了与AI 模型有关的新动态，原文标题是「Elon Musk Faces an A.I. Dilemma at SpaceX」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自Hacker News的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是Hacker News。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://nytimes.com/2026/11/23/business/elon-musk-ai-anthropic-google.html",
       "linkLabel": "查看原文",
-      "timeLabel": "11/22 09:35",
-      "publishedAt": "2026-11-22T01:35:14Z",
+      "timeLabel": "11/24 02:52",
+      "publishedAt": "2026-11-23T18:52:05Z",
       "tags": [
         "AI 模型",
         "转述"
@@ -60,19 +96,73 @@
       "pinned": false
     },
     {
-      "id": "08b074f7bce07f08",
+      "id": "5dc55a044437ee86",
+      "personId": "trump",
+      "title": "特朗普有一则新动态，来自TechCrunch",
+      "summary": "TechCrunch报道了与英伟达有关的新动态，原文标题是「Trump reportedly called into Nvidia board meeting to advocate for Huang’s return」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自TechCrunch的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/23/trump-reportedly-called-into-nvidia-board-meeting-to-advocate-for-huangs-return",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/24 00:39",
+      "publishedAt": "2026-11-23T16:39:10Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "ea91e3604351f004",
       "personId": "trump",
       "title": "特朗普有一则新动态，来自The Verge",
-      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Trump threatens ‘tremendous tax’ for moving AI data centers outside the US」。先把它当成今天要核对的结论，细节以原文为准。",
+      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「White House brags that Trump was ‘totally involved’ in getting Jensen reinstated」。先把它当成今天要核对的结论，细节以原文为准。",
       "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
       "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
       "sourceName": "The Verge",
-      "sourceUrl": "https://theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+      "sourceUrl": "https://theverge.com/policy/1040096/trump-nvidia-jensen-huang-reinstated",
       "linkLabel": "查看原文",
-      "timeLabel": "11/21 02:50",
-      "publishedAt": "2026-11-20T18:50:19Z",
+      "timeLabel": "11/24 00:30",
+      "publishedAt": "2026-11-23T16:30:11Z",
       "tags": [
         "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "cce907208d419513",
+      "personId": "musk",
+      "title": "马斯克有一则新动态，来自The Verge",
+      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Tech leaders are celebrating Jensen Huang’s return」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自The Verge的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是The Verge。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/24 00:14",
+      "publishedAt": "2026-11-23T16:14:04Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "57e4d9bc2d25bc90",
+      "personId": "trump",
+      "title": "特朗普有一则新动态，来自TechCrunch",
+      "summary": "TechCrunch报道了与英伟达有关的新动态，原文标题是「Trump endorses Jensen Huang’s return to Nvidia, says US has no evidence of wrongdoing」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自TechCrunch的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "TechCrunch",
+      "sourceUrl": "https://techcrunch.com/2026/11/23/trump-endorses-jensen-huangs-return-to-nvidia-says-us-has-no-evidence-of-wrongdoing",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/23 23:04",
+      "publishedAt": "2026-11-23T15:04:01Z",
+      "tags": [
+        "英伟达",
         "转述"
       ],
       "pinned": false
