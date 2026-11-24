@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-24T00:07:54Z",
-  "updatedLabel": "11/24 08:07",
+  "updatedAt": "2026-11-24T10:10:46Z",
+  "updatedLabel": "11/24 18:10",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,60 @@
     }
   ],
   "posts": [
+    {
+      "id": "980364aa8b2c9c53",
+      "personId": "trump",
+      "title": "黄仁勋复职：特朗普为什么一定要把他送回英伟达？",
+      "summary": "英伟达还是不能没有黄仁勋。",
+      "context": "上文来自钛媒体的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是钛媒体。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "钛媒体",
+      "sourceUrl": "https://tmtpost.com/8216210.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/24 17:05",
+      "publishedAt": "2026-11-24T09:05:47Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "b4a6e2afde010280",
+      "personId": "musk",
+      "title": "英伟达恢复黄仁勋CEO职务！黄仁勋重返公司总部，受到数百名员工迎接；DeepSeek最新估值或达6078亿元；蚂蚁开源医疗AI模型家族丨雷峰早报",
+      "summary": "要闻提示 1.英伟达恢复黄仁勋CEO职务！黄仁勋重返公司总部，受到数百名员工迎接 2.DeepSeek最新估值或达6078亿元 3.送100台iPhone Duo被质疑内定！",
+      "context": "上文来自雷峰网的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "雷峰网",
+      "sourceUrl": "https://leiphone.com/category/zaobao/Ao31dQuXPBTU7qpK.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/24 09:42",
+      "publishedAt": "2026-11-24T01:42:00Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "f4218e9adf8b9eb7",
+      "personId": "musk",
+      "title": "黄仁勋重返英伟达，市值涨31.48%；马斯克：AI 研发落后对手，出租算力比自研更赚钱；新一代 AI 模型更爱「爆粗口」",
+      "summary": "黄仁勋重返英伟达 黄仁勋在美国当地时间 11 月 23 日重返英伟达总部，现场员工聚集在大厅高声欢呼，迎接这位创办人回归。黄仁勋在现场表示：「感谢大家给我第二次机会，接下来我一定会成为更优秀的 CEO」。",
+      "context": "上文来自极客公园的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是极客公园。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "极客公园",
+      "sourceUrl": "http://geekpark.net/news/374375",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/24 08:28",
+      "publishedAt": "2026-11-24T00:28:30Z",
+      "tags": [
+        "英伟达",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "012a59ac52869d1b",
       "personId": "trump",
@@ -107,60 +161,6 @@
       "linkLabel": "查看原文",
       "timeLabel": "11/24 00:39",
       "publishedAt": "2026-11-23T16:39:10Z",
-      "tags": [
-        "英伟达",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "ea91e3604351f004",
-      "personId": "trump",
-      "title": "特朗普有一则新动态，来自The Verge",
-      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「White House brags that Trump was ‘totally involved’ in getting Jensen reinstated」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "The Verge",
-      "sourceUrl": "https://theverge.com/policy/1040096/trump-nvidia-jensen-huang-reinstated",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/24 00:30",
-      "publishedAt": "2026-11-23T16:30:11Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "cce907208d419513",
-      "personId": "musk",
-      "title": "马斯克有一则新动态，来自The Verge",
-      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Tech leaders are celebrating Jensen Huang’s return」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自The Verge的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是The Verge。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "The Verge",
-      "sourceUrl": "https://theverge.com/tech/1040069/jensen-huang-return-elon-musk-sam-altman-yay",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/24 00:14",
-      "publishedAt": "2026-11-23T16:14:04Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "57e4d9bc2d25bc90",
-      "personId": "trump",
-      "title": "特朗普有一则新动态，来自TechCrunch",
-      "summary": "TechCrunch报道了与英伟达有关的新动态，原文标题是「Trump endorses Jensen Huang’s return to Nvidia, says US has no evidence of wrongdoing」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自TechCrunch的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是TechCrunch。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "TechCrunch",
-      "sourceUrl": "https://techcrunch.com/2026/11/23/trump-endorses-jensen-huangs-return-to-nvidia-says-us-has-no-evidence-of-wrongdoing",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/23 23:04",
-      "publishedAt": "2026-11-23T15:04:01Z",
       "tags": [
         "英伟达",
         "转述"
