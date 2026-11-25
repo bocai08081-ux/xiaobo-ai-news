@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-24T22:38:36Z",
-  "updatedLabel": "11/25 06:38",
+  "updatedAt": "2026-11-25T08:55:02Z",
+  "updatedLabel": "11/25 16:55",
   "people": [
     {
       "id": "tibo",
@@ -24,6 +24,24 @@
   ],
   "posts": [
     {
+      "id": "104155dd51d4aa23",
+      "personId": "musk",
+      "title": "豆包个人 AI 助理「小豆」开启公测；存储承压，小米三季度经调整净利润下滑近六成；红果短剧上线时间管理功能 | 极客早知道",
+      "summary": "豆包旗下 AI 个人助理「小豆」开启公测，能够帮你处理日常事务 11 月 24 日消息，豆包官方今天宣布「小豆」正式开启公测，采用邀请制开放。用户凭邀请码即可开启体验，并获赠一定量免费额度。",
+      "context": "上文来自极客公园的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是极客公园。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "极客公园",
+      "sourceUrl": "http://geekpark.net/news/374438",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/25 08:44",
+      "publishedAt": "2026-11-25T00:44:18Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
       "id": "9134491ec669a372",
       "personId": "trump",
       "title": "特朗普有一则新动态，来自The Verge",
@@ -35,24 +53,6 @@
       "linkLabel": "查看原文",
       "timeLabel": "11/25 04:02",
       "publishedAt": "2026-11-24T20:02:03Z",
-      "tags": [
-        "英伟达",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "b4a6e2afde010280",
-      "personId": "musk",
-      "title": "英伟达恢复黄仁勋CEO职务！黄仁勋重返公司总部，受到数百名员工迎接；DeepSeek最新估值或达6078亿元；蚂蚁开源医疗AI模型家族丨雷峰早报",
-      "summary": "要闻提示 1.英伟达恢复黄仁勋CEO职务！黄仁勋重返公司总部，受到数百名员工迎接 2.DeepSeek最新估值或达6078亿元 3.送100台iPhone Duo被质疑内定！",
-      "context": "上文来自雷峰网的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "雷峰网",
-      "sourceUrl": "https://leiphone.com/category/zaobao/Ao31dQuXPBTU7qpK.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/24 09:42",
-      "publishedAt": "2026-11-24T01:42:00Z",
       "tags": [
         "英伟达",
         "转述"
@@ -109,24 +109,6 @@
       "publishedAt": "2026-11-23T22:09:26Z",
       "tags": [
         "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "8d3be4d941ac5480",
-      "personId": "musk",
-      "title": "华为星芒限时5499元起，网友喊话再便宜500，刘赫回应：我们选择创新优先；英伟达才说H200芯片不卖中国，美财长突喊：不用再限丨雷峰早报",
-      "summary": "要闻提示 1.英伟达才说H200芯片不卖中国，美财长突喊：不用再限 2.限时售价5499元起！华为星芒总经理回应OSTA O1 Pro定价高：我们选择创新优先 3.ASML总裁急了：切断光刻机售后也没用，中国工厂依然能造芯 4.第一批买iPhone Duo的人亏麻了：渠道价大跌破发！",
-      "context": "上文来自雷峰网的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "雷峰网",
-      "sourceUrl": "https://leiphone.com/category/zaobao/WvQYh5bertpjOZdF.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/23 18:40",
-      "publishedAt": "2026-11-23T10:40:00Z",
-      "tags": [
-        "英伟达",
         "转述"
       ],
       "pinned": false
