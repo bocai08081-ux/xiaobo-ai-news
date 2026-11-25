@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-25T08:55:02Z",
-  "updatedLabel": "11/25 16:55",
+  "updatedAt": "2026-11-25T21:52:14Z",
+  "updatedLabel": "11/26 05:52",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,42 @@
     }
   ],
   "posts": [
+    {
+      "id": "1343f7f3b4352e4c",
+      "personId": "musk",
+      "title": "马斯克有一则新动态，来自The Verge",
+      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "上文来自The Verge的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是The Verge。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "The Verge",
+      "sourceUrl": "https://theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/26 01:44",
+      "publishedAt": "2026-11-25T17:44:51Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "e45d98444fa4b4c6",
+      "personId": "musk",
+      "title": "元材新界发布 FrontierMat：330 道真实研发难题难住 GPT-6 Astra，自研跨尺度材料大模型登顶",
+      "summary": "雷峰网报道了这件事：元材新界发布 FrontierMat：330 道真实研发难题难住 GPT-6 Astra，自研跨尺度材料大模型登顶。",
+      "context": "上文来自雷峰网的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "雷峰网",
+      "sourceUrl": "https://leiphone.com/category/industrynews/GMIW0ZLuJPyQHSR4.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/25 19:04",
+      "publishedAt": "2026-11-25T11:04:00Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "104155dd51d4aa23",
       "personId": "musk",
@@ -73,42 +109,6 @@
       "publishedAt": "2026-11-24T00:28:30Z",
       "tags": [
         "英伟达",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "012a59ac52869d1b",
-      "personId": "trump",
-      "title": "特朗普有一则新动态，来自The Verge",
-      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Trump engineered a risky comeback for Jensen Huang」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "The Verge",
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/24 06:25",
-      "publishedAt": "2026-11-23T22:25:12Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "537965d7de454e67",
-      "personId": "trump",
-      "title": "特朗普有一则新动态，来自The Verge",
-      "summary": "The Verge报道了与AI 模型有关的新动态，原文标题是「Welcome to elite impunity, Jensen Huang」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "The Verge",
-      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/1040819/welcome-to-elite-impunity-jensen-huang",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/24 06:09",
-      "publishedAt": "2026-11-23T22:09:26Z",
-      "tags": [
-        "AI 模型",
         "转述"
       ],
       "pinned": false
