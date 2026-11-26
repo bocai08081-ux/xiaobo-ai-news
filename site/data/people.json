@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-26T08:40:12Z",
-  "updatedLabel": "11/26 16:40",
+  "updatedAt": "2026-11-26T21:46:19Z",
+  "updatedLabel": "11/27 05:46",
   "people": [
     {
       "id": "tibo",
@@ -71,24 +71,6 @@
       "linkLabel": "查看原文",
       "timeLabel": "11/26 01:44",
       "publishedAt": "2026-11-25T17:44:51Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "e45d98444fa4b4c6",
-      "personId": "musk",
-      "title": "元材新界发布 FrontierMat：330 道真实研发难题难住 GPT-6 Astra，自研跨尺度材料大模型登顶",
-      "summary": "雷峰网报道了这件事：元材新界发布 FrontierMat：330 道真实研发难题难住 GPT-6 Astra，自研跨尺度材料大模型登顶。",
-      "context": "上文来自雷峰网的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "雷峰网",
-      "sourceUrl": "https://leiphone.com/category/industrynews/GMIW0ZLuJPyQHSR4.html",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/25 19:04",
-      "publishedAt": "2026-11-25T11:04:00Z",
       "tags": [
         "AI 模型",
         "转述"
