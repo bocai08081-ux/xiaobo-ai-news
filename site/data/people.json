@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-25T21:52:14Z",
-  "updatedLabel": "11/26 05:52",
+  "updatedAt": "2026-11-26T08:40:12Z",
+  "updatedLabel": "11/26 16:40",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,42 @@
     }
   ],
   "posts": [
+    {
+      "id": "244a3e8cb4f170fa",
+      "personId": "tibo",
+      "title": "Tibo有一则新动态，来自Hacker News",
+      "summary": "Hacker News报道了与AI 模型有关的新动态，原文标题是「OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster」。先把它当成今天要核对的结论，细节以原文为准。",
+      "context": "这条链到本人的公开帖子。帖子本身可能很短，卡片里的说明是编辑补上的上下文，不是帖子原文。",
+      "sourceNote": "原帖来自 @thsottiaux。卡片标题和说明是中文整理，时间已换算成北京时间。",
+      "sourceName": "Hacker News",
+      "sourceUrl": "https://twitter.com/thsottiaux/status/2125784147889393806",
+      "linkLabel": "查看原帖",
+      "timeLabel": "11/26 11:36",
+      "publishedAt": "2026-11-26T03:36:58Z",
+      "tags": [
+        "AI 模型",
+        "原帖"
+      ],
+      "pinned": false
+    },
+    {
+      "id": "6b540a46d07e61ca",
+      "personId": "trump",
+      "title": "一月只开工两三天！奥迪中国回应长春工厂产能利用率跌破10%；Anthropic创始人兄妹上市次日套现37亿；小鹏智驾拟开启全球付费订阅",
+      "summary": "要闻提示 1.Anthropic创始人兄妹上市次日套现37亿元 2.一月只开工两三天，被称“幽灵工厂”！奥迪中国回应长春工厂产能利用率跌破10% 3.打脸自己？",
+      "context": "上文来自雷峰网的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是雷峰网。只因为标题或摘要提到了特朗普，才收进人物动态。",
+      "sourceName": "雷峰网",
+      "sourceUrl": "https://leiphone.com/category/zaobao/TaYBp58OxQSPMi10.html",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/26 09:30",
+      "publishedAt": "2026-11-26T01:30:00Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "1343f7f3b4352e4c",
       "personId": "musk",
