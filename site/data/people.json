@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-27T08:51:34Z",
-  "updatedLabel": "11/27 16:51",
+  "updatedAt": "2026-11-27T21:29:34Z",
+  "updatedLabel": "11/28 05:29",
   "people": [
     {
       "id": "tibo",
@@ -23,6 +23,24 @@
     }
   ],
   "posts": [
+    {
+      "id": "1ad5cfd9b4573707",
+      "personId": "musk",
+      "title": "“打不过，”马斯克公开认输AI模型之争，向员工承认“落后于对手”，警告浪费GPU者将被开除",
+      "summary": "当年要“理解宇宙”的马斯克，如今已经知难而退，安心当起了包租公。",
+      "context": "上文来自36氪的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
+      "sourceNote": "来源是36氪。只因为标题或摘要提到了马斯克，才收进人物动态。",
+      "sourceName": "36氪",
+      "sourceUrl": "https://36kr.com/p/4087944117123713?f=rss",
+      "linkLabel": "查看原文",
+      "timeLabel": "11/27 20:31",
+      "publishedAt": "2026-11-27T12:31:39Z",
+      "tags": [
+        "AI 模型",
+        "转述"
+      ],
+      "pinned": false
+    },
     {
       "id": "1343f7f3b4352e4c",
       "personId": "musk",
@@ -55,24 +73,6 @@
       "publishedAt": "2026-11-25T00:44:18Z",
       "tags": [
         "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "9134491ec669a372",
-      "personId": "trump",
-      "title": "特朗普有一则新动态，来自The Verge",
-      "summary": "The Verge报道了与英伟达有关的新动态，原文标题是「Jensen Huang reportedly tells Nvidia staff it’s ‘not true’ Trump got him rehired」。先把它当成今天要核对的结论，细节以原文为准。",
-      "context": "上文来自The Verge的公开报道，不是 @realDonaldTrump 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是The Verge。只因为标题或摘要提到了特朗普，才收进人物动态。",
-      "sourceName": "The Verge",
-      "sourceUrl": "https://theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/25 04:02",
-      "publishedAt": "2026-11-24T20:02:03Z",
-      "tags": [
-        "英伟达",
         "转述"
       ],
       "pinned": false
