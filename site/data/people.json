@@ -1,7 +1,7 @@
 {
   "timezone": "Asia/Shanghai",
-  "updatedAt": "2026-11-27T21:29:34Z",
-  "updatedLabel": "11/28 05:29",
+  "updatedAt": "2026-11-28T08:10:57Z",
+  "updatedLabel": "11/28 16:10",
   "people": [
     {
       "id": "tibo",
@@ -24,24 +24,6 @@
   ],
   "posts": [
     {
-      "id": "1ad5cfd9b4573707",
-      "personId": "musk",
-      "title": "“打不过，”马斯克公开认输AI模型之争，向员工承认“落后于对手”，警告浪费GPU者将被开除",
-      "summary": "当年要“理解宇宙”的马斯克，如今已经知难而退，安心当起了包租公。",
-      "context": "上文来自36氪的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是36氪。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "36氪",
-      "sourceUrl": "https://36kr.com/p/4087944117123713?f=rss",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/27 20:31",
-      "publishedAt": "2026-11-27T12:31:39Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
       "id": "1343f7f3b4352e4c",
       "personId": "musk",
       "title": "马斯克有一则新动态，来自The Verge",
@@ -53,24 +35,6 @@
       "linkLabel": "查看原文",
       "timeLabel": "11/26 01:44",
       "publishedAt": "2026-11-25T17:44:51Z",
-      "tags": [
-        "AI 模型",
-        "转述"
-      ],
-      "pinned": false
-    },
-    {
-      "id": "104155dd51d4aa23",
-      "personId": "musk",
-      "title": "豆包个人 AI 助理「小豆」开启公测；存储承压，小米三季度经调整净利润下滑近六成；红果短剧上线时间管理功能 | 极客早知道",
-      "summary": "豆包旗下 AI 个人助理「小豆」开启公测，能够帮你处理日常事务 11 月 24 日消息，豆包官方今天宣布「小豆」正式开启公测，采用邀请制开放。用户凭邀请码即可开启体验，并获赠一定量免费额度。",
-      "context": "上文来自极客公园的公开报道，不是 @elonmusk 的原帖。转述会漏掉语气和后续回复，不能单独当成本人发言。",
-      "sourceNote": "来源是极客公园。只因为标题或摘要提到了马斯克，才收进人物动态。",
-      "sourceName": "极客公园",
-      "sourceUrl": "http://geekpark.net/news/374438",
-      "linkLabel": "查看原文",
-      "timeLabel": "11/25 08:44",
-      "publishedAt": "2026-11-25T00:44:18Z",
       "tags": [
         "AI 模型",
         "转述"
